@@ -55,7 +55,6 @@
     "@babel/eslint-parser": "^7.19.1",
     "@babel/preset-env": "^7.19.3",
     "@babel/preset-react": "^7.18.6",
-    "@kirstendarling/tsconfig": "*",
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
     "@types/react-gtm-module": "^2.0.1",

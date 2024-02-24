@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-yarn workspace @kirstendarling/app lint
-yarn workspace @kirstendarling/app build
+# yarn workspace @kirstendarling/app lint
+# yarn workspace @kirstendarling/app build

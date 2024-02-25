@@ -17,11 +17,11 @@ export default {
       name: 'hexcode',
       title: 'Hexcode',
       type: 'string',
-      validation: (Rule) =>
-        Rule.regex(/^#(?:[0-9a-fA-F]{3}){1,2}$/, {
-          name: 'hexcode', // Error message is "Does not match email-pattern"
-          invert: false, // Boolean to allow any value that does NOT match pattern
-        }),
+      // validation: (Rule) =>
+      //   Rule.regex(/^#(?:[0-9a-fA-F]{3}){1,2}$/, {
+      //     name: 'hexcode', // Error message is "Does not match email-pattern"
+      //     invert: false, // Boolean to allow any value that does NOT match pattern
+      //   }),
       description: 'What is the 6 digit hexcode that represents the color? (e.g. #000000)',
     },
   ],

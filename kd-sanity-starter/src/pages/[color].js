@@ -1,6 +1,27 @@
+import { createClient } from 'next-sanity';
+import { useEffect, useState } from 'react';
 import colors from '../data/colors.json';
 
+const client = createClient({
+  projectId: 'gjsw9ksp',
+  dataset: 'production',
+  apiVersion: '2024-03-25',
+  useCdn: false,
+});
+
 export default function Color({ color }) {
+  const [loadedColors, setLoadedColors] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const colors2 = await client.fetch(`*[_type == "color"]`);
+      setLoadedColors(colors2);
+      console.log(colors2);
+    };
+
+    fetchData();
+  }, []);
+
   return (
     <div className='color-page' style={{ backgroundColor: color.hex }}>
       <h1>{color.name}</h1>
@@ -9,7 +30,7 @@ export default function Color({ color }) {
 }
 
 export async function getStaticPaths() {
-  const paths = colors.map((color) => {
+  const paths = colors2.map((color) => {
     return {
       params: { color: color.name },
     };

@@ -3,8 +3,6 @@ import Link from 'next/link';
 
 import colors from '../data/colors.json';
 
-// TODO: link this repo to Sanity.io
-
 export default function Home() {
   return (
     <div>

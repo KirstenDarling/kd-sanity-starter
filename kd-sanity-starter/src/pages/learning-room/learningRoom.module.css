@@ -1,0 +1,18 @@
+.mainContainer {
+  height: 100%;
+  overflow: hidden;
+}
+
+.sectionDemo {
+  height: 100%;
+  background-color: #9966cc;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, #dda0dd),
+    color-stop(100%, #9966cc)
+  );
+  background-image: -webkit-linear-gradient(#9966cc, #9966cc);
+  background-image: linear-gradient(#9966cc, #9966cc);
+}

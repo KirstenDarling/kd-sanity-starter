@@ -121,6 +121,7 @@ export default function Home() {
 
     WIDTH = window.innerWidth;
     HEIGHT = window.innerHeight;
+    console.log(HEIGHT);
     canvas = document.getElementById('demo') as HTMLCanvasElement;
     canvas.width = WIDTH;
     canvas.height = HEIGHT;
@@ -151,8 +152,9 @@ export default function Home() {
         <div
           style={{
             position: 'absolute',
-            top: '10%',
-            left: '50%',
+            top: '40%',
+            left: '15%',
+            margin: 'auto',
           }}
         >
           <Circle size='375px' videoUrl='https://www.youtube.com/watch?v=9JrAojUqMvQ' />

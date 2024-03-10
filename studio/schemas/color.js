@@ -2,7 +2,7 @@
 
 export default {
   name: 'color',
-  title: 'Color',
+  title: 'Colors',
   // TODO: Setup Desk Structure to show 'Colors'
   type: 'document',
   // icon,

@@ -2,7 +2,7 @@
 
 export default {
   name: 'activity',
-  title: 'Activity',
+  title: 'Activities',
   type: 'document',
   // icon,
   fields: [
@@ -113,20 +113,20 @@ export default {
       of: [{type: 'datetime'}],
       hidden: ({document}) => document?.eventTimeFrame != 'severalDaysNotInARow',
     },
-    {
-      name: 'neighborhoods',
-      title: 'Neighborhood',
-      type: 'array',
-      of: [
-        {
-          name: 'neighborhoodSelected',
-          title: 'Neighborhood',
-          type: 'reference',
-          to: [{type: 'neighborhood'}],
-        },
-      ],
-      description: 'Which neighborhood is this in or close to?',
-    },
+    // {
+    //   name: 'neighborhoods',
+    //   title: 'Neighborhood',
+    //   type: 'array',
+    //   of: [
+    //     {
+    //       name: 'neighborhoodSelected',
+    //       title: 'Neighborhood',
+    //       type: 'reference',
+    //       to: [{type: 'neighborhood'}],
+    //     },
+    //   ],
+    //   description: 'Which neighborhood is this in or close to?',
+    // },
     //   { title: "Downtown", value: "downtown" },
     //   { title: "Cap Hill", value: "capitolHill" },
     //   { title: "Wash Park", value: "washingtonPark" },

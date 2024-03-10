@@ -1,10 +1,10 @@
-// import { MdContentPaste as icon } from "react-icons/md";
+import {MdContentPaste as icon} from 'react-icons/md'
 
 export default {
-  name: 'bill',
-  title: 'bill',
+  name: 'expense',
+  title: 'Expenses',
   type: 'document',
-  // icon,
+  icon,
   fields: [
     {
       name: 'name',
@@ -12,11 +12,36 @@ export default {
       type: 'string',
     },
     {
+      name: 'type',
+      title: 'Type',
+      type: 'string',
+      options: {
+        list: [
+          {title: 'Recurring Subscription', value: 'recurringSubscription'},
+          {title: 'Recurring Bill', value: 'recurBill'},
+          {title: 'One Time Bill', value: 'oneTimeBill'},
+          {title: 'Debt', value: 'debt'},
+          {title: 'Finance Charge', value: 'financeCharge'},
+        ],
+      },
+    },
+    {
       name: 'regularDueDate',
       title: 'Regular Due Date',
       type: 'number',
       max: 31,
       min: 1,
+    },
+    {
+      name: 'autoPay',
+      title: 'Is Autopay setup?',
+      type: 'string',
+      options: {
+        list: [
+          {title: 'Yes', value: 'yes'},
+          {title: 'No', value: 'no'},
+        ],
+      },
     },
     {
       name: 'total',
@@ -49,11 +74,6 @@ export default {
         ],
       },
     },
-    // {
-    //   name: "notes",
-    //   title: "Notes",
-    //   type: "blockContent",
-    // },
     {
       name: 'status',
       title: 'Status',
@@ -66,15 +86,9 @@ export default {
       },
     },
     {
-      name: 'autoPay',
-      title: 'Is Autopay setup?',
-      type: 'string',
-      options: {
-        list: [
-          {title: 'Yes', value: 'yes'},
-          {title: 'No', value: 'no'},
-        ],
-      },
+      name: 'notes',
+      title: 'Notes',
+      type: 'blockContent',
     },
   ],
   preview: {

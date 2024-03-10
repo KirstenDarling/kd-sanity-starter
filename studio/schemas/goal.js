@@ -2,7 +2,7 @@
 
 export default {
   name: 'goal',
-  title: 'Goal',
+  title: 'Goals',
   type: 'document',
   // icon,
   fields: [
@@ -12,13 +12,13 @@ export default {
       type: 'string',
       description: 'E.g.: Our first ever screening of Gattaca',
     },
-    {
-      name: 'movie',
-      title: 'Movie',
-      type: 'reference',
-      to: [{type: 'movie'}],
-      description: 'Which movie are we screening',
-    },
+    // {
+    //   name: 'movie',
+    //   title: 'Movie',
+    //   type: 'reference',
+    //   to: [{type: 'movie'}],
+    //   description: 'Which movie are we screening',
+    // },
     {
       name: 'published',
       title: 'Published',

@@ -1,6 +1,6 @@
 export default {
   name: 'blogPost',
-  title: 'Blog Post',
+  title: 'Blog Posts',
 
   type: 'document',
   // icon,
@@ -23,7 +23,7 @@ export default {
     {
       name: 'content',
       title: 'Content',
-      type: 'text',
+      type: 'blockContent',
     },
   ],
   preview: {

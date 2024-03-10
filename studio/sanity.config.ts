@@ -22,9 +22,10 @@
 
 import {visionTool} from '@sanity/vision'
 import {defineConfig} from 'sanity'
-import {structureTool} from 'sanity/structure'
 // import {schemaTypes} from './schemaTypes'
+import {deskTool} from 'sanity/desk'
 import schemas from './schemas/schema'
+import {deskStructure} from './src/structure/deskStructure'
 
 export default defineConfig({
   name: 'default',
@@ -33,7 +34,14 @@ export default defineConfig({
   projectId: 'gjsw9ksp',
   dataset: 'production',
 
-  plugins: [structureTool(), visionTool()],
+  plugins: [
+    deskTool({
+      structure: deskStructure,
+      // defaultDocumentNode,
+    }),
+    // structureTool(),
+    visionTool(),
+  ],
 
   schema: {
     types: schemas,

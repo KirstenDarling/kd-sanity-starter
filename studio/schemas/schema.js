@@ -2,9 +2,8 @@
 
 // We import object and document schemas
 import activity from './activity'
-// import archerUtilities from './archerUtilities'
+import archerUtilities from './archerUtilities'
 import balance from './balance'
-import bill from './bill'
 import blockContent from './blockContent'
 import blogPost from './blogPost'
 import castMember from './castMember'
@@ -12,11 +11,13 @@ import color from './color'
 import crewMember from './crewMember'
 import debt from './debt'
 import debtCollector from './debtCollector'
+import expense from './expense'
 import firstPaycheck from './firstPaycheck'
 import goal from './goal'
 import monthlyBudget from './monthlyBudget'
 import movie from './movie'
 import neighborhood from './neighborhood'
+import numbers from './numbers'
 import person from './person'
 import personalHoliday from './personalHoliday'
 import plotSummaries from './plotSummaries'
@@ -33,15 +34,16 @@ export default [
   // types: schemaTypes.concat([
   // The following are document types which will appear
   // in the studio.
-  // archerUtilities,
+  archerUtilities,
   blogPost,
+  numbers,
   movie,
   person,
   neighborhood,
   screening,
   activity,
   balance,
-  bill,
+  expense,
   color,
   debt,
   debtCollector,

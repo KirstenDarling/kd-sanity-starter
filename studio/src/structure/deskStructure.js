@@ -1,9 +1,6 @@
 // Structure Builder Reference LINK: https://www.sanity.io/docs/structure-builder-reference
-// import { AiFillVideoCamera, AiOutlineUsergroupAdd } from "react-icons/ai";
-// import { FiEdit, FiGlobe, FiHome, FiSettings } from "react-icons/fi";
-// import { GiFarmTractor } from "react-icons/gi";
-import {MdTrendingUp, MdDirectionsBike, MdBook} from 'react-icons/md'
-// import { RiPlantFill, RiRouteFill } from "react-icons/ri";
+import {FiEdit} from 'react-icons/fi'
+import {MdBook, MdDirectionsBike, MdTrendingUp} from 'react-icons/md'
 // import Iframe from "sanity-plugin-iframe-pane";
 // import {
 //   defaultDocumentNodeTypes,
@@ -30,7 +27,7 @@ import {MdTrendingUp, MdDirectionsBike, MdBook} from 'react-icons/md'
 //   }
 // };
 
-export default (S) =>
+export const deskStructure = (S) =>
   S.list()
     .title('Content')
     .items([
@@ -41,13 +38,19 @@ export default (S) =>
           S.list()
             .title('Activities App')
             .items([
-              S.documentTypeListItem('activity').title('Activities'),
-              // .icon(FiEdit),
-              S.documentTypeListItem('neighborhood').title('Neighborhoods'),
-              // .icon(FiEdit),
+              S.documentTypeListItem('activity').title('Activities').icon(FiEdit),
+              S.documentTypeListItem('neighborhood').title('Neighborhoods').icon(FiEdit),
             ]),
         ),
-      // S.documentTypeListItem("activity").title("Activities"),
+      S.divider(),
+      S.listItem()
+        .title('Blog Content')
+        .icon(MdDirectionsBike)
+        .child(
+          S.list()
+            .title('Blog Posts')
+            .items([S.documentTypeListItem('blogPost').title('Blog Posts').icon(FiEdit)]),
+        ),
       S.divider(),
       S.listItem()
         .title('Budget App')
@@ -65,7 +68,7 @@ export default (S) =>
               S.documentTypeListItem('debt').title('List of Debts'),
               S.documentTypeListItem('debtCollector').title('Debt Collection Companies'),
               S.divider(),
-              S.documentTypeListItem('bill').title('All Bills...'),
+              S.documentTypeListItem('expense').title('All Bills...'),
             ]),
         ),
       S.divider(),
@@ -76,22 +79,22 @@ export default (S) =>
           S.list()
             .title('Book of Shadows App')
             .items([
-              S.documentTypeListItem('spell').title('Spells'),
-              // .icon(FiEdit),
-              S.documentTypeListItem('personalHoliday').title('Personal Holidays'),
-              // .icon(FiEdit),
+              S.documentTypeListItem('spell').title('Spells').icon(FiEdit),
+              S.documentTypeListItem('personalHoliday').title('Personal Holidays').icon(FiEdit),
               S.documentTypeListItem('goal').title('Goals, Intentions, Manifestations'),
             ]),
         ),
       S.divider(),
       S.documentTypeListItem('color').title('Color App'),
       S.divider(),
-      // S.documentTypeListItem("person").title("People"),
+      S.documentTypeListItem('person').title('People'),
+      S.divider(),
+      S.documentTypeListItem('numbers').title('Numbers'),
       // S.documentTypeListItem("organization").title("Organizations"),
       // S.documentTypeListItem("place").title("Places"),
       // S.documentTypeListItem("dealer").title("Dealers"),
       // S.documentTypeListItem("category").title("Categories"),
-      // S.divider(),
+      S.divider(),
       // S.documentTypeListItem("comment").title("Comments"),
       // ...S.documentTypeListItems().filter(filteredDocuments),
     ])

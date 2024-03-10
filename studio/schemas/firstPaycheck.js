@@ -131,10 +131,10 @@ export default {
       type: 'array',
       of: [
         {
-          name: 'bill',
-          title: 'Bills',
+          name: 'expenses',
+          title: 'expenses',
           type: 'reference',
-          to: [{type: 'bill'}],
+          to: [{type: 'expense'}],
         },
       ],
     },

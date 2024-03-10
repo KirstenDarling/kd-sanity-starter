@@ -24,6 +24,7 @@ import plotSummaries from './plotSummaries'
 import plotSummary from './plotSummary'
 import screening from './screening'
 import spell from './spell'
+import topic from './topic'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default [
@@ -56,6 +57,7 @@ export default [
   // { type: 'typename' } in other document schemas
   blockContent,
   plotSummary,
+  topic,
   plotSummaries,
   castMember,
   crewMember,

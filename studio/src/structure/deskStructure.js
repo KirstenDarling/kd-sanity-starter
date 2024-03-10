@@ -90,6 +90,8 @@ export const deskStructure = (S) =>
       S.documentTypeListItem('person').title('People'),
       S.divider(),
       S.documentTypeListItem('numbers').title('Numbers'),
+      S.divider(),
+      S.documentTypeListItem('topic').title('Topics'),
       // S.documentTypeListItem("organization").title("Organizations"),
       // S.documentTypeListItem("place").title("Places"),
       // S.documentTypeListItem("dealer").title("Dealers"),

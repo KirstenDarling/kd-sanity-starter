@@ -2,10 +2,11 @@
 
 // We import object and document schemas
 import activity from './activity'
-import archerUtilities from './archerUtilities'
+// import archerUtilities from './archerUtilities'
 import balance from './balance'
 import bill from './bill'
 import blockContent from './blockContent'
+import blogPost from './blogPost'
 import castMember from './castMember'
 import color from './color'
 import crewMember from './crewMember'
@@ -32,7 +33,8 @@ export default [
   // types: schemaTypes.concat([
   // The following are document types which will appear
   // in the studio.
-  archerUtilities,
+  // archerUtilities,
+  blogPost,
   movie,
   person,
   neighborhood,

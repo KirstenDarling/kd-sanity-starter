@@ -12,14 +12,42 @@ export default {
       type: 'string',
     },
     {
-      name: 'amount',
-      title: 'Amount Owed',
+      name: 'regularDueDate',
+      title: 'Regular Due Date',
+      type: 'number',
+      max: 31,
+      min: 1,
+    },
+    {
+      name: 'total',
+      title: 'Total',
       type: 'string',
     },
     {
-      name: 'dueDate',
-      title: 'Due Date',
-      type: 'string',
+      name: 'monthsPaid2024',
+      title: 'Months Paid in 2024',
+      description: 'Check each month off once this bill has been paid for that month.',
+      type: 'array',
+      of: [{type: 'string'}],
+      options: {
+        list: [
+          {title: 'January', value: 'january'},
+          {title: 'February', value: 'february'},
+          {title: 'March', value: 'march'},
+          {title: 'April', value: 'april'},
+          {title: 'May', value: 'may'},
+          {title: 'June', value: 'june'},
+          {title: 'July', value: 'july'},
+          {title: 'August', value: 'august'},
+          {title: 'September', value: 'september'},
+          {
+            title: 'October',
+            value: 'october',
+          },
+          {title: 'November', value: 'november'},
+          {title: 'December', value: 'december'},
+        ],
+      },
     },
     // {
     //   name: "notes",
@@ -32,8 +60,8 @@ export default {
       type: 'string',
       options: {
         list: [
-          {title: 'Current / Paid', value: 'currentPaid'},
-          {title: 'PAST DUE!', value: 'pastDue'},
+          {title: 'Current', value: 'Current'},
+          {title: 'LATE!', value: 'Late'},
         ],
       },
     },
@@ -52,7 +80,7 @@ export default {
   preview: {
     select: {
       title: 'name',
-      subtitle: 'amount',
+      subtitle: 'status',
     },
   },
 }

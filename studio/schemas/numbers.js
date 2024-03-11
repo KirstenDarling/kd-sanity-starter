@@ -19,13 +19,26 @@ export default {
     {
       name: 'date',
       title: 'Date of this Recording',
-      type: 'datetime',
+      type: 'date',
     },
   ],
   preview: {
     select: {
-      title: 'activityName',
-      // subtitle: "type.0",
+      title: 'date',
+      numberOfEmails: 'numberOfEmails',
+      instagramFollowing: 'instagramFollowing',
+    },
+    prepare(selection) {
+      const {title, numberOfEmails, instagramFollowing} = selection
+      return {
+        title: new Date(title).toLocaleDateString('en-us', {
+          weekday: 'long',
+          year: 'numeric',
+          month: 'short',
+          day: 'numeric',
+        }),
+        subtitle: `Emails: ${numberOfEmails ? numberOfEmails : 'unknown'}, Following: ${instagramFollowing ? instagramFollowing : 'unknown'}`,
+      }
     },
   },
 }

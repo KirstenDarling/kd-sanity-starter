@@ -17,10 +17,10 @@ export default {
       type: 'string',
       options: {
         list: [
-          {title: 'Interest', value: 'interest'},
-          {title: 'Study Topic', value: 'studyTopic'},
-          {title: 'Hobby', value: 'hobby'},
-          {title: 'Skill', value: 'skill'},
+          {title: 'Interests', value: 'Interests'},
+          {title: 'Study Topics', value: 'Study Topics'},
+          {title: 'Hobbies', value: 'Hobbies'},
+          {title: 'Skills', value: 'Skills'},
         ],
       },
     },
@@ -32,8 +32,8 @@ export default {
   ],
   preview: {
     select: {
-      title: 'activityName',
-      // subtitle: "type.0",
+      title: 'name',
+      subtitle: 'type',
     },
   },
 }

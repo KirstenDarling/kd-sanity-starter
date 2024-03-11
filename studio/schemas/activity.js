@@ -14,8 +14,8 @@ export default {
     {
       name: 'type',
       title: 'What type of activity is this?',
-      type: 'array',
-      of: [{type: 'string'}],
+      type: 'string',
+      // of: [{type: 'string'}],
       options: {
         list: [
           {title: 'Movie', value: 'movie'},
@@ -92,26 +92,26 @@ export default {
       name: 'eventDatetime',
       title: 'Date & Time',
       type: 'datetime',
-      hidden: ({document}) => !document?.eventTimeFrame.includes('oneDayOnly'),
+      // hidden: ({document}) => !document?.eventTimeFrame.includes('oneDayOnly'),
     },
     {
       name: 'eventStartDatetime',
       title: 'Start Date & Time',
       type: 'datetime',
-      hidden: ({document}) => !document?.eventTimeFrame.includes('severalDaysInARow'),
+      // hidden: ({document}) => !document?.eventTimeFrame.includes('severalDaysInARow'),
     },
     {
       name: 'eventEndDatetime',
       title: 'End Date & Time',
       type: 'datetime',
-      hidden: ({document}) => !document?.eventTimeFrame.includes('severalDaysInARow'),
+      // hidden: ({document}) => !document?.eventTimeFrame.includes('severalDaysInARow'),
     },
     {
       name: 'eventDatetimes',
       title: 'Event Dates & Times',
       type: 'array',
       of: [{type: 'datetime'}],
-      hidden: ({document}) => document?.eventTimeFrame != 'severalDaysNotInARow',
+      // hidden: ({document}) => document?.eventTimeFrame != 'severalDaysNotInARow',
     },
     // {
     //   name: 'neighborhoods',
@@ -190,7 +190,7 @@ export default {
   preview: {
     select: {
       title: 'activityName',
-      // subtitle: "type.0",
+      subtitle: 'type',
       media: 'image',
     },
   },

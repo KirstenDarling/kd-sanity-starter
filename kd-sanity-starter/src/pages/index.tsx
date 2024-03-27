@@ -42,7 +42,7 @@ export default function Home() {
                 </button>
               </a>
 
-              <a href='https://www.google.com'>
+              <a href='/learning-room'>
                 <button className={` ${homeStyles.secondButton}  ${homeStyles.abhayaLibreBold}`}>
                   <p>Creative</p>
                 </button>

@@ -36,7 +36,7 @@ export default function Home() {
               Welcome! <br /> Please choose a vibe:
             </h1>
             <div className={homeStyles.buttonGrouping}>
-              <a href='https://www.google.com'>
+              <a href='/corporate'>
                 <button className={homeStyles.firstButton}>
                   <p>Corporate</p>
                 </button>

@@ -44,15 +44,13 @@
 }
 
 .innerContainer {
-  /* background-color: white; */
-  /* border-radius: 20px; */
+  background-color: #fde5f7;
   height: 65%;
   width: 75%;
   position: relative;
   margin: auto;
   top: 20%;
   z-index: 5;
-  background: rgba(255, 255, 255, 0.25);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);

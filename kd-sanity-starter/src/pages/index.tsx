@@ -23,18 +23,31 @@ export default function Home() {
         />
         <div className={homeStyles.innerContainer}>
           <div className={homeStyles.innerContent}>
-            <h1>Circle Image Here</h1>
+            <div className={homeStyles.profilePic}>
+              <Image
+                alt='travel'
+                src='/profilePic.png'
+                layout='fill'
+                objectFit='cover'
+                quality={100}
+              />
+            </div>
             <h1 className={`${homeStyles.headline} ${homeStyles.bellezaRegular}`}>
               Welcome! <br /> Please choose a vibe:
             </h1>
-            <a href='https://www.google.com'>
-              <button className={homeStyles.firstButton}>Corporate</button>
-            </a>
-            <a href='https://www.google.com'>
-              <button className={` ${homeStyles.secondButton}  ${homeStyles.abhayaLibreBold}`}>
-                Creative
-              </button>
-            </a>
+            <div className={homeStyles.buttonGrouping}>
+              <a href='https://www.google.com'>
+                <button className={homeStyles.firstButton}>
+                  <p>Corporate</p>
+                </button>
+              </a>
+
+              <a href='https://www.google.com'>
+                <button className={` ${homeStyles.secondButton}  ${homeStyles.abhayaLibreBold}`}>
+                  <p>Creative</p>
+                </button>
+              </a>
+            </div>
           </div>
         </div>
       </div>

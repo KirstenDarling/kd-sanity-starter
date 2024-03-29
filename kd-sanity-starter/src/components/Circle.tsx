@@ -1,14 +1,23 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import Draggable from 'react-draggable';
 import YouTubeVideo from './YouTubeVideo';
 
 const Circle = ({
   text,
   videoUrl,
   size,
+  position,
+  left,
+  top,
+  hasPlayButton,
 }: {
   text?: string;
   videoUrl?: string;
   size: '150px' | '250px' | '375px';
+  position?: 'absolute' | 'relative';
+  left?: string;
+  top?: string;
+  hasPlayButton?: boolean;
 }) => {
   const thisSize = size || '375px';
   const circleStyle = {
@@ -21,6 +30,9 @@ const Circle = ({
     alignItems: 'center',
     color: 'white',
     fontSize: '20px',
+    position: position || 'relative',
+    left: left || '0',
+    top: top || '0',
   };
 
   const glowingBox = {
@@ -35,6 +47,8 @@ const Circle = ({
   };
 
   const [isHovered, setIsHovered] = useState(false);
+  const [showVideo, setShowVideo] = useState(false);
+  const [showPlayButton, setShowPlayButton] = useState(false);
 
   const handleMouseEnter = () => {
     setIsHovered(true);
@@ -44,15 +58,24 @@ const Circle = ({
     setIsHovered(false);
   };
 
+  useEffect(() => {
+    hasPlayButton && isHovered && setShowVideo(true);
+    hasPlayButton && !isHovered && setShowVideo(false);
+    !hasPlayButton && setShowVideo(true);
+  }, [hasPlayButton, isHovered]);
+
   return (
-    <div
-      style={isHovered ? { ...glow, ...circleStyle } : circleStyle}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-    >
-      {text && <p className='text-center'>{text}</p>}
-      {videoUrl && <YouTubeVideo videoUrl={videoUrl} />}
-    </div>
+    <Draggable>
+      <div
+        style={isHovered ? { ...glow, ...circleStyle } : circleStyle}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
+        {text && <p className='text-center'>{text}</p>}
+        {!isHovered && hasPlayButton && <button>the vibe</button>}
+        {videoUrl && showVideo && <YouTubeVideo videoUrl={videoUrl} />}
+      </div>
+    </Draggable>
   );
 };
 

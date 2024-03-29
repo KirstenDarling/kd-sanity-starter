@@ -1,4 +1,4 @@
-const YouTubeVideo = ({ videoUrl }: { videoUrl: string }) => {
+const YouTubeVideo = ({ videoUrl }: { videoUrl: string }, mini: boolean) => {
   // Extracting video ID from the URL
   const videoId = extractVideoId(videoUrl);
 

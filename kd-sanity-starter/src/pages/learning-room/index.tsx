@@ -167,23 +167,45 @@ export default function Home() {
         <div
           style={{
             position: 'absolute',
-            top: '10%',
-            left: '-3%',
+            top: '0%',
+            height: '100%',
+            width: '100%',
           }}
         >
-          <Image src={LearningRoomLogo} width='600' alt={''}></Image>
-        </div>
-        <div
-          style={{
-            position: 'absolute',
-            top: '40%',
-            left: '15%',
-            margin: 'auto',
-          }}
-        >
-          <Circle size='375px' videoUrl='https://www.youtube.com/watch?v=9JrAojUqMvQ' />
-          <Circle size='150px' text='Civil Engineering' />
-          <Circle size='250px' text='Data Engineering' />
+          <Image
+            src={LearningRoomLogo}
+            width='600'
+            alt={''}
+            style={{ marginTop: '10%', marginLeft: '-5%' }}
+          ></Image>
+          <div style={{ display: 'flex', flexDirection: 'row' }}>
+            {/* <Circle size='150px' text='Civil Engineering' /> */}
+            <Circle
+              position='absolute'
+              left='5%'
+              top='50%'
+              size='150px'
+              text='Hobbies and Interests'
+            />
+            <Circle position='absolute' left='48%' top='12%' size='250px' text='Resources' />
+
+            <Circle
+              position='absolute'
+              left='74%'
+              top='23%'
+              size='250px'
+              videoUrl='https://www.youtube.com/watch?v=qhPr8XgRnrg'
+              hasPlayButton={true}
+            />
+            <Circle position='absolute' left='66%' top='62%' size='250px' text='Study Topics' />
+            <Circle
+              size='375px'
+              left='25%'
+              top='2rem'
+              videoUrl='https://www.youtube.com/watch?v=9JrAojUqMvQ'
+              hasPlayButton={false}
+            />
+          </div>
         </div>
       </div>
     </div>

@@ -36,13 +36,13 @@ export default function Home() {
               Welcome! <br /> Please choose a vibe:
             </h1>
             <div className={homeStyles.buttonGrouping}>
-              <a href='https://www.google.com'>
+              <a href='/corporate'>
                 <button className={homeStyles.firstButton}>
                   <p>Corporate</p>
                 </button>
               </a>
 
-              <a href='https://www.google.com'>
+              <a href='/learning-room'>
                 <button className={` ${homeStyles.secondButton}  ${homeStyles.abhayaLibreBold}`}>
                   <p>Creative</p>
                 </button>

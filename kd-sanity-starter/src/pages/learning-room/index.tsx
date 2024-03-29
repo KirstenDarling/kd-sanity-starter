@@ -138,6 +138,30 @@ export default function Home() {
 
   return (
     <div className={`${Styles.mainContainer} main-container`}>
+      <a href='/'>
+        <div
+          className='escapeBanner'
+          style={{
+            height: '65px',
+            width: '100vw',
+            backgroundColor: '#5171ff',
+            fontWeight: 'bold',
+            position: 'fixed',
+          }}
+        >
+          <h2
+            style={{
+              color: 'white',
+              textAlign: 'center',
+              paddingTop: '10px',
+            }}
+          >
+            You are currently viewing the creative site.
+            <br />
+            Click here to change your view.
+          </h2>
+        </div>
+      </a>
       <div className={`${Styles.sectionDemo} section-demo`}>
         <canvas id='demo'></canvas>
         <div

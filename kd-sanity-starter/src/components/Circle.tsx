@@ -10,21 +10,25 @@ const Circle = ({
   left,
   top,
   hasPlayButton,
+  handleCircleClick,
+  backgroundColor,
 }: {
   text?: string;
   videoUrl?: string;
-  size: '150px' | '250px' | '375px';
+  size: '150px' | '250px' | '375px' | '575px';
   position?: 'absolute' | 'relative';
   left?: string;
   top?: string;
   hasPlayButton?: boolean;
+  handleCircleClick?: () => void;
+  backgroundColor?: string;
 }) => {
   const thisSize = size || '375px';
   const circleStyle = {
     width: thisSize,
     height: thisSize,
     borderRadius: '50%',
-    backgroundColor: '#9966CC',
+    backgroundColor: backgroundColor || '#9966CC',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
@@ -70,6 +74,7 @@ const Circle = ({
         style={isHovered ? { ...glow, ...circleStyle } : circleStyle}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
+        onClick={handleCircleClick}
       >
         {text && <p className='text-center'>{text}</p>}
         {!isHovered && hasPlayButton && <button>the vibe</button>}

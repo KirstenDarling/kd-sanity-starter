@@ -19,10 +19,11 @@ const Circle = ({
   top?: string;
   hasPlayButton?: boolean;
 }) => {
+  const [clickedCircle, setCircleClicked] = useState(false);
   const thisSize = size || '375px';
   const circleStyle = {
-    width: thisSize,
-    height: thisSize,
+    width: clickedCircle ? '375px' : thisSize,
+    height: clickedCircle ? '375px' : thisSize,
     borderRadius: '50%',
     backgroundColor: '#9966CC',
     display: 'flex',
@@ -31,8 +32,8 @@ const Circle = ({
     color: 'white',
     fontSize: '20px',
     position: position || 'relative',
-    left: left || '0',
-    top: top || '0',
+    left: clickedCircle ? '45%' : left || '0',
+    top: clickedCircle ? '25%' : top || '0',
   };
 
   const glowingBox = {
@@ -58,6 +59,10 @@ const Circle = ({
     setIsHovered(false);
   };
 
+  const handleTextClick = () => {
+    setCircleClicked(true);
+  };
+
   useEffect(() => {
     hasPlayButton && isHovered && setShowVideo(true);
     hasPlayButton && !isHovered && setShowVideo(false);
@@ -71,7 +76,11 @@ const Circle = ({
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        {text && <p className='text-center'>{text}</p>}
+        {text && (
+          <p onClick={handleTextClick} className='text-center'>
+            {text}
+          </p>
+        )}
         {!isHovered && hasPlayButton && <button>the vibe</button>}
         {videoUrl && showVideo && <YouTubeVideo videoUrl={videoUrl} />}
       </div>

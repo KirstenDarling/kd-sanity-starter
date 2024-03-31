@@ -187,24 +187,31 @@ export default function Home() {
               size='150px'
               text='Hobbies and Interests'
             />
-            <Circle position='absolute' left='48%' top='12%' size='250px' text='Resources' />
+            {/* <Circle position='absolute' left='48%' top='12%' size='250px' text='Resources' /> */}
 
-            <Circle
+            {/* <Circle
               position='absolute'
               left='74%'
               top='23%'
               size='250px'
               videoUrl='https://www.youtube.com/watch?v=qhPr8XgRnrg'
               hasPlayButton={true}
-            />
+            /> */}
             <Circle position='absolute' left='66%' top='62%' size='250px' text='Study Topics' />
-            <Circle
+            {/* <Circle
               size='375px'
               left='25%'
               top='2rem'
               videoUrl='https://www.youtube.com/watch?v=9JrAojUqMvQ'
               hasPlayButton={false}
-            />
+            /> */}
+            {/* sub topics */}
+            <Circle position='absolute' left='32%' top='43%' size='150px' text='1' />
+            <Circle position='absolute' left='37%' top='75%' size='150px' text='2' />
+            <Circle position='absolute' left='38%' top='15%' size='150px' text='3' />
+            <Circle position='absolute' left='70%' top='15%' size='150px' text='4' />
+            <Circle position='absolute' left='66%' top='78%' size='150px' text='5' />
+            <Circle position='absolute' left='76%' top='43%' size='150px' text='6' />
           </div>
         </div>
       </div>

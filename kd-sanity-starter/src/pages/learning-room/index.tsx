@@ -1,7 +1,7 @@
 import Circle from '@components/Circle';
 import LearningRoomLogo from '@public/learningRoomLogo.png';
 import Image from 'next/image';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Styles from './learningRoom.module.css';
 
 export default function Home() {
@@ -136,6 +136,12 @@ export default function Home() {
     return () => clearInterval(interval);
   }, []);
 
+  const [circleClicked, setCircleClicked] = useState(false);
+
+  const handleCircleClick = () => {
+    setCircleClicked(true);
+  };
+
   return (
     <div className={`${Styles.mainContainer} main-container`}>
       <a href='/'>
@@ -179,39 +185,82 @@ export default function Home() {
             style={{ marginTop: '10%', marginLeft: '-5%' }}
           ></Image>
           <div style={{ display: 'flex', flexDirection: 'row' }}>
-            {/* <Circle size='150px' text='Civil Engineering' /> */}
+            {!circleClicked && (
+              <Circle
+                position='absolute'
+                left='5%'
+                top='50%'
+                size='150px'
+                text='Hobbies and Interests'
+                handleCircleClick={handleCircleClick}
+              />
+            )}
+            {!circleClicked && (
+              <Circle
+                position='absolute'
+                // left={circleClicked ? '37.5%' : '48%'}
+                // top={circleClicked ? '15%' : '12%'}
+                // size={circleClicked ? '575px' : '250px'}
+                left='48%'
+                top='12%'
+                size='250px'
+                text='Resources'
+                handleCircleClick={handleCircleClick}
+                backgroundColor={circleClicked ? '#5171ff' : '#9966CC'}
+              />
+            )}
+
+            {!circleClicked && (
+              <Circle
+                position='absolute'
+                left='74%'
+                top='23%'
+                size='250px'
+                videoUrl='https://www.youtube.com/watch?v=qhPr8XgRnrg'
+                hasPlayButton={true}
+                handleCircleClick={handleCircleClick}
+              />
+            )}
+            {/* {!circleClicked && ( */}
             <Circle
               position='absolute'
-              left='5%'
-              top='50%'
-              size='150px'
-              text='Hobbies and Interests'
+              left={circleClicked ? '37.5%' : '66%'}
+              top={circleClicked ? '15%' : '62%'}
+              size={circleClicked ? '575px' : '250px'}
+              text='Study Topics'
+              handleCircleClick={handleCircleClick}
+              backgroundColor={circleClicked ? '#5171ff' : '#9966CC'}
             />
-            {/* <Circle position='absolute' left='48%' top='12%' size='250px' text='Resources' /> */}
-
-            {/* <Circle
-              position='absolute'
-              left='74%'
-              top='23%'
-              size='250px'
-              videoUrl='https://www.youtube.com/watch?v=qhPr8XgRnrg'
-              hasPlayButton={true}
-            /> */}
-            <Circle position='absolute' left='66%' top='62%' size='250px' text='Study Topics' />
-            {/* <Circle
-              size='375px'
-              left='25%'
-              top='2rem'
-              videoUrl='https://www.youtube.com/watch?v=9JrAojUqMvQ'
-              hasPlayButton={false}
-            /> */}
+            {/* )} */}
+            {!circleClicked && (
+              <Circle
+                size='375px'
+                left='25%'
+                top='2rem'
+                videoUrl='https://www.youtube.com/watch?v=9JrAojUqMvQ'
+                hasPlayButton={false}
+                handleCircleClick={handleCircleClick}
+              />
+            )}
             {/* sub topics */}
-            <Circle position='absolute' left='32%' top='43%' size='150px' text='1' />
-            <Circle position='absolute' left='37%' top='75%' size='150px' text='2' />
-            <Circle position='absolute' left='38%' top='15%' size='150px' text='3' />
-            <Circle position='absolute' left='70%' top='15%' size='150px' text='4' />
-            <Circle position='absolute' left='66%' top='78%' size='150px' text='5' />
-            <Circle position='absolute' left='76%' top='43%' size='150px' text='6' />
+            {circleClicked && (
+              <Circle position='absolute' left='40%' top='45%' size='150px' text='1' />
+            )}
+            {circleClicked && (
+              <Circle position='absolute' left='48%' top='68%' size='150px' text='2' />
+            )}
+            {circleClicked && (
+              <Circle position='absolute' left='48%' top='22%' size='150px' text='3' />
+            )}
+            {circleClicked && (
+              <Circle position='absolute' left='68%' top='22%' size='150px' text='4' />
+            )}
+            {circleClicked && (
+              <Circle position='absolute' left='68%' top='68%' size='150px' text='5' />
+            )}
+            {circleClicked && (
+              <Circle position='absolute' left='74%' top='45%' size='150px' text='6' />
+            )}
           </div>
         </div>
       </div>

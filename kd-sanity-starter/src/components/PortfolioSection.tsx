@@ -1,7 +1,20 @@
 import Image from 'next/image';
-import UnpluggedImage from '../../public/unpluggedScreenshot.png';
 
-const PortfolioSection = () => {
+const PortfolioSection = ({
+  subheading,
+  heading,
+  text,
+  buttonText,
+  buttonLink,
+  image,
+}: {
+  subheading?: string;
+  heading?: string;
+  text?: string;
+  buttonText?: string;
+  buttonLink?: string;
+  image?: any;
+}) => {
   return (
     <div
       className='portfolioSection'
@@ -29,7 +42,7 @@ const PortfolioSection = () => {
       <div style={{ width: '50%', zIndex: '1' }}>
         <Image
           alt='travel'
-          src={UnpluggedImage}
+          src={image}
           quality={100}
           height={400}
           width={400}
@@ -37,14 +50,10 @@ const PortfolioSection = () => {
         />
       </div>
       <div style={{ width: '50%', paddingTop: '2%', zIndex: '1' }}>
-        <p style={{ marginBottom: '5%', color: '#5171ff' }}>Responsive Web Design</p>
-        <h1 style={{ fontSize: '32px', fontWeight: 'bold' }}>Unplugged Retreat</h1>
-        <p style={{ paddingRight: '20%', paddingLeft: '5%', paddingTop: '2%' }}>
-          A sleek and minimal website built to display information about a work retreat. This
-          website is fully responsive; which means it will look just as good when viewed on a
-          smartphone or a laptop.
-        </p>
-        <a href='https://kirstendarling.github.io/Unplugged-Retreat-Site/'>
+        <p style={{ marginBottom: '5%', color: '#5171ff' }}>{subheading}</p>
+        <h1 style={{ fontSize: '32px', fontWeight: 'bold' }}>{heading}</h1>
+        <p style={{ paddingRight: '20%', paddingLeft: '5%', paddingTop: '2%' }}>{text}</p>
+        <a href={buttonLink}>
           <button
             style={{
               backgroundColor: '#5171ff',
@@ -54,7 +63,7 @@ const PortfolioSection = () => {
               marginTop: '5%',
             }}
           >
-            View Site
+            {buttonText}
           </button>
         </a>
       </div>

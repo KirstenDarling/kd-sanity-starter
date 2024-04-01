@@ -25,14 +25,14 @@ const NavBar = () => {
             <p>Home</p>
           </button>
         </a>
-        <a href='/corporate/about'>
+        <a href='/portfolio'>
           <button className='navButton'>
-            <p>About</p>
+            <p>Portfolio</p>
           </button>
         </a>
-        <a href='/corporate/contact'>
+        <a href='/certifications'>
           <button className='navButton'>
-            <p>Contact</p>
+            <p>Certifications</p>
           </button>
         </a>
       </div>

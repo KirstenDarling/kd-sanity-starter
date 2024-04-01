@@ -1,7 +1,20 @@
 import Image from 'next/image';
-import UnpluggedImage from '../../public/unpluggedScreenshot.png';
 
-const CertificateSection = () => {
+const CertificateSection = ({
+  subheading,
+  heading,
+  text,
+  buttonText,
+  buttonLink,
+  image,
+}: {
+  subheading?: string;
+  heading?: string;
+  text?: string;
+  buttonText?: string;
+  buttonLink?: string;
+  image?: any;
+}) => {
   return (
     <div
       className='certificateSection'
@@ -14,17 +27,11 @@ const CertificateSection = () => {
       }}
     >
       <div style={{ width: '50%', marginLeft: '12%', zIndex: '1' }}>
-        <p style={{ marginBottom: '5%', color: '#5171ff' }}>Developer Certifications</p>
-        <h1 style={{ fontSize: '32px', fontWeight: 'bold' }}>
-          Learn More About my Developer Certifications
-        </h1>
-        <p style={{ paddingRight: '20%', paddingLeft: '5%', paddingTop: '2%' }}>
-          I am always learning and keepign up with the latest in the tech world. I attended
-          Skillcrush&apos;s Front End Developer Bootcamp. As well as smaller courses on platforms
-          such as Udemy, W3Schools, freeCodeCamp, Mimo, and Sololearn.
-        </p>
+        <p style={{ marginBottom: '5%', color: '#5171ff' }}>{subheading}</p>
+        <h1 style={{ fontSize: '32px', fontWeight: 'bold' }}>{heading}</h1>
+        <p style={{ paddingRight: '20%', paddingLeft: '5%', paddingTop: '2%' }}>{text}</p>
 
-        <a href='https://kirstendarling.github.io/Unplugged-Retreat-Site/'>
+        <a href={buttonLink}>
           <button
             style={{
               backgroundColor: '#5171ff',
@@ -34,14 +41,14 @@ const CertificateSection = () => {
               marginTop: '5%',
             }}
           >
-            View Site
+            {buttonText}
           </button>
         </a>
       </div>
       <div style={{ width: '50%', zIndex: '1' }}>
         <Image
           alt='travel'
-          src={UnpluggedImage}
+          src={image}
           quality={100}
           height={400}
           width={400}

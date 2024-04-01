@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 // import homeStyles from '../styles/home.module.css';
+import EscapeBanner from '@/components/EscapeBanner';
 import corporateLogo from '../../../public/corporateLogo.gif';
 
 export default function Home() {
@@ -16,30 +17,7 @@ export default function Home() {
       </Head>
 
       <div style={{ width: '100vw', height: '100vh' }}>
-        <a href='/'>
-          <div
-            className='escapeBanner'
-            style={{
-              height: '65px',
-              width: '100vw',
-              backgroundColor: '#5171ff',
-              fontWeight: 'bold',
-              position: 'fixed',
-            }}
-          >
-            <h2
-              style={{
-                color: 'white',
-                textAlign: 'center',
-                paddingTop: '10px',
-              }}
-            >
-              You are currently viewing the corporate site.
-              <br />
-              Click here to change your view.
-            </h2>
-          </div>
-        </a>
+        <EscapeBanner pageType='corporate' />
 
         <div
           className='navBar'

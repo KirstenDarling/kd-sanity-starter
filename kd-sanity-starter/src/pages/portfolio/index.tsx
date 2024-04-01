@@ -121,7 +121,7 @@ export default function Home() {
           heading='Error Page'
           text=" A simple error page that I created using HTML, CSS, and JavaScript while attending Skillcrush' bootcamp."
           buttonText='View Site'
-          buttonLink=''
+          buttonLink='https://kirstendarling.github.io/105-Error-Page/'
           image={ErrorPageImage}
         />
         <PortfolioSection

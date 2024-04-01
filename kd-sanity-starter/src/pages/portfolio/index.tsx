@@ -113,7 +113,7 @@ export default function Home() {
           heading='Flexbox Playground Site'
           text=' A site that I created to test out different flexbox properties. This site was built using HTML, CSS, and JavaScript. It is fully responsive and interactive.'
           buttonText='View Site'
-          buttonLink='https://github.com/KirstenDarling/Flexbox-Test-Site'
+          buttonLink='https://kirstendarling.github.io/Flexbox-Test-Site/'
           image={FlexBoxPlaygroundImage}
         />
         <CertificateSection
@@ -121,7 +121,7 @@ export default function Home() {
           heading='Error Page'
           text=" A simple error page that I created using HTML, CSS, and JavaScript while attending Skillcrush' bootcamp."
           buttonText='View Site'
-          buttonLink=''
+          buttonLink='https://kirstendarling.github.io/105-Error-Page/'
           image={ErrorPageImage}
         />
         <PortfolioSection

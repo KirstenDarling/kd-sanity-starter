@@ -113,7 +113,7 @@ export default function Home() {
           heading='Flexbox Playground Site'
           text=' A site that I created to test out different flexbox properties. This site was built using HTML, CSS, and JavaScript. It is fully responsive and interactive.'
           buttonText='View Site'
-          buttonLink='https://github.com/KirstenDarling/Flexbox-Test-Site'
+          buttonLink='https://kirstendarling.github.io/Flexbox-Test-Site/'
           image={FlexBoxPlaygroundImage}
         />
         <CertificateSection

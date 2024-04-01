@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-const CertificateSection = ({
+const LeftPictureSection = ({
   subheading,
   heading,
   text,
@@ -17,7 +17,7 @@ const CertificateSection = ({
 }) => {
   return (
     <div
-      className='certificateSection'
+      className='leftPictureSection'
       style={{
         display: 'flex',
         width: '100vw',
@@ -71,4 +71,4 @@ const CertificateSection = ({
   );
 };
 
-export default CertificateSection;
+export default LeftPictureSection;

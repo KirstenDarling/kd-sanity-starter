@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-const PortfolioSection = ({
+const RightPictureSection = ({
   subheading,
   heading,
   text,
@@ -17,7 +17,7 @@ const PortfolioSection = ({
 }) => {
   return (
     <div
-      className='portfolioSection'
+      className='rightPictureSection'
       style={{
         display: 'flex',
         width: '100vw',
@@ -71,4 +71,4 @@ const PortfolioSection = ({
   );
 };
 
-export default PortfolioSection;
+export default RightPictureSection;

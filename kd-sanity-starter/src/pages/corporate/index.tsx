@@ -1,12 +1,12 @@
 import Head from 'next/head';
 // import homeStyles from '../styles/home.module.css';
-import CertificateSection from '@/components/CertificateSection';
 import ContinueSection from '@/components/ContinueSection';
 import EscapeBanner from '@/components/EscapeBanner';
 import Footer from '@/components/Footer';
 import IntroSection from '@/components/IntroSection';
+import LeftPictureSection from '@/components/LeftPictureSection';
 import NavBar from '@/components/NavBar';
-import PortfolioSection from '@/components/PortfolioSection';
+import RightPictureSection from '@/components/RightPictureSection';
 import SkillcrushCert from '../../../public/skillcrushCertImage.png';
 import UnpluggedImage from '../../../public/unpluggedScreenshot.png';
 
@@ -27,7 +27,7 @@ export default function Home() {
         <NavBar />
         <IntroSection />
         <ContinueSection />
-        <PortfolioSection
+        <RightPictureSection
           subheading='Software Development'
           heading='Custom, Complex Websites'
           text='From a sleek and minimal website built to display information about a work retreat, to a Magic 8-ball that uses JavaScript to predict your future, to a complex and interactive site that helps content creators manage blog posts, podcasts, tables of data, and more, I can create a site that is perfect for your needs. View my portfolio to browse some of my past projects.'
@@ -35,7 +35,7 @@ export default function Home() {
           buttonLink='/portfolio'
           image={UnpluggedImage}
         />
-        <CertificateSection
+        <LeftPictureSection
           subheading='Developer Certifications'
           heading='Learn More About my Developer Certifications'
           text="I am always learning and keepign up with the latest in the tech world. I attended

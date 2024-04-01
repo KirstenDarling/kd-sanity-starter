@@ -32,7 +32,7 @@ const IntroSection = ({ text }: { text?: string }) => {
           as a contact form, image gallery, portfolio section, blog, and more!
         </p>
         <p>Click below to contact me and get started on your new custom website!</p>
-        <a href='/'>
+        <a href='/corporate'>
           <button
             style={{
               backgroundColor: '#5171ff',

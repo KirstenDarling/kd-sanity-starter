@@ -15,6 +15,7 @@ import RecipeImage from '../../../public/receipesite.png';
 import RoguePickingsImage from '../../../public/roguepickingssite.png';
 import UnpluggedImage from '../../../public/unpluggedScreenshot.png';
 // import VisionBoardImage from '../../../public/visionboardsite.png';
+import Footer from '@/components/Footer';
 import CollegeSkylineImage from '../../../public/collegeskylinecentersite.png';
 import ErrorPageImage from '../../../public/errorpage.png';
 
@@ -132,13 +133,7 @@ export default function Home() {
           image={CollegeSkylineImage}
         />
 
-        <div
-          className='footerSection'
-          style={{ display: 'flex', width: '100vw', height: '350px', backgroundColor: '#5171ff' }}
-        >
-          <div style={{ width: '50%' }}></div>
-          <div style={{ width: '50%' }}></div>
-        </div>
+        <Footer />
       </div>
     </div>
   );

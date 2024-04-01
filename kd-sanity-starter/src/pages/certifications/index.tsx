@@ -2,6 +2,7 @@ import Head from 'next/head';
 // import homeStyles from '../styles/home.module.css';
 import CertificateSection from '@/components/CertificateSection';
 import EscapeBanner from '@/components/EscapeBanner';
+import Footer from '@/components/Footer';
 import NavBar from '@/components/NavBar';
 import PortfolioSection from '@/components/PortfolioSection';
 import CodingForDataCert from '../../../public/codingfordata.png';
@@ -101,13 +102,7 @@ export default function Home() {
           buttonLink='https://www.sololearn.com/certificates/CT-8WCESLWD'
           image={HTMLCert}
         />
-        <div
-          className='footerSection'
-          style={{ display: 'flex', width: '100vw', height: '350px', backgroundColor: '#5171ff' }}
-        >
-          <div style={{ width: '50%' }}></div>
-          <div style={{ width: '50%' }}></div>
-        </div>
+        <Footer />
       </div>
     </div>
   );

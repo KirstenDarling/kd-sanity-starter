@@ -1,9 +1,9 @@
 import Head from 'next/head';
 // import homeStyles from '../styles/home.module.css';
-import CertificateSection from '@/components/CertificateSection';
 import EscapeBanner from '@/components/EscapeBanner';
+import LeftPictureSection from '@/components/LeftPictureSection';
 import NavBar from '@/components/NavBar';
-import PortfolioSection from '@/components/PortfolioSection';
+import RightPictureSection from '@/components/RightPictureSection';
 import BecksSiteImage from '../../../public/beckshybridsSite.png';
 import CodingResourcesImage from '../../../public/codingresourcessite.png';
 import FlexBoxPlaygroundImage from '../../../public/flexbloxplaygroundsite.png';
@@ -31,10 +31,10 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <div style={{ width: '100vw', height: '100vh' }}>
+      <div className='w-full h-full'>
         <EscapeBanner pageType='corporate' />
         <NavBar />
-        <CertificateSection
+        <LeftPictureSection
           subheading='Nextjs and Sanity.io'
           heading="Beck's Hybrids"
           text="This site was created as a redesign of Beck's Hybrids previous website. The designs were created by Element Three. I was responsible for turning the designs into a fully functional website. This site was built using Nextjs and Sanity.io."
@@ -42,7 +42,7 @@ export default function Home() {
           buttonLink='https://www.beckshybrids.com/'
           image={BecksSiteImage}
         />
-        <PortfolioSection
+        <RightPictureSection
           subheading='Responsive Web Development'
           heading='Unplugged Retreat'
           text='A sleek and minimal website built to display information about a work retreat. This
@@ -52,7 +52,7 @@ export default function Home() {
           buttonLink='https://kirstendarling.github.io/Unplugged-Retreat-Site/'
           image={UnpluggedImage}
         />
-        <CertificateSection
+        <LeftPictureSection
           subheading='JavaScript'
           heading='Magic 8 Ball'
           text=' A fun and interactive site that will give you answers to all of your questions. This site was built using HTML, CSS, and JavaScript.'
@@ -60,7 +60,7 @@ export default function Home() {
           buttonLink='https://kirstendarling.github.io/Magic-8-Ball/'
           image={Magic8BallImage}
         />
-        <PortfolioSection
+        <RightPictureSection
           subheading='Javascript'
           heading='LOL Cat Clock'
           text='A fun and interactive site that displays a clock with a different cat picture for each hour of the day. This site was built using HTML, CSS, and JavaScript.'
@@ -68,7 +68,7 @@ export default function Home() {
           buttonLink='https://kirstendarling.github.io/Lol-Cat-Clock/'
           image={LolCatImage}
         />
-        <CertificateSection
+        <LeftPictureSection
           subheading='Responsive Web Development'
           heading='Rogue Pickings'
           text=''
@@ -76,7 +76,7 @@ export default function Home() {
           buttonLink='https://kirstendarling.github.io/Rogue-Pickings-Responsive-Site/'
           image={RoguePickingsImage}
         />
-        <PortfolioSection
+        <RightPictureSection
           subheading='Interactive Forms'
           heading='Submission Forms'
           text=' A collection of forms that I have created using HTML, CSS, and JavaScript while following along with the 100DaysOfCode Challenge. These forms are fully responsive and interactive.'
@@ -84,7 +84,7 @@ export default function Home() {
           buttonLink='https://kirstendarling.github.io/100DaysOfCode-Day1-Registration-Form/'
           image={FormImage}
         />
-        <CertificateSection
+        <LeftPictureSection
           subheading='Responsive Web Development'
           heading='Coding Resources'
           text=' A collection of resources for coding. This site was built using HTML, CSS, and JavaScript. It is fully responsive and interactive.'
@@ -92,7 +92,7 @@ export default function Home() {
           buttonLink='https://kirstendarling.github.io/Coding-Resources-Site/'
           image={CodingResourcesImage}
         />
-        <PortfolioSection
+        <RightPictureSection
           subheading='Portfolio Template'
           heading='Jubilee Austen'
           text=' A portfolio template that I recreated using HTML, CSS, and JavaScript in Skillcrush class. This template is fully responsive and interactive. It is a great starting point for anyone looking to create a portfolio site.'
@@ -100,7 +100,7 @@ export default function Home() {
           buttonLink='https://kirstendarling.github.io/Jubilee-Austen-Site/'
           image={JubileeAustenImage}
         />
-        <CertificateSection
+        <LeftPictureSection
           subheading='Responsive Web Development'
           heading='Recipe Site'
           text=' A recipe site that I recreated using HTML, CSS, and JavaScript while in Skillcrush class. This site is fully responsive and interactive. It is a great starting point for anyone looking to create a recipe site.'
@@ -108,7 +108,7 @@ export default function Home() {
           buttonLink='https://kirstendarling.github.io/Recipe-Site-Skillcrush-Challenge/'
           image={RecipeImage}
         />
-        <PortfolioSection
+        <RightPictureSection
           subheading='CSS Flexbox'
           heading='Flexbox Playground Site'
           text=' A site that I created to test out different flexbox properties. This site was built using HTML, CSS, and JavaScript. It is fully responsive and interactive.'
@@ -116,7 +116,7 @@ export default function Home() {
           buttonLink='https://kirstendarling.github.io/Flexbox-Test-Site/'
           image={FlexBoxPlaygroundImage}
         />
-        <CertificateSection
+        <LeftPictureSection
           subheading='Basic Routing'
           heading='Error Page'
           text=" A simple error page that I created using HTML, CSS, and JavaScript while attending Skillcrush' bootcamp."
@@ -124,7 +124,7 @@ export default function Home() {
           buttonLink='https://kirstendarling.github.io/105-Error-Page/'
           image={ErrorPageImage}
         />
-        <PortfolioSection
+        <RightPictureSection
           subheading='PHP WordPress Template'
           heading='College Skyline Center'
           text='A template that I created using PHP and WordPress to rework an existing site.'

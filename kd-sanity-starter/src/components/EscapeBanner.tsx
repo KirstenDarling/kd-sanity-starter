@@ -1,24 +1,8 @@
 const EscapeBanner = ({ pageType }: { pageType?: string }) => {
   return (
     <a href='/'>
-      <div
-        className='escapeBanner'
-        style={{
-          height: '65px',
-          width: '100vw',
-          backgroundColor: '#5171ff',
-          fontWeight: 'bold',
-          position: 'fixed',
-          zIndex: 1000,
-        }}
-      >
-        <h2
-          style={{
-            color: 'white',
-            textAlign: 'center',
-            paddingTop: '10px',
-          }}
-        >
+      <div className='escapeBanner h-[65px] w-screen bg-blue-600 font-bold fixed z-50'>
+        <h2 className='color-white text-center pt-[10px]'>
           You are currently viewing the {pageType} site.
           <br />
           Click here to change your view.

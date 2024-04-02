@@ -4,7 +4,7 @@ import homeStyles from '../styles/home.module.css';
 
 export default function Home() {
   return (
-    <div style={{ overflow: 'hidden' }}>
+    <div className='overflow-hidden'>
       <Head>
         <title>Kirsten Darling</title>
         <meta

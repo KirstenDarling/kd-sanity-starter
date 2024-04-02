@@ -3,23 +3,11 @@ import corporateLogo from '../../public/corporateLogo.gif';
 
 const NavBar = () => {
   return (
-    <div
-      className='navBar'
-      style={{ backgroundColor: 'white', display: 'flex', justifyContent: 'space-between' }}
-    >
-      <div className='logo' style={{ marginLeft: '40px' }}>
+    <div className='navBar flex bg-white justify-between'>
+      <div className='logo ml-[40px]'>
         <Image alt='travel' src={corporateLogo} height={250} width={250} quality={100} />
       </div>
-      <div
-        className='navLinksGrouping'
-        style={{
-          width: '30%',
-          display: 'flex',
-          justifyContent: 'space-around',
-          alignSelf: 'center',
-          marginRight: '40px',
-        }}
-      >
+      <div className='navLinksGrouping w-[30%] flex justify-around self-center mr-[40px'>
         <a href='/corporate'>
           <button className='navButton'>
             <p>Home</p>

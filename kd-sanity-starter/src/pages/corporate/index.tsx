@@ -22,7 +22,7 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <div style={{ width: '100vw', height: '100vh' }}>
+      <div className='w-full h-full'>
         <EscapeBanner pageType='corporate' />
         <NavBar />
         <IntroSection />

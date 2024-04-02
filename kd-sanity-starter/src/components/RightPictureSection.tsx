@@ -16,55 +16,24 @@ const RightPictureSection = ({
   image?: any;
 }) => {
   return (
-    <div
-      className='rightPictureSection'
-      style={{
-        display: 'flex',
-        width: '100vw',
-        height: '550px',
-        backgroundColor: 'white',
-        paddingTop: '3%',
-      }}
-    >
-      <div
-        style={{
-          width: '55%',
-          height: '200px',
-          marginLeft: '7%',
-          marginTop: '6%',
-          marginBottom: '5%',
-          marginRight: '-5%',
-          backgroundColor: '#f3f3f3',
-          position: 'absolute',
-          zIndex: '0',
-        }}
-      ></div>
-      <div style={{ width: '50%', zIndex: '1' }}>
+    <div className='rightPictureSection flex w-full h-[550px] bg-white pt-[3%]'>
+      <div className='w-[55%] h-[200px] ml-[7%] mt-[6%] mb-[5%] mr-[-5%] bg-[#f3f3f3] z-[0] absolute'></div>
+      <div className='w-[50%] z-[1]'>
         <Image
           alt='travel'
           src={image}
           quality={100}
           height={400}
           width={400}
-          style={{ border: '7px white solid', marginLeft: '25%', marginTop: '10%' }}
+          className='border-[7px] border-white ml-[25%] mt-[10%]'
         />
       </div>
-      <div style={{ width: '50%', paddingTop: '2%', zIndex: '1' }}>
-        <p style={{ marginBottom: '5%', color: '#5171ff' }}>{subheading}</p>
-        <h1 style={{ fontSize: '32px', fontWeight: 'bold' }}>{heading}</h1>
-        <p style={{ paddingRight: '20%', paddingLeft: '5%', paddingTop: '2%' }}>{text}</p>
+      <div className='w-[50%] pt-[2%] z-[1]'>
+        <p className='mb-[5%] text-[#5171ff]'>{subheading}</p>
+        <h1 className='text-[32px] font-bold'>{heading}</h1>
+        <p className='pr-[20%] pl-[5%] pt-[2%]'>{text}</p>
         <a href={buttonLink}>
-          <button
-            style={{
-              backgroundColor: '#5171ff',
-              padding: '2%',
-              color: 'white',
-              fontWeight: 'bold',
-              marginTop: '5%',
-            }}
-          >
-            {buttonText}
-          </button>
+          <button className='p-2 mt-[5%] bg-[#5171ff] text-white font-bold'>{buttonText}</button>
         </a>
       </div>
     </div>

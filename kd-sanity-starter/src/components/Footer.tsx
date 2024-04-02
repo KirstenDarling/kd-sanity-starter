@@ -34,35 +34,18 @@ const Footer = ({ pageType }: { pageType?: string }) => {
   };
 
   return (
-    <div
-      className='footerSection'
-      style={{
-        display: 'flex',
-        width: '100vw',
-        height: '350px',
-        backgroundColor: '#5171ff',
-        paddingLeft: '12%',
-      }}
-    >
-      <div
-        style={{
-          width: '100%',
-          display: 'flex',
-          flexDirection: 'row',
-          justifyContent: 'space-between',
-          paddingTop: '5%',
-        }}
-      >
+    <div className='footerSection flex w-full h-[350px] bg-[#5171ff] pl-[12%] justify-between'>
+      <div className='w-full flex flex-row justify-between pt-[5%]'>
         <a href='/'>
           <Image
             src={NameImage}
             alt='Kirsten Bachert-Darling'
             height={100}
             width={200}
-            style={{ borderRadius: '2%', paddingTop: '12%' }}
+            className='border-[2%] pt-[12%]'
           />
         </a>
-        <div style={{ display: 'flex', flexDirection: 'row', paddingTop: '5%', marginTop: '-2%' }}>
+        <div className='flex flex-row pt-[5%] mt-[-2%]'>
           <IconContext.Provider
             value={{
               style: {
@@ -77,12 +60,7 @@ const Footer = ({ pageType }: { pageType?: string }) => {
               onMouseLeave={handleMouseLeaveGithub}
             >
               <FaGithub
-                style={{
-                  color: isGithubHovered ? '#00c2cb' : 'white',
-                  height: '50px',
-                  width: '50px',
-                  marginRight: '20px',
-                }}
+                className={`${isGithubHovered ? 'color-[#00c2cb]' : 'color-white'} h-[50px] w-[50px] mr-[20px]`}
               />
             </a>
             <a
@@ -92,22 +70,14 @@ const Footer = ({ pageType }: { pageType?: string }) => {
               onMouseLeave={handleMouseLeaveLinkedIn}
             >
               <FaLinkedin
-                style={{
-                  color: isLinkedinHovered ? '#00c2cb' : 'white',
-                  height: '50px',
-                  width: '50px',
-                  marginRight: '20px',
-                }}
+                className={`${isLinkedinHovered ? 'color-[#00c2cb]' : 'color-white'} h-[50px] w-[50px] mr-[20px]`}
               />
             </a>
             <a href='https://LinkedIn.com/kdarling93' target='_blank'></a>
           </IconContext.Provider>
         </div>
-        <div
-          className='siteMap'
-          style={{ display: 'flex', paddingTop: '3%', color: 'white', paddingRight: '15%' }}
-        >
-          <div style={{ display: 'flex', flexDirection: 'column', marginRight: '5%' }}>
+        <div className='siteMap flex pt-[3%] color-white pr-[15%]'>
+          <div className='flex flex-col mr-[5%]'>
             <a href='/'>
               <p>Home Page</p>
             </a>
@@ -118,7 +88,7 @@ const Footer = ({ pageType }: { pageType?: string }) => {
               <p>Creative Site</p>
             </a>
           </div>
-          <div style={{ display: 'flex', flexDirection: 'column' }}>
+          <div className='flex flex-col'>
             <a href='/portfolio'>
               <p>Portfolio</p>
             </a>

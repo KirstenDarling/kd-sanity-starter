@@ -148,21 +148,9 @@ export default function Home() {
       <EscapeBanner pageType='creative' />
       <div className={`${Styles.sectionDemo} section-demo`}>
         <canvas id='demo'></canvas>
-        <div
-          style={{
-            position: 'absolute',
-            top: '0%',
-            height: '100%',
-            width: '100%',
-          }}
-        >
-          <Image
-            src={LearningRoomLogo}
-            width='600'
-            alt={''}
-            style={{ marginTop: '10%', marginLeft: '-5%' }}
-          ></Image>
-          <div style={{ display: 'flex', flexDirection: 'row' }}>
+        <div className='absolute top-0 w-full h-full'>
+          <Image src={LearningRoomLogo} width='600' alt={''} className='mt-[10%] ml-[5-%]'></Image>
+          <div className='flex flex-row'>
             {!circleClicked && (
               <Circle
                 position='absolute'

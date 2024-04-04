@@ -29,7 +29,7 @@ export default function Home() {
       </Head>
 
       <div className='w-full h-full'>
-        <EscapeBanner pageType='corporate' />
+        <EscapeBanner pageType='professional' />
         <NavBar />
         <LeftPictureSection
           subheading='Break Into Tech: Front End Developer Track'

@@ -1,0 +1,30 @@
+.App {
+  text-align: center;
+}
+
+.AppHeader {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+.AppLink {
+  color: #61dafb;
+}
+
+.ProjectsSection {
+  padding: 20px;
+}
+
+.Project {
+  margin-bottom: 20px;
+}
+
+.AppFooter {
+  background-color: #282c34;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: white;
+}

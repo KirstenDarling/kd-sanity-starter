@@ -32,7 +32,7 @@ export default function Home() {
       </Head>
 
       <div className='w-full h-full'>
-        <EscapeBanner pageType='corporate' />
+        <EscapeBanner pageType='professional' />
         <NavBar />
         <LeftPictureSection
           subheading='Nextjs and Sanity.io'

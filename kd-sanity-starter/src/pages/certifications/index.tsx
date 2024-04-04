@@ -7,6 +7,7 @@ import NavBar from '@/components/NavBar';
 import RightPictureSection from '@/components/RightPictureSection';
 import CodingForDataCert from '../../../public/codingfordata.png';
 import CSharpCert from '../../../public/csharpcert.png';
+import CSharpIntermediateCert from '../../../public/csharpintermediatecert.jpg';
 import CSSCert from '../../../public/csscert.png';
 import HTMLCert from '../../../public/htmlcert.png';
 import JavaScriptCert from '../../../public/javascript.png';
@@ -28,7 +29,7 @@ export default function Home() {
       </Head>
 
       <div className='w-full h-full'>
-        <EscapeBanner pageType='corporate' />
+        <EscapeBanner pageType='professional' />
         <NavBar />
         <LeftPictureSection
           subheading='Break Into Tech: Front End Developer Track'
@@ -37,6 +38,14 @@ export default function Home() {
           buttonText='View Certificate'
           buttonLink='/skillcrushCert.pdf'
           image={SkillcrushCert}
+        />
+        <LeftPictureSection
+          subheading='Sololearn'
+          heading='C# Intermediate'
+          text='In this course, I learned about Object-Oriented Programming in C#. I learned about classes, objects, inheritance, polymorphism, interfaces, and abstract classes. I also learned about Exception Handling, File I/O, and how to use LINQ to query data. I also learned about Delegates, Events, and Lambda Expressions.'
+          buttonText='View Certificate'
+          buttonLink='https://www.sololearn.com/certificates/CC-NKKQGTNS'
+          image={CSharpIntermediateCert}
         />
         <RightPictureSection
           subheading='Sololearn'

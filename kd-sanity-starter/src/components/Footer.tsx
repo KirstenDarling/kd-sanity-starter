@@ -81,7 +81,7 @@ const Footer = ({ pageType }: { pageType?: string }) => {
             <a href='/'>
               <p>Home Page</p>
             </a>
-            <a href='/corporate'>
+            <a href='/professional'>
               <p>Coporate Site</p>
             </a>
             <a href='/creative'>

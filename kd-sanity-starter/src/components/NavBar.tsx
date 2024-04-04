@@ -8,7 +8,7 @@ const NavBar = () => {
         <Image alt='travel' src={corporateLogo} height={250} width={250} quality={100} />
       </div>
       <div className='navLinksGrouping w-[30%] flex justify-around self-center mr-[40px'>
-        <a href='/corporate'>
+        <a href='/professional'>
           <button className='navButton'>
             <p>Home</p>
           </button>

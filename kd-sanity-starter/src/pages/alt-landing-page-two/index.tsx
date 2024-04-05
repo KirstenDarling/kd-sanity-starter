@@ -1,6 +1,9 @@
 import HeartIcon from '@public/Icon.svg';
+import ImageLummiGroup1 from '@public/ImageLummiGroup1.png';
+import ImageLummiGroup2 from '@public/ImageLummiGroup2.png';
+import ImageLummiGroup3 from '@public/ImageLummiGroup3.png';
 import InstagramIcon from '@public/InstagramLogo.svg';
-import LinkedInIcon from '@public/LinkedInLogo.svg';
+import LinkedInIcon from '@public/LinkedinLogo.svg';
 import TwitterIcon from '@public/TwitterLogo.svg';
 import CodeGrooveIcon from '@public/codeGrooveIcon.svg';
 import ImageLummi1 from '@public/image-lummi1.png';
@@ -9,9 +12,6 @@ import ImageLummi3 from '@public/imageLummi3.png';
 import ImageLummi4 from '@public/imageLummi4.png';
 import ImageLummi5 from '@public/imageLummi5.png';
 import ImageLummi6 from '@public/imageLummi6.png';
-import ImageLummiGroup1 from '@public/imageLummiGroup1.png';
-import ImageLummiGroup2 from '@public/imageLummiGroup2.png';
-import ImageLummiGroup3 from '@public/imageLummiGroup3.png';
 
 import Image from 'next/image';
 import mushoStyles from '../../styles/musho.module.css';

@@ -1,3 +1,19 @@
+import HeartIcon from '@public/Icon.svg';
+import InstagramIcon from '@public/InstagramLogo.svg';
+import LinkedInIcon from '@public/LinkedInLogo.svg';
+import TwitterIcon from '@public/TwitterLogo.svg';
+import CodeGrooveIcon from '@public/codeGrooveIcon.svg';
+import ImageLummi1 from '@public/image-lummi1.png';
+import ImageLummi2 from '@public/imageLummi2.png';
+import ImageLummi3 from '@public/imageLummi3.png';
+import ImageLummi4 from '@public/imageLummi4.png';
+import ImageLummi5 from '@public/imageLummi5.png';
+import ImageLummi6 from '@public/imageLummi6.png';
+import ImageLummiGroup1 from '@public/imageLummiGroup1.png';
+import ImageLummiGroup2 from '@public/imageLummiGroup2.png';
+import ImageLummiGroup3 from '@public/imageLummiGroup3.png';
+
+import Image from 'next/image';
 import mushoStyles from '../../styles/musho.module.css';
 
 export default function Home() {
@@ -5,7 +21,7 @@ export default function Home() {
     <div className={mushoStyles.mushoVibrant}>
       <div className={mushoStyles.typeCenteredNav}>
         <div className={mushoStyles.brand}>
-          {/* <img className={mushoStyles.icon} alt='Icon' src='icon.svg' /> */}
+          <Image className={mushoStyles.icon} alt='Icon' src={CodeGrooveIcon} />
           <div className={mushoStyles.brandName}>CodeGroove</div>
         </div>
         <div className={mushoStyles.navLinks}>
@@ -56,13 +72,13 @@ export default function Home() {
             <p className={mushoStyles.subheading2}>A peek into my professional adventures.</p>
           </div>
           <div className={mushoStyles.showcaseContainer}>
-            {/* <img className={mushoStyles.imageLummi} alt='Image lummi' src='image-lummi.png' /> */}
+            <Image className={mushoStyles.imageLummi} alt='Image lummi' src={ImageLummi1} />
             <div className={mushoStyles.showcaseGrid}>
-              {/* <img className={mushoStyles.img} alt='Image lummi' src='image.png' />
-              <img className={mushoStyles.img} alt='Image lummi' src='image-lummi-2.png' />
-              <img className={mushoStyles.img} alt='Image lummi' src='image-lummi-3.png' />
-              <img className={mushoStyles.img} alt='Image lummi' src='image-lummi-4.png' />
-              <img className={mushoStyles.img} alt='Image lummi' src='image-lummi-5.png' /> */}
+              <Image className={mushoStyles.img} alt='Image lummi' src={ImageLummi2} />
+              <Image className={mushoStyles.img} alt='Image lummi' src={ImageLummi3} />
+              <Image className={mushoStyles.img} alt='Image lummi' src={ImageLummi4} />
+              <Image className={mushoStyles.img} alt='Image lummi' src={ImageLummi5} />
+              <Image className={mushoStyles.img} alt='Image lummi' src={ImageLummi6} />
             </div>
           </div>
         </div>
@@ -76,7 +92,7 @@ export default function Home() {
         </div>
         <div className={mushoStyles.stepsGrid}>
           <div className={mushoStyles.cards}>
-            {/* <img className={mushoStyles.imageLummi2} alt='Image lummi' src='image-lummi-6.png' /> */}
+            <Image className={mushoStyles.imageLummi2} alt='Image lummi' src={ImageLummiGroup1} />
             <div className={mushoStyles.copy}>
               <div className={mushoStyles.step}>Step 1</div>
               <div className={mushoStyles.featureTitle}>Ideation Phase</div>
@@ -86,7 +102,7 @@ export default function Home() {
             </div>
           </div>
           <div className={mushoStyles.cards}>
-            {/* <img className={mushoStyles.imageLummi2} alt='Image lummi' src='image-lummi-7.png' /> */}
+            <Image className={mushoStyles.imageLummi2} alt='Image lummi' src={ImageLummiGroup2} />
             <div className={mushoStyles.copy}>
               <div className={mushoStyles.step}>Step 2</div>
               <div className={mushoStyles.featureTitle}>Code in Action</div>
@@ -96,7 +112,7 @@ export default function Home() {
             </div>
           </div>
           <div className={mushoStyles.cards}>
-            {/* <img className={mushoStyles.imageLummi2} alt='Image lummi' src='image-lummi-8.png' /> */}
+            <Image className={mushoStyles.imageLummi2} alt='Image lummi' src={ImageLummiGroup3} />
             <div className={mushoStyles.copy}>
               <div className={mushoStyles.step}>Step 3</div>
               <div className={mushoStyles.featureTitle}>Final Touches</div>
@@ -126,7 +142,7 @@ export default function Home() {
       <div className={mushoStyles.typeHorizontal}>
         <div className={mushoStyles.content}>
           <div className={mushoStyles.brand2}>
-            {/* <img className={mushoStyles.icon2} alt='Icon' src='image.svg' /> */}
+            <Image className={mushoStyles.icon2} alt='Icon' src={HeartIcon} />
             <div className={mushoStyles.brandName}>CodeGroove</div>
           </div>
           <div className={mushoStyles.links}>
@@ -137,7 +153,11 @@ export default function Home() {
             </div>
             <div className={mushoStyles.legal}>All rights reserved 2024</div>
           </div>
-          {/* <img className={mushoStyles.social} alt='Social' src='social.svg' /> */}
+          <div className='flex flex-row pr-[32px]'>
+            <Image className={`mr-[10%] ${mushoStyles.social}`} alt='Social' src={TwitterIcon} />
+            <Image className={`mr-[10%] ${mushoStyles.social}`} alt='Social' src={InstagramIcon} />
+            <Image className={`mr-[10%] ${mushoStyles.social}`} alt='Social' src={LinkedInIcon} />
+          </div>
         </div>
       </div>
     </div>

@@ -17,7 +17,7 @@
   padding: 8px;
   position: absolute;
   top: 0;
-  width: 1280px;
+  width: 100vw;
   z-index: 6;
 }
 
@@ -340,9 +340,8 @@
   flex: 0 0 auto;
   flex-direction: column;
   gap: 12px;
-  max-width: 800px;
   position: relative;
-  width: 100%;
+  width: 100vw;
 }
 
 /* .mushoVibrant  */
@@ -443,8 +442,6 @@
   flex-direction: column;
   gap: 40px;
   justify-content: center;
-  max-width: 720px;
-  min-width: 304px;
   position: relative;
   width: 100%;
 }
@@ -598,7 +595,7 @@
 
 /* .mushoVibrant  */
 .benefitsImageLummi {
-  /* background-image: url(./benefits-image-lummi.png); */
+  background-image: url('../../public/imageLummiFinal.png');
   background-position: 50% 50%;
   background-size: cover;
   flex: 1;

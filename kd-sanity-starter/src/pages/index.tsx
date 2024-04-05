@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import Link from 'next/link';
 import homeStyles from '../styles/home.module.css';
 
 export default function Home() {
@@ -42,17 +43,17 @@ export default function Home() {
               Welcome! <br /> Please choose a vibe:
             </h1>
             <div className={homeStyles.buttonGrouping}>
-              <a href='/professional'>
+              <Link href='/professional'>
                 <button className={homeStyles.firstButton}>
                   <p>Professional</p>
                 </button>
-              </a>
+              </Link>
 
-              <a href='/learning-room'>
+              <Link href='/learning-room'>
                 <button className={` ${homeStyles.secondButton}  ${homeStyles.abhayaLibreBold}`}>
                   <p>Creative</p>
                 </button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

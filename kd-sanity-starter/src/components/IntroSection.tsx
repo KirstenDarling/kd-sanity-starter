@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import IntroImage from '../../public/introImage.jpg';
 
 const IntroSection = ({ text }: { text?: string }) => {
@@ -14,9 +15,9 @@ const IntroSection = ({ text }: { text?: string }) => {
           as a contact form, image gallery, portfolio section, blog, and more!
         </p>
         <p>Click below to contact me and get started on your new custom website!</p>
-        <a href='/professional'>
+        <Link href='/professional'>
           <button className='bg-[#5171ff] p-[2%] text-white font-bold mt-[5%]'>Contact Me!</button>
-        </a>
+        </Link>
       </div>
       <div className='w-[30%] ml-[15%] flex flex-col z-[1]'>
         <Image

@@ -1,3 +1,8 @@
+import Nova1 from '@public/Nova1.png';
+import Nova2 from '@public/Nova2.png';
+import Nova3 from '@public/Nova3.png';
+import NovaPerson1 from '@public/NovaPerson1.png';
+import Image from 'next/image';
 import AltThreestyles from '../../styles/altLandingPageThree.module.css';
 
 export default function Home() {
@@ -47,16 +52,12 @@ export default function Home() {
             </div>
           </div>
           <div className={AltThreestyles.imageContainer}>
-            {/* <img className={AltThreestyles.imageLummi} alt='Image lummi' src='image-lummi.png' /> */}
+            <Image className={AltThreestyles.imageLummi} alt='Image lummi' src={Nova1} />
           </div>
         </div>
       </div>
       <div className={AltThreestyles.typeImage}>
-        {/* <img
-          className={AltThreestyles.img}
-          alt='Image lummi'
-          src='image-lummi-luminance-dark.png'
-        /> */}
+        {/* <Image className={AltThreestyles.img} alt='Image lummi' src={Nova2} /> */}
         <div className={AltThreestyles.overlay} />
         <div className={AltThreestyles.textContent}>
           <div className={AltThreestyles.div}>Crafting virtual utopias.</div>
@@ -103,7 +104,8 @@ export default function Home() {
                     </button>
                   </button>
                 </div>
-                <div className={AltThreestyles.imageLummi3} />
+                {/* <div className={AltThreestyles.imageLummi3} /> */}
+                <Image src={Nova2} alt='' />
               </div>
             </div>
             <div className={AltThreestyles.bigCard3}>
@@ -121,7 +123,7 @@ export default function Home() {
                   </button>
                 </button>
               </div>
-              <div className={AltThreestyles.imageLummi4} />
+              <Image src={Nova3} alt='' />
             </div>
           </div>
         </div>
@@ -134,8 +136,8 @@ export default function Home() {
           </div>
           <div className={AltThreestyles.imageGallery}>
             <div className={AltThreestyles.imagesContent}>
-              {/* <img className={AltThreestyles.image} alt='Image' src='image-2.png' />
-              <img className={AltThreestyles.image2} alt='Image' src='image-3.png' /> */}
+              <Image className={AltThreestyles.image} alt='Image' src={NovaPerson1} />
+              {/* <Image className={AltThreestyles.image2} alt='Image' src={Nova2} /> */}
             </div>
             <div className={AltThreestyles.dots}>
               <div className={AltThreestyles.dot} />

@@ -15,7 +15,7 @@
   padding: 8px;
   position: absolute;
   top: 0;
-  width: 1280px;
+  width: 100vw;
   z-index: 6;
 }
 
@@ -785,7 +785,7 @@
 }
 
 .imageLummiCategory {
-  /* background-image: url(./image-lummi-category-avatars.png); */
+  background-image: url('../../public/NovaPerson2.png');
   background-position: 50% 50%;
   background-size: cover;
   flex: 1;

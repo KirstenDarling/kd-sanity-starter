@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { useState } from 'react';
 import { IconContext } from 'react-icons';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
@@ -36,7 +37,7 @@ const Footer = ({ pageType }: { pageType?: string }) => {
   return (
     <div className='footerSection flex w-full h-[350px] bg-[#5171ff] pl-[12%] justify-between'>
       <div className='w-full flex flex-row justify-between pt-[5%]'>
-        <a href='/'>
+        <Link href='/'>
           <Image
             src={NameImage}
             alt='Kirsten Bachert-Darling'
@@ -44,7 +45,7 @@ const Footer = ({ pageType }: { pageType?: string }) => {
             width={200}
             className='border-[2%] pt-[12%]'
           />
-        </a>
+        </Link>
         <div className='flex flex-row pt-[5%] mt-[-2%]'>
           <IconContext.Provider
             value={{
@@ -78,26 +79,26 @@ const Footer = ({ pageType }: { pageType?: string }) => {
         </div>
         <div className='siteMap flex pt-[3%] color-white pr-[15%]'>
           <div className='flex flex-col mr-[5%]'>
-            <a href='/'>
+            <Link href='/'>
               <p>Home Page</p>
-            </a>
-            <a href='/professional'>
+            </Link>
+            <Link href='/professional'>
               <p>Coporate Site</p>
-            </a>
-            <a href='/creative'>
+            </Link>
+            <Link href='/creative'>
               <p>Creative Site</p>
-            </a>
+            </Link>
           </div>
           <div className='flex flex-col'>
-            <a href='/portfolio'>
+            <Link href='/portfolio'>
               <p>Portfolio</p>
-            </a>
-            <a href='/certifications'>
+            </Link>
+            <Link href='/certifications'>
               <p>Certifications</p>
-            </a>
-            <a href='/learning-room'>
+            </Link>
+            <Link href='/learning-room'>
               <p>Learning Room</p>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

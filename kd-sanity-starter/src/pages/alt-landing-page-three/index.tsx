@@ -137,7 +137,6 @@ export default function Home() {
           <div className={AltThreestyles.imageGallery}>
             <div className={AltThreestyles.imagesContent}>
               <Image className={AltThreestyles.image} alt='Image' src={NovaPerson1} />
-              {/* <Image className={AltThreestyles.image2} alt='Image' src={Nova2} /> */}
             </div>
             <div className={AltThreestyles.dots}>
               <div className={AltThreestyles.dot} />

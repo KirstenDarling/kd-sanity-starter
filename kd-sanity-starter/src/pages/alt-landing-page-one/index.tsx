@@ -1,35 +1,23 @@
-import AltOnestyles from '../../styles/altLandingPageOne.module.css';
+import BulletPointsSection1 from '@/components/BulletPointsSection1';
+import CardRowCircle1 from '@/components/CardRowCircle1';
+import Footer1 from '@/components/Footer1';
+import Hero1 from '@/components/Hero1';
+import NavBar1 from '@/components/NavBar1';
+import NumberAccordion1 from '@/components/NumberAccordion1';
+import SubscriptionPlans1 from '@/components/SubscriptionPlans1';
+import TextBannerWithBackground1 from '@/components/TextBannerWithBackground1';
 
 export default function Home() {
   return (
-    <div className={AltOnestyles.app}>
-      <header className={AltOnestyles.AppHeader}>
-        <h1>Welcome to My Portfolio</h1>
-        <p>Explore my projects and experience</p>
-        <a
-          className={AltOnestyles.AppLink}
-          href='#projects'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          View Projects
-        </a>
-      </header>
-      <section id='projects' className={AltOnestyles.ProjectsSection}>
-        <h2>Projects</h2>
-        <div className={AltOnestyles.Project}>
-          <h3>Project 1</h3>
-          <p>Description of Project 1</p>
-        </div>
-        <div className={AltOnestyles.Project}>
-          <h3>Project 2</h3>
-          <p>Description of Project 2</p>
-        </div>
-        {/* Add more projects as needed */}
-      </section>
-      <footer className={AltOnestyles.AppFooter}>
-        <p>&copy; {new Date().getFullYear()} Your Name</p>
-      </footer>
+    <div className='w-full h-[4806px] bg-white flex-col justify-start items-center inline-flex'>
+      <NavBar1 />
+      <Hero1 />
+      <TextBannerWithBackground1 />
+      <BulletPointsSection1 />
+      <NumberAccordion1 />
+      <CardRowCircle1 />
+      <SubscriptionPlans1 />
+      <Footer1 />
     </div>
   );
 }

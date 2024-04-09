@@ -1,6 +1,6 @@
 import Image from 'next/image';
+import MobileMockup7 from '../../public/MobileMockup7.png';
 import MessageIcon from '../../public/messageIcon.svg';
-import MobileMockup7 from '../../public/mobileMockup7.png';
 
 const MobilePreviewSection7 = () => {
   return (

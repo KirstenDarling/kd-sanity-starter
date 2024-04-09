@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import Image1 from '../../public/hero5image1.png';
-import Image2 from '../../public/hero5Image2.png';
-import Image3 from '../../public/hero5Image3.png';
-import Image4 from '../../public/hero5Image4.png';
-import Image5 from '../../public/hero5Image5.png';
-import Image6 from '../../public/hero5Image6.png';
+import Image2 from '../../public/hero5image2.png';
+import Image3 from '../../public/hero5image3.png';
+import Image4 from '../../public/hero5image4.png';
+import Image5 from '../../public/hero5image5.png';
+import Image6 from '../../public/hero5image6.png';
 
 const Hero5 = () => {
   return (

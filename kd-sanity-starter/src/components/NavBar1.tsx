@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import CityTechIcon from '../../public/CityTechIcon.svg';
+import CityTechIcon from '../../public/cityTechIcon.svg';
 
 const NavBar1 = () => {
   return (

@@ -1,6 +1,6 @@
 import Image from 'next/image';
+import ApartmentIcon from '../../public/ApartmentIcon.svg';
 import AlienIcon from '../../public/alienIcon.svg';
-import ApartmentIcon from '../../public/apartmentIcon.svg';
 import CheckCircleIcon from '../../public/checkCircleIcon.svg';
 import PlaceIcon from '../../public/planeIcon.svg';
 import SwitchIcon from '../../public/switchIcon.svg';

@@ -1,8 +1,14 @@
+import DropdownIcon from '@public/dropdownIcon.svg';
+import WinkIcon from '@public/winkIcon.svg';
+import Image from 'next/image';
+
 const NavBar5 = () => {
   return (
     <div className='self-stretch p-2 bg-gray-800 justify-between items-center inline-flex'>
       <div className='px-2 justify-start items-center gap-2 flex'>
-        <div className='w-6 h-6 relative' />
+        <div className='w-6 h-6 relative'>
+          <Image alt='' src={WinkIcon} />
+        </div>
         <div className="text-zinc-100 text-base font-normal font-['Source Sans Pro'] leading-normal">
           Data Arcana
         </div>
@@ -19,7 +25,9 @@ const NavBar5 = () => {
           <div className="text-zinc-100 text-xs font-normal font-['Source Sans Pro'] leading-tight">
             Skills
           </div>
-          <div className='w-3 h-3 relative' />
+          <div className='w-3 h-3 relative'>
+            <Image alt='' src={DropdownIcon} />
+          </div>
         </div>
         <div className='px-5 py-3 bg-teal-600 rounded-lg justify-center items-center gap-1 flex'>
           <div className='px-1 justify-center items-center gap-2 flex'>

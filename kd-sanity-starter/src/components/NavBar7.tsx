@@ -1,8 +1,13 @@
+import HomeIcon from '@public/homeIcon.svg';
+import Image from 'next/image';
+
 const NavBar7 = () => {
   return (
-    <div className='self-stretch p-2 justify-between items-center inline-flex'>
+    <div className='bg-black text-white self-stretch p-2 justify-between items-center inline-flex'>
       <div className='w-[102px] self-stretch pl-2 pr-4 bg-black rounded-lg justify-start items-center gap-1 flex'>
-        <div className='w-6 h-6 relative' />
+        <div className='w-6 h-6 relative'>
+          <Image alt='' src={HomeIcon} />
+        </div>
         <div className="text-neutral-100 text-xs font-normal font-['Alegreya'] leading-tight">
           DataWarp
         </div>

@@ -1,3 +1,6 @@
+import Media7Layout from '@public/mediaLayout7.png';
+import Image from 'next/image';
+
 const Hero7 = () => {
   return (
     <div className='self-stretch px-4 pt-[152px] pb-[104px] bg-black justify-center items-center inline-flex'>
@@ -31,16 +34,7 @@ const Hero7 = () => {
           </div>
         </div>
         <div className='grow shrink basis-0 flex-col justify-center items-start gap-2 inline-flex'>
-          <div className='w-[914.47px] h-[544.97px] relative'>
-            {/* <Image
-            className='w-[702.90px] h-[423.81px] left-[105.64px] top-[60.62px] absolute'
-            src='https://via.placeholder.com/703x424'
-          /> */}
-            {/* <Image
-            className='w-[914.47px] h-[544.97px] left-0 top-0 absolute'
-            src='https://via.placeholder.com/914x545'
-          /> */}
-          </div>
+          <Image alt='' src={Media7Layout} />
         </div>
       </div>
     </div>

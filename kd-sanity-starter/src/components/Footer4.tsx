@@ -1,3 +1,6 @@
+import HeartIcon from '@public/HeartIcon.svg';
+import Image from 'next/image';
+
 const Footer4 = () => {
   return (
     <div className='self-stretch h-[303px] p-2 flex-col justify-start items-start gap-2 flex'>
@@ -5,7 +8,9 @@ const Footer4 = () => {
         <div className='self-stretch justify-between items-start inline-flex'>
           <div className='grow shrink basis-0 flex-col justify-start items-start gap-6 inline-flex'>
             <div className='justify-center items-center gap-2 inline-flex'>
-              <div className='w-8 h-8 relative' />
+              <div className='w-8 h-8 relative'>
+                <Image alt='' src={HeartIcon} />
+              </div>
               <div className="text-neutral-100 text-sm font-normal font-['Open Sans'] leading-snug">
                 CyberStudy Cafe
               </div>

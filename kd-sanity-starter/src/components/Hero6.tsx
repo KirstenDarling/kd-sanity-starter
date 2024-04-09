@@ -1,3 +1,6 @@
+import HeroImage6 from '@public/heroImage6.png';
+import Image from 'next/image';
+
 const Hero6 = () => {
   return (
     <div className='self-stretch bg-gray-100 justify-center items-center inline-flex'>
@@ -21,10 +24,7 @@ const Hero6 = () => {
         </div>
       </div>
       <div className='grow shrink basis-0 h-[725px] justify-center items-center gap-2 flex'>
-        {/* <Image
-        className='grow shrink basis-0 self-stretch'
-        src='https://via.placeholder.com/640x725'
-      /> */}
+        <Image className='grow shrink basis-0 self-stretch' src={HeroImage6} alt='' />
       </div>
     </div>
   );

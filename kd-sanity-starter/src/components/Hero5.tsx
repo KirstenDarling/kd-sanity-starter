@@ -1,3 +1,11 @@
+import Image1 from '@public/hero5image1.png';
+import Image2 from '@public/hero5Image2.png';
+import Image3 from '@public/hero5Image3.png';
+import Image4 from '@public/hero5Image4.png';
+import Image5 from '@public/hero5Image5.png';
+import Image6 from '@public/hero5Image6.png';
+import Image from 'next/image';
+
 const Hero5 = () => {
   return (
     <div className='self-stretch px-6 bg-gray-800 justify-center items-start gap-20 inline-flex'>
@@ -33,14 +41,14 @@ const Hero5 = () => {
         </div>
         <div className='grow shrink basis-0 self-stretch justify-start items-start gap-4 flex'>
           <div className='w-[280.77px] flex-col justify-start items-start gap-4 inline-flex'>
-            {/* <Image className="self-stretch h-[340px] rounded-2xl" src="https://via.placeholder.com/281x340" /> */}
-            {/* <Image className="self-stretch h-[468px] rounded-2xl" src="https://via.placeholder.com/281x468" /> */}
-            {/* <Image className="self-stretch h-[340px] rounded-2xl" src="https://via.placeholder.com/281x340" /> */}
+            <Image className='self-stretch  rounded-2xl' src={Image1} alt='' />
+            <Image className='self-stretch  rounded-2xl' src={Image3} alt='' />
+            <Image className='self-stretch  rounded-2xl' src={Image5} alt='' />
           </div>
           <div className='w-[280.77px] flex-col justify-start items-start gap-4 inline-flex'>
-            {/* <Image className="self-stretch h-[340px] rounded-2xl" src="https://via.placeholder.com/281x340" /> */}
-            {/* <Image className="self-stretch h-[250px] rounded-2xl" src="https://via.placeholder.com/281x250" /> */}
-            {/* <Image className="self-stretch h-[340px] rounded-2xl" src="https://via.placeholder.com/281x340" /> */}
+            <Image className='self-stretch  rounded-2xl' src={Image2} alt='' />
+            <Image className='self-stretch  rounded-2xl' src={Image4} alt='' />
+            <Image className='self-stretch  rounded-2xl' src={Image6} alt='' />
           </div>
         </div>
       </div>

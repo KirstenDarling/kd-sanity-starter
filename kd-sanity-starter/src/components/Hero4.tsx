@@ -1,9 +1,12 @@
+import Hero4Image from '@public/hero4.png';
+import Image from 'next/image';
+
 const Hero4 = () => {
   return (
-    <div className='self-stretch h-[832px] flex-col justify-center items-center gap-12 flex'>
-      <img className='w-[1280px] h-[832px]' src='https://via.placeholder.com/1280x832' />
+    <div className='mt-[-7%] self-stretch h-[832px] flex-col justify-center items-center gap-12 flex'>
+      <Image className='z-[1] w-full h-[832px]' src={Hero4Image} alt='' />
       <div className='self-stretch h-[383.28px] px-12 rounded-2xl flex-col justify-center items-start flex'>
-        <div className='self-stretch h-[343px] p-10 rounded-2xl flex-col justify-center items-start gap-8 flex'>
+        <div className='absolute top-[30%] z-[2] self-stretch h-[343px] p-10 rounded-2xl flex-col justify-center items-start gap-8 flex'>
           <div className='self-stretch h-[177px] flex-col justify-center items-start gap-4 flex'>
             <div className="self-stretch text-zinc-900 text-[56px] font-normal font-['Fugaz One'] leading-[67.20px]">
               Revolutionize Your Study

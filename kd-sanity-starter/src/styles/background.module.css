@@ -20,3 +20,9 @@
   background-position: 50% 50%;
   background-size: cover;
 }
+
+.textBanner1 {
+  background-image: url('../../public/LummiBackground4.png');
+  background-position: 50% 50%;
+  background-size: cover;
+}

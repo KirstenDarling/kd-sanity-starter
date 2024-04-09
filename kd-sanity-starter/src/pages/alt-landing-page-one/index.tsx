@@ -19,7 +19,7 @@ export default function Home() {
         backgroundColor='bg-black'
         textColor='text-white'
       />
-      <Hero1 />
+      <Hero1 heading='Revolutionizing Urban Tech' buttonText='Join the Future' />
       <TextBannerWithBackground1 />
       <BulletPointsSection1 />
       <NumberAccordion1 />

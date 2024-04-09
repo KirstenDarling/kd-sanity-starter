@@ -1,3 +1,8 @@
+import Image from 'next/image';
+import LummiGroup1Image from '../../public/ImageLummiGroup1.png';
+import LummiGroup2Image from '../../public/ImageLummiGroup2.png';
+import LummiGroup3Image from '../../public/ImageLummiGroup3.png';
+
 const CardRow2 = () => {
   return (
     <div className='self-stretch h-[812px] px-4 py-40 bg-rose-500 flex-col justify-center items-center gap-10 flex'>
@@ -13,10 +18,7 @@ const CardRow2 = () => {
       </div>
       <div className='self-stretch justify-center items-start gap-10 inline-flex'>
         <div className='grow shrink basis-0 flex-col justify-center items-start gap-4 inline-flex'>
-          {/* <img
-          className='self-stretch h-56 rounded-[32px]'
-          src='https://via.placeholder.com/360x224'
-        /> */}
+          <Image className='self-stretch h-56 rounded-[32px]' src={LummiGroup1Image} alt='' />
           <div className='self-stretch h-[106px] flex-col justify-center items-center gap-2 flex'>
             <div className="self-stretch text-center text-fuchsia-400 text-xs font-normal font-['Work Sans'] leading-tight">
               Step 1
@@ -30,10 +32,7 @@ const CardRow2 = () => {
           </div>
         </div>
         <div className='grow shrink basis-0 flex-col justify-center items-start gap-4 inline-flex'>
-          {/* <img
-          className='self-stretch h-56 rounded-[32px]'
-          src='https://via.placeholder.com/360x224'
-        /> */}
+          <Image className='self-stretch h-56 rounded-[32px]' src={LummiGroup2Image} alt='' />
           <div className='self-stretch h-[106px] flex-col justify-center items-center gap-2 flex'>
             <div className="self-stretch text-center text-fuchsia-400 text-xs font-normal font-['Work Sans'] leading-tight">
               Step 2
@@ -47,10 +46,7 @@ const CardRow2 = () => {
           </div>
         </div>
         <div className='grow shrink basis-0 flex-col justify-center items-start gap-4 inline-flex'>
-          {/* <img
-          className='self-stretch h-56 rounded-[32px]'
-          src='https://via.placeholder.com/360x224'
-        /> */}
+          <Image className='self-stretch h-56 rounded-[32px]' src={LummiGroup3Image} alt='' />
           <div className='self-stretch h-[106px] flex-col justify-center items-center gap-2 flex'>
             <div className="self-stretch text-center text-fuchsia-400 text-xs font-normal font-['Work Sans'] leading-tight">
               Step 3

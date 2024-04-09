@@ -5,7 +5,7 @@ import MobilePreviewSection7 from '@/components/MobilePreviewSection7';
 import NavBar7 from '@/components/NavBar7';
 import Newsletter7 from '@/components/Newsletter7';
 import Quote7 from '@/components/Quote7';
-import Subscriptions7 from '@/components/Subscriptions7';
+import SubscriptionPlans1 from '@/components/SubscriptionPlans1';
 import TextBanner7 from '@/components/TextBanner7';
 
 export default function Home() {
@@ -15,7 +15,7 @@ export default function Home() {
       <Hero7 />
       <TextBanner7 />
       <MobilePreviewSection7 />
-      <Subscriptions7 />
+      <SubscriptionPlans1 />
       <Newsletter7 />
       <Quote7 />
       <Footer7 />

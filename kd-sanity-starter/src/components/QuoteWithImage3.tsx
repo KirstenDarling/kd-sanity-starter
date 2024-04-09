@@ -1,3 +1,6 @@
+import Image from 'next/image';
+import NovaPerson2 from '../../public/NovaPerson2.png';
+
 const QuoteWithImage3 = () => {
   return (
     <div className='self-stretch bg-black justify-center items-center inline-flex'>
@@ -15,7 +18,7 @@ const QuoteWithImage3 = () => {
           </div>
         </div>
       </div>
-      {/* <img className="w-[640px] h-[640px] relative" src="https://via.placeholder.com/640x640" /> */}
+      <Image className='w-[620px] relative' src={NovaPerson2} alt='' />
     </div>
   );
 };

@@ -1,3 +1,6 @@
+import Image from 'next/image';
+import CatPic from '../../public/catPic.png';
+
 const Quote7 = () => {
   return (
     <div className='self-stretch bg-black justify-center items-center inline-flex'>
@@ -15,7 +18,7 @@ const Quote7 = () => {
           </div>
         </div>
       </div>
-      {/* <Image className='w-[640px] h-[640px] relative' src='https://via.placeholder.com/640x640' /> */}
+      <Image className='max-w-[55%] w-[640px] h-[640px] relative' src={CatPic} alt='' />
     </div>
   );
 };

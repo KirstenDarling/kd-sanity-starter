@@ -1,8 +1,11 @@
+import BackgroundImageStyles from '../styles/background.module.css';
+
 const Newsletter6 = () => {
   return (
-    <div className='self-stretch h-[686px] px-4 py-[120px] flex-col justify-center items-center flex'>
-      {/* <Image className='w-[1280px] h-[686px]' src='https://via.placeholder.com/1280x686' /> */}
-      <div className='self-stretch h-[446px] p-8 bg-black flex-col justify-center items-center gap-4 flex'>
+    <div
+      className={` ${BackgroundImageStyles.subscriptionBackground} self-stretch h-[686px] px-4 py-[120px] flex-col justify-center items-center flex`}
+    >
+      <div className='self-stretch h-[446px] max-w-[480px] m-[auto] p-8 bg-black flex-col justify-center items-center gap-4 flex'>
         <div className='self-stretch h-[82px] flex-col justify-center items-center gap-2 flex'>
           <div className="self-stretch text-center text-neutral-100 text-4xl font-extrabold font-['Alegreya'] leading-[46.80px]">
             Enlist Now

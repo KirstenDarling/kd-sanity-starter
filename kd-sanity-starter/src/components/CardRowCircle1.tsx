@@ -1,3 +1,8 @@
+import Image from 'next/image';
+import CircleOne from '../../public/oneCircleOne.png';
+import CircleThree from '../../public/oneCircleThree.png';
+import CircleTwo from '../../public/oneCircleTwo.png';
+
 const CardRowCircle1 = () => {
   return (
     <div className='self-stretch h-[763px] px-4 py-36 bg-black flex-col justify-center items-center gap-10 flex'>
@@ -13,10 +18,7 @@ const CardRowCircle1 = () => {
       </div>
       <div className='self-stretch justify-center items-start gap-8 inline-flex'>
         <div className='w-[260px] flex-col justify-start items-center gap-4 inline-flex'>
-          {/* <img
-          className='self-stretch h-64 rounded-[400px]'
-          src='https://via.placeholder.com/260x256'
-        /> */}
+          <Image className='self-stretch h-64 rounded-[400px]' src={CircleOne} alt='' />
           <div className='self-stretch h-[49px] flex-col justify-start items-center flex'>
             <div className="self-stretch text-center text-neutral-100 text-lg font-normal font-['Fira Sans'] leading-[27px]">
               Alexa Rydell
@@ -27,10 +29,7 @@ const CardRowCircle1 = () => {
           </div>
         </div>
         <div className='w-[260px] flex-col justify-start items-center gap-4 inline-flex'>
-          {/* <img
-          className='self-stretch h-64 rounded-[400px]'
-          src='https://via.placeholder.com/260x256'
-        /> */}
+          <Image className='self-stretch h-64 rounded-[400px]' src={CircleTwo} alt='' />
           <div className='self-stretch h-[49px] flex-col justify-start items-center flex'>
             <div className="self-stretch text-center text-neutral-100 text-lg font-normal font-['Fira Sans'] leading-[27px]">
               Marco Chen
@@ -41,10 +40,7 @@ const CardRowCircle1 = () => {
           </div>
         </div>
         <div className='w-[260px] flex-col justify-start items-center gap-4 inline-flex'>
-          {/* <img
-          className='self-stretch h-64 rounded-[400px]'
-          src='https://via.placeholder.com/260x256'
-        /> */}
+          <Image className='self-stretch h-64 rounded-[400px]' src={CircleThree} alt='' />
           <div className='self-stretch h-[49px] flex-col justify-start items-center flex'>
             <div className="self-stretch text-center text-neutral-100 text-lg font-normal font-['Fira Sans'] leading-[27px]">
               Samira Khan

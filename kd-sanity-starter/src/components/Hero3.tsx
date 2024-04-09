@@ -1,3 +1,6 @@
+import Image from 'next/image';
+import Nova1 from '../../public/Nova1.png';
+
 const Hero3 = () => {
   return (
     <div className='self-stretch px-6 pt-[104px] pb-16 bg-black justify-center items-start gap-12 inline-flex'>
@@ -20,7 +23,7 @@ const Hero3 = () => {
           </div>
         </div>
         <div className='grow shrink basis-0 h-[704px] justify-center items-center gap-2 flex'>
-          {/* <img className="grow shrink basis-0 self-stretch" src="https://via.placeholder.com/576x704" /> */}
+          <Image className='grow shrink basis-0 self-stretch' src={Nova1} alt='' />
         </div>
       </div>
     </div>

@@ -1,5 +1,5 @@
-import DownArrow from '@public/downArrow.png';
 import Image from 'next/image';
+import DownArrow from '../../public/downArrow.png';
 
 const ContinueSection = () => {
   return (

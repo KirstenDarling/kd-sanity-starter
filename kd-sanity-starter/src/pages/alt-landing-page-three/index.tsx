@@ -20,7 +20,10 @@ export default function Home() {
         buttonText='Join the Odyssey'
         image={Nova1}
       />
-      <TextBannerWithBackground3 />
+      <TextBannerWithBackground3
+        heading='Crafting virtual utopias.'
+        subheading='Digital Frontier Awaits'
+      />
       <CardsSquare3 />
       <ProjectLargeImageAccordion3 />
       <QuoteWithImage3

@@ -21,7 +21,10 @@ export default function Home() {
         buttonTwoText='Learn More'
         image={Hero4Image}
       />
-      <TextBannerWithImage4 />
+      <TextBannerWithImage4
+        heading='Study anytime, anywhere.'
+        subheading='A new era of online learning.'
+      />
       <CardRow4 />
       <NumberAccordion4 />
       <SubscriptionPlans1 />

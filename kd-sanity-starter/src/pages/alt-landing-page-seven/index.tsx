@@ -20,7 +20,7 @@ export default function Home() {
         buttonTwoText='Learn More'
         heroImage={Media7Layout}
       />
-      <TextBanner7 />
+      <TextBanner7 heading='Pioneering Data Horizons.' subheading='Data solutions reimagined' />
       <MobilePreviewSection7 />
       <SubscriptionPlans1 />
       <Newsletter7 />

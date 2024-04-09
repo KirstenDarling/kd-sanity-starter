@@ -20,7 +20,10 @@ export default function Home() {
         textColor='text-white'
       />
       <Hero1 heading='Revolutionizing Urban Tech' buttonText='Join the Future' />
-      <TextBannerWithBackground1 />
+      <TextBannerWithBackground1
+        heading="Shaping Tomorrow's Cityscape."
+        subheading='Innovative Urban Solutions'
+      />
       <BulletPointsSection1 />
       <NumberAccordion1 />
       <CardRowCircle1 />

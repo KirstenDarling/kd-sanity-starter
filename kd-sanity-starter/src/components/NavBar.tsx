@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import corporateLogo from '../../public/corporateLogo.gif';
 
-const NavBar = () => {
+export const NavBar = () => {
   return (
     <div className='navBar flex bg-white justify-between'>
       <div className='logo ml-[40px]'>

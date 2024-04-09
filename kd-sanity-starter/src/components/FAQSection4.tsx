@@ -1,6 +1,6 @@
 const FAQSection4 = () => {
   return (
-    <div className='self-stretch h-[981px] px-8 py-[120px] bg-black flex-col justify-start items-center gap-20 flex'>
+    <div className='self-stretch h-[981px] px-[10rem] py-[120px] bg-black flex-col justify-start items-center gap-20 flex'>
       <div className='self-stretch h-[741px] flex-col justify-start items-center gap-[72px] flex'>
         <div className='self-stretch h-[118px] flex-col justify-start items-start gap-6 flex'>
           <div className="self-stretch text-neutral-100 text-[56px] font-normal font-['Fugaz One'] leading-[67.20px]">

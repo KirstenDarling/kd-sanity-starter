@@ -5,6 +5,7 @@ import Hero6 from '@/components/Hero6';
 import MobilePreviewSection6 from '@/components/MobilePreviewSection6';
 import NavBar6 from '@/components/NavBar6';
 import Newsletter6 from '@/components/Newsletter6';
+import NumberAccordion6 from '@/components/NumberAccordion6';
 import SplitTextBanner6 from '@/components/SplitTextBanner6';
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <Hero6 />
       <SplitTextBanner6 />
       <MobilePreviewSection6 />
+      <NumberAccordion6 />
       <Newsletter6 />
       <Footer6 />
     </div>

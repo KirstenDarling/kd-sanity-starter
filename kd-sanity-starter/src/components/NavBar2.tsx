@@ -1,8 +1,13 @@
+import Image from 'next/image';
+import CodeGrooveIcon from '../../public/codeGrooveIcon.svg';
+
 const NavBar2 = () => {
   return (
     <div className='self-stretch h-[59px] p-2 bg-rose-500 justify-between items-center inline-flex'>
       <div className='px-2 justify-start items-center gap-2 flex'>
-        <div className='w-6 h-6 relative' />
+        <div className='w-6 h-6 relative'>
+          <Image src={CodeGrooveIcon} alt='' />
+        </div>
         <div className="text-orange-200 text-sm font-normal font-['Work Sans'] leading-[21px]">
           CodeGroove
         </div>

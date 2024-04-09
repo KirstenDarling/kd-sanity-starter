@@ -246,12 +246,7 @@
 }
 
 .imageLummi2 {
-  height: 563px;
-  left: 0;
   object-fit: cover;
-  position: absolute;
-  top: 0;
-  width: 1280px;
 }
 
 .overlay2 {

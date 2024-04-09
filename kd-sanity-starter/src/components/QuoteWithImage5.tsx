@@ -1,7 +1,10 @@
+import FiveSplitImage from '@public/fiveSplitImage.png';
+import Image from 'next/image';
+
 const QuoteWithImage5 = () => {
   return (
     <div className='self-stretch bg-gray-800 justify-center items-center inline-flex'>
-      <div className='grow shrink basis-0 h-[640px] p-6 bg-gray-800 justify-center items-center gap-10 flex'>
+      <div className='min-w-[50%] grow shrink basis-0 h-[640px] p-6 bg-gray-800 justify-center items-center gap-10 flex'>
         <div className='grow shrink basis-0 flex-col justify-center items-center gap-3 inline-flex'>
           <div className='self-stretch h-[100px] flex-col justify-center items-center gap-10 flex'>
             <div className='self-stretch h-[100px] flex-col justify-center items-start gap-4 flex'>
@@ -15,7 +18,7 @@ const QuoteWithImage5 = () => {
           </div>
         </div>
       </div>
-      {/* <Image className="w-[640px] h-[640px] relative" src="https://via.placeholder.com/640x640" /> */}
+      <Image className='max-w-[50%] w-[640px] h-[640px] relative' src={FiveSplitImage} alt='' />
     </div>
   );
 };

@@ -10,7 +10,15 @@ import TextBannerWithBackground1 from '@/components/TextBannerWithBackground1';
 export default function Home() {
   return (
     <div className='w-full h-[4806px] bg-white flex-col justify-start items-center inline-flex'>
-      <NavBar1 />
+      <NavBar1
+        pageTitle='CityTech'
+        linkOneTitle='Dashboard'
+        linkTwoTitle='Innovations'
+        linkThreeTitle='Our Crew'
+        buttonText='Explore Now'
+        backgroundColor='bg-black'
+        textColor='text-white'
+      />
       <Hero1 />
       <TextBannerWithBackground1 />
       <BulletPointsSection1 />

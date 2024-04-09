@@ -13,7 +13,7 @@ export default function Home() {
     <div className='w-full h-[4818.97px] bg-white flex-col justify-start items-center inline-flex'>
       <NavBar7 />
       <Hero7 />
-      <TextBanner7 />
+      <TextBanner7 heading='Pioneering Data Horizons.' subheading='Data solutions reimagined' />
       <MobilePreviewSection7 />
       <SubscriptionPlans1 />
       <Newsletter7 />

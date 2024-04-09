@@ -14,7 +14,10 @@ export default function Home() {
     <div className='w-full h-[5453px] bg-white flex-col justify-start items-center inline-flex'>
       <NavBar4 />
       <Hero4 />
-      <TextBannerWithImage4 />
+      <TextBannerWithImage4
+        heading='Study anytime, anywhere.'
+        subheading='A new era of online learning.'
+      />
       <CardRow4 />
       <NumberAccordion4 />
       <SubscriptionPlans1 />

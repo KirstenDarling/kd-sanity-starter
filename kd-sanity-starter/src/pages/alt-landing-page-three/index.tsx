@@ -13,7 +13,10 @@ export default function Home() {
     <div className='w-full h-[4681px] bg-white flex-col justify-start items-center inline-flex'>
       <NavBar3 />
       <Hero3 />
-      <TextBannerWithBackground3 />
+      <TextBannerWithBackground3
+        heading='Crafting virtual utopias.'
+        subheading='Digital Frontier Awaits'
+      />
       <CardsSquare3 />
       <ProjectLargeImageAccordion3 />
       <QuoteWithImage3 />

@@ -7,6 +7,7 @@ import NavBar5 from '@/components/NavBar5';
 import ProjectAccordion5 from '@/components/ProjectAccordion5';
 import QuoteWithImage5 from '@/components/QuoteWithImage5';
 import Timeline5 from '@/components/Timeline5';
+import FiveSplitImage from '../../../public/fiveSplitImage.png';
 
 export default function Home() {
   return (
@@ -16,7 +17,11 @@ export default function Home() {
       <Timeline5 />
       <CardRow5 />
       <ProjectAccordion5 />
-      <QuoteWithImage5 />
+      <QuoteWithImage5
+        quote='“Lucas transformed our data handling, unveiling insights that propelled our growth.”'
+        author='Jordan Smith, CEO of Innotech'
+        image={FiveSplitImage}
+      />
       <Footer5 />
     </div>
   );

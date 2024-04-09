@@ -10,7 +10,11 @@ export default function Home() {
   return (
     <div className='w-full h-[4071px] bg-white flex-col justify-start items-center inline-flex'>
       <NavBar2 />
-      <Hero2 />
+      <Hero2
+        heading='Crafting Code Creatively'
+        subheading='Diving deep into development.'
+        buttonText='See Projects'
+      />
       <TextBanner2 />
       <PortfolioImageGrid2 />
       <CardRow2 />

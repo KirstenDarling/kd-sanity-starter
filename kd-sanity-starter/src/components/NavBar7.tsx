@@ -1,5 +1,5 @@
-import HomeIcon from '@public/homeIcon.svg';
 import Image from 'next/image';
+import HomeIcon from '../../public/homeIcon.svg';
 
 const NavBar7 = () => {
   return (

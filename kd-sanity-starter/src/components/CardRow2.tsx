@@ -1,7 +1,7 @@
-import LummiGroup1Image from '@public/ImageLummiGroup1.png';
-import LummiGroup2Image from '@public/ImageLummiGroup2.png';
-import LummiGroup3Image from '@public/ImageLummiGroup3.png';
 import Image from 'next/image';
+import LummiGroup1Image from '../../public/ImageLummiGroup1.png';
+import LummiGroup2Image from '../../public/ImageLummiGroup2.png';
+import LummiGroup3Image from '../../public/ImageLummiGroup3.png';
 
 const CardRow2 = () => {
   return (

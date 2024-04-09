@@ -1,5 +1,5 @@
-import Nova1 from '@public/Nova1.png';
 import Image from 'next/image';
+import Nova1 from '../../public/Nova1.png';
 
 const Hero3 = () => {
   return (

@@ -1,10 +1,10 @@
-import LummiImage1 from '@public/image-lummi1.png';
-import LummiImage2 from '@public/imageLummi2.png';
-import LummiImage3 from '@public/imageLummi3.png';
-import LummiImage4 from '@public/imageLummi4.png';
-import LummiImage5 from '@public/imageLummi5.png';
-import LummiImage6 from '@public/imageLummi6.png';
 import Image from 'next/image';
+import LummiImage1 from '../../public/image-lummi1.png';
+import LummiImage2 from '../../public/imageLummi2.png';
+import LummiImage3 from '../../public/imageLummi3.png';
+import LummiImage4 from '../../public/imageLummi4.png';
+import LummiImage5 from '../../public/imageLummi5.png';
+import LummiImage6 from '../../public/imageLummi6.png';
 
 const PortfolioImageGrid2 = () => {
   return (

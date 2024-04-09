@@ -1,5 +1,5 @@
-import Media7Layout from '@public/mediaLayout7.png';
 import Image from 'next/image';
+import Media7Layout from '../../public/mediaLayout7.png';
 
 const Hero7 = () => {
   return (

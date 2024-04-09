@@ -1,5 +1,5 @@
-import RightArrowIcon from '@public/rightArrowIcon.svg';
 import Image from 'next/image';
+import RightArrowIcon from '../../public/rightArrowIcon.svg';
 
 const Footer3 = () => {
   return (

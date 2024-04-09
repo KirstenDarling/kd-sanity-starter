@@ -1,5 +1,5 @@
-import SunIcon from '@public/sunIcon.svg';
 import Image from 'next/image';
+import SunIcon from '../../public/sunIcon.svg';
 
 const NavBar6 = () => {
   return (

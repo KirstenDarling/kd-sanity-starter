@@ -1,5 +1,5 @@
-import ProfessionalJourneyImage from '@public/professionalJourneyImage.png';
 import Image from 'next/image';
+import ProfessionalJourneyImage from '../../public/professionalJourneyImage.png';
 
 const Timeline5 = () => {
   return (

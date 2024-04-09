@@ -1,5 +1,5 @@
-import MessageIcon from '@public/messageIcon.svg';
 import Image from 'next/image';
+import MessageIcon from '../../public/messageIcon.svg';
 
 const BulletPointsSection1 = () => {
   return (

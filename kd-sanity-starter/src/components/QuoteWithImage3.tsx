@@ -1,5 +1,5 @@
-import NovaPerson2 from '@public/NovaPerson2.png';
 import Image from 'next/image';
+import NovaPerson2 from '../../public/NovaPerson2.png';
 
 const QuoteWithImage3 = () => {
   return (

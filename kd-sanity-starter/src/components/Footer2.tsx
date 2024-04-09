@@ -1,8 +1,8 @@
-import HeartIcon2 from '@public/HeartIcon2.svg';
-import InstagramIcon from '@public/InstagramLogo.svg';
-import LinkedInIcon from '@public/LinkedinLogo.svg';
-import TwitterIcon from '@public/TwitterLogo.svg';
 import Image from 'next/image';
+import HeartIcon2 from '../../public/HeartIcon2.svg';
+import InstagramIcon from '../../public/InstagramLogo.svg';
+import LinkedInIcon from '../../public/LinkedinLogo.svg';
+import TwitterIcon from '../../public/TwitterLogo.svg';
 
 const Footer2 = () => {
   return (

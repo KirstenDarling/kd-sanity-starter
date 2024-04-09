@@ -1,5 +1,5 @@
-import ImageLummiFinal from '@public/imageLummiFinal.png';
 import Image from 'next/image';
+import ImageLummiFinal from '../../public/imageLummiFinal.png';
 
 const ImageCTASection2 = () => {
   return (

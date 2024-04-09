@@ -1,6 +1,6 @@
-import Nova2 from '@public/Nova2.png';
-import Nova3 from '@public/Nova3.png';
 import Image from 'next/image';
+import Nova2 from '../../public/Nova2.png';
+import Nova3 from '../../public/Nova3.png';
 
 const CardsSquare3 = () => {
   return (

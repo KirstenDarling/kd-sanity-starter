@@ -1,7 +1,7 @@
-import CircleOne from '@public/oneCircleOne.png';
-import CircleThree from '@public/oneCircleThree.png';
-import CircleTwo from '@public/oneCircleTwo.png';
 import Image from 'next/image';
+import CircleOne from '../../public/oneCircleOne.png';
+import CircleThree from '../../public/oneCircleThree.png';
+import CircleTwo from '../../public/oneCircleTwo.png';
 
 const CardRowCircle1 = () => {
   return (

@@ -1,6 +1,6 @@
-import DropdownIcon from '@public/dropdownIcon.svg';
-import WinkIcon from '@public/winkIcon.svg';
 import Image from 'next/image';
+import DropdownIcon from '../../public/dropdownIcon.svg';
+import WinkIcon from '../../public/winkIcon.svg';
 
 const NavBar5 = () => {
   return (

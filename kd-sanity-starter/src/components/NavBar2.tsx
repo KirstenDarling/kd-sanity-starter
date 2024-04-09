@@ -1,5 +1,5 @@
-import CodeGrooveIcon from '@public/codeGrooveIcon.svg';
 import Image from 'next/image';
+import CodeGrooveIcon from '../../public/codeGrooveIcon.svg';
 
 const NavBar2 = () => {
   return (

@@ -1,5 +1,5 @@
-import HeartIcon from '@public/HeartIcon.svg';
 import Image from 'next/image';
+import HeartIcon from '../../public/heartIcon.svg';
 
 const Footer4 = () => {
   return (

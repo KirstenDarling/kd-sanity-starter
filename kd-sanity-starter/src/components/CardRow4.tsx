@@ -1,10 +1,10 @@
-import Image1 from '@public/fourCard1.png';
-import Image2 from '@public/fourCard2.png';
-import Image3 from '@public/fourCard3.png';
-import Image4 from '@public/fourCard4.png';
-import Image5 from '@public/fourCard5.png';
-import Image6 from '@public/fourCard6.png';
 import Image from 'next/image';
+import Image1 from '../../public/fourCard1.png';
+import Image2 from '../../public/fourCard2.png';
+import Image3 from '../../public/fourCard3.png';
+import Image4 from '../../public/fourCard4.png';
+import Image5 from '../../public/fourCard5.png';
+import Image6 from '../../public/fourCard6.png';
 
 const CardRow4 = () => {
   return (

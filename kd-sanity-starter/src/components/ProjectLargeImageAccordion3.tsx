@@ -1,5 +1,5 @@
-import NovaPerson1 from '@public/NovaPerson1.png';
 import Image from 'next/image';
+import NovaPerson1 from '../../public/NovaPerson1.png';
 
 const ProjectLargeImageAccordion3 = () => {
   return (

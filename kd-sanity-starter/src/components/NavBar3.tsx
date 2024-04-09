@@ -1,5 +1,5 @@
-import NeonThriveStackIcon from '@public/NeonThriveStackIcon.svg';
 import Image from 'next/image';
+import NeonThriveStackIcon from '../../public/NeonThriveStackIcon.svg';
 
 const NavBar3 = () => {
   return (

@@ -1,3 +1,6 @@
+import RightArrowIcon from '@public/rightArrowIcon.svg';
+import Image from 'next/image';
+
 const Footer3 = () => {
   return (
     <div className='self-stretch h-[290px] px-8 py-16 bg-black flex-col justify-start items-start gap-8 flex'>
@@ -64,7 +67,9 @@ const Footer3 = () => {
               </div>
             </div>
             <div className='w-[53px] h-[53px] p-4 bg-purple-500 justify-center items-center gap-1 flex'>
-              <div className='w-6 h-6 relative' />
+              <div className='w-6 h-6 relative'>
+                <Image alt='' src={RightArrowIcon} />
+              </div>
             </div>
           </div>
           <div className='justify-start items-start gap-4 inline-flex'>

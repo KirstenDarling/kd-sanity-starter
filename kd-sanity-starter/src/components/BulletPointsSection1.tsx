@@ -1,6 +1,9 @@
+import MessageIcon from '@public/messageIcon.svg';
+import Image from 'next/image';
+
 const BulletPointsSection1 = () => {
   return (
-    <div className='self-stretch h-[659px] px-4 py-40 bg-gray-100 flex-col justify-center items-center gap-10 flex'>
+    <div className=' h-[659px] px-4 py-40 bg-gray-100 flex-col justify-center items-center gap-10 inline-flex'>
       <div className='self-stretch h-[101px] flex-col justify-start items-center gap-3 flex'>
         <div className="self-stretch text-center text-zinc-900 text-[56px] font-extrabold font-['Playfair Display'] leading-[67.20px]">
           Smart Connectivity
@@ -9,10 +12,12 @@ const BulletPointsSection1 = () => {
           Seamless City Integration
         </div>
       </div>
-      <div className='self-stretch justify-center items-start gap-10 inline-flex'>
+      <div className='m-[auto] flex flex-wrap self-stretch justify-center items-start gap-10'>
         <div className='grow shrink basis-0 h-[79px] justify-start items-start gap-4 flex'>
-          <div className='w-8 h-8 relative' />
-          <div className='grow shrink basis-0 flex-col justify-start items-start gap-2 inline-flex'>
+          <div className='w-8 h-8 relative'>
+            <Image src={MessageIcon} alt='' />
+          </div>
+          <div className='w-[373.33px] h-[79px] grow shrink basis-0 flex-col justify-start items-start gap-2 inline-flex'>
             <div className="self-stretch text-zinc-900 text-lg font-normal font-['Fira Sans'] leading-[27px]">
               Data-Driven Insights
             </div>
@@ -22,8 +27,10 @@ const BulletPointsSection1 = () => {
           </div>
         </div>
         <div className='grow shrink basis-0 h-[79px] justify-start items-start gap-4 flex'>
-          <div className='w-8 h-8 relative' />
-          <div className='grow shrink basis-0 flex-col justify-start items-start gap-2 inline-flex'>
+          <div className='w-8 h-8 relative'>
+            <Image src={MessageIcon} alt='' />
+          </div>
+          <div className='w-[373.33px] h-[79px] grow shrink basis-0 flex-col justify-start items-start gap-2 inline-flex'>
             <div className="self-stretch text-zinc-900 text-lg font-normal font-['Fira Sans'] leading-[27px]">
               Augmented Reality
             </div>
@@ -34,8 +41,10 @@ const BulletPointsSection1 = () => {
           </div>
         </div>
         <div className='grow shrink basis-0 h-[79px] justify-start items-start gap-4 flex'>
-          <div className='w-8 h-8 relative' />
-          <div className='grow shrink basis-0 flex-col justify-start items-start gap-2 inline-flex'>
+          <div className='w-8 h-8 relative'>
+            <Image src={MessageIcon} alt='' />
+          </div>
+          <div className='w-[373.33px] h-[79px] grow shrink basis-0 flex-col justify-start items-start gap-2 inline-flex'>
             <div className="self-stretch text-zinc-900 text-lg font-normal font-['Fira Sans'] leading-[27px]">
               Efficient Transportation
             </div>
@@ -45,8 +54,10 @@ const BulletPointsSection1 = () => {
           </div>
         </div>
         <div className='grow shrink basis-0 h-[79px] justify-start items-start gap-4 flex'>
-          <div className='w-8 h-8 relative' />
-          <div className='grow shrink basis-0 flex-col justify-start items-start gap-2 inline-flex'>
+          <div className='w-8 h-8 relative'>
+            <Image src={MessageIcon} alt='' />
+          </div>
+          <div className='w-[373.33px] h-[79px] grow shrink basis-0 flex-col justify-start items-start gap-2 inline-flex'>
             <div className="self-stretch text-zinc-900 text-lg font-normal font-['Fira Sans'] leading-[27px]">
               Eco-Friendly Tech
             </div>
@@ -56,8 +67,10 @@ const BulletPointsSection1 = () => {
           </div>
         </div>
         <div className='grow shrink basis-0 h-[79px] justify-start items-start gap-4 flex'>
-          <div className='w-8 h-8 relative' />
-          <div className='grow shrink basis-0 flex-col justify-start items-start gap-2 inline-flex'>
+          <div className='w-8 h-8 relative'>
+            <Image src={MessageIcon} alt='' />
+          </div>
+          <div className='w-[373.33px] h-[79px] grow shrink basis-0 flex-col justify-start items-start gap-2 inline-flex'>
             <div className="self-stretch text-zinc-900 text-lg font-normal font-['Fira Sans'] leading-[27px]">
               Advanced Security
             </div>
@@ -67,8 +80,10 @@ const BulletPointsSection1 = () => {
           </div>
         </div>
         <div className='grow shrink basis-0 h-[79px] justify-start items-start gap-4 flex'>
-          <div className='w-8 h-8 relative' />
-          <div className='grow shrink basis-0 flex-col justify-start items-start gap-2 inline-flex'>
+          <div className='w-8 h-8 relative'>
+            <Image src={MessageIcon} alt='' />
+          </div>
+          <div className='w-[373.33px] h-[79px] grow shrink basis-0 flex-col justify-start items-start gap-2 inline-flex'>
             <div className="self-stretch text-zinc-900 text-lg font-normal font-['Fira Sans'] leading-[27px]">
               AI-Powered Services
             </div>

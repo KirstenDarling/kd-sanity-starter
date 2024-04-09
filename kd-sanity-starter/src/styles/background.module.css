@@ -13,9 +13,10 @@
   background-image: url('../../public/textBanner1.png');
   background-position: 50% 50%;
   background-size: cover;
-  /* flex: 1;
-  flex-grow: 1;
-  height: 100vw;
-  min-width: 100%;
-  position: relative; */
+}
+
+.hero3 {
+  background-image: url('../../public/NovaBackground.png');
+  background-position: 50% 50%;
+  background-size: cover;
 }

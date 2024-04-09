@@ -1,3 +1,6 @@
+import NovaPerson1 from '@public/NovaPerson1.png';
+import Image from 'next/image';
+
 const ProjectLargeImageAccordion3 = () => {
   return (
     <div className='self-stretch h-[1284px] px-16 py-[120px] bg-black flex-col justify-start items-center gap-16 flex'>
@@ -10,23 +13,22 @@ const ProjectLargeImageAccordion3 = () => {
             Explore streets with no daylight.
           </div>
         </div>
-        <div className='self-stretch h-[806px] flex-col justify-center items-start gap-10 flex'>
+        <div className='overflow-hidden self-stretch h-[806px] flex-col justify-center items-start gap-10 flex'>
           <div className='self-stretch bg-black justify-start items-center gap-8 inline-flex'>
-            {/* <img className="w-[1312px] h-[738px]" src="https://via.placeholder.com/1312x738" /> */}
-            {/* <img className="w-[1312px] h-[738px]" src="https://via.placeholder.com/1312x738" /> */}
+            <div className='p-4 bg-black rounded-[100px] border border-gray-600 justify-center items-center gap-2 inline-flex'>
+              <div className='w-4 h-4 relative' />
+            </div>
+            <Image className='w-[1312px]' src={NovaPerson1} alt='' />
+            <div className='p-4 bg-black rounded-[100px] border border-gray-600 justify-center items-center gap-2 inline-flex'>
+              <div className='w-4 h-4 relative' />
+            </div>
           </div>
-          <div className='p-4 bg-black rounded-[100px] border border-gray-600 justify-center items-center gap-2 inline-flex'>
-            <div className='w-4 h-4 relative' />
-          </div>
-          <div className='p-4 bg-black rounded-[100px] border border-gray-600 justify-center items-center gap-2 inline-flex'>
-            <div className='w-4 h-4 relative' />
-          </div>
-          <div className='p-2.5 justify-center items-center gap-[9px] inline-flex'>
-            <div className='w-2 h-2 bg-gray-100 rounded-full' />
-            <div className='w-2 h-2 bg-gray-600 rounded-full' />
-            <div className='w-2 h-2 bg-gray-600 rounded-full' />
-            <div className='w-2 h-2 bg-gray-600 rounded-full' />
-          </div>
+        </div>
+        <div className='p-2.5 justify-center items-center gap-[9px] inline-flex'>
+          <div className='w-2 h-2 bg-gray-100 rounded-full' />
+          <div className='w-2 h-2 bg-gray-600 rounded-full' />
+          <div className='w-2 h-2 bg-gray-600 rounded-full' />
+          <div className='w-2 h-2 bg-gray-600 rounded-full' />
         </div>
       </div>
     </div>

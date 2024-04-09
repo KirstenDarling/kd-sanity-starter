@@ -1,3 +1,7 @@
+import Nova2 from '@public/Nova2.png';
+import Nova3 from '@public/Nova3.png';
+import Image from 'next/image';
+
 const CardsSquare3 = () => {
   return (
     <div className='self-stretch h-[1110px] px-8 py-[120px] bg-black flex-col justify-center items-center gap-10 flex'>
@@ -60,7 +64,7 @@ const CardsSquare3 = () => {
                   </div>
                 </div>
               </div>
-              {/* <img className="w-[294px] h-[364px] relative" src="https://via.placeholder.com/294x364" /> */}
+              <Image className='w-[294px] h-[364px] relative' src={Nova2} alt='' />
             </div>
           </div>
           <div className='self-stretch border border-gray-600 justify-start items-start inline-flex'>
@@ -86,7 +90,7 @@ const CardsSquare3 = () => {
                 </div>
               </div>
             </div>
-            {/* <img className="w-[600px] h-[364px] relative" src="https://via.placeholder.com/600x364" /> */}
+            <Image className='w-[600px] h-[364px] relative' src={Nova3} alt='' />
           </div>
         </div>
       </div>

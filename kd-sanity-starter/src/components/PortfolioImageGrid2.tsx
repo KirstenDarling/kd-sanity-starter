@@ -1,3 +1,11 @@
+import LummiImage1 from '@public/image-lummi1.png';
+import LummiImage2 from '@public/imageLummi2.png';
+import LummiImage3 from '@public/imageLummi3.png';
+import LummiImage4 from '@public/imageLummi4.png';
+import LummiImage5 from '@public/imageLummi5.png';
+import LummiImage6 from '@public/imageLummi6.png';
+import Image from 'next/image';
+
 const PortfolioImageGrid2 = () => {
   return (
     <div className='self-stretch h-[1058px] px-4 py-[120px] bg-rose-500 flex-col justify-center items-center gap-10 flex'>
@@ -11,31 +19,33 @@ const PortfolioImageGrid2 = () => {
           </div>
         </div>
         <div className='self-stretch justify-center items-start gap-6 inline-flex'>
-          {/* <img
-          className='grow shrink basis-0 h-[676px] rounded-2xl'
-          src='https://via.placeholder.com/588x676'
-        /> */}
-          <div className='grow shrink basis-0 h-[676px] justify-start items-center gap-6 flex'>
-            {/* <img
-            className='grow shrink basis-0 h-[209.33px] rounded-2xl'
-            src='https://via.placeholder.com/282x209'
-          /> */}
-            {/* <img
-            className='grow shrink basis-0 h-[209.33px] rounded-2xl'
-            src='https://via.placeholder.com/282x209'
-          /> */}
-            {/* <img
-            className='grow shrink basis-0 h-[209.33px] rounded-2xl'
-            src='https://via.placeholder.com/588x209'
-          /> */}
-            {/* <img
-            className='grow shrink basis-0 h-[209.33px] rounded-2xl'
-            src='https://via.placeholder.com/282x209'
-          /> */}
-            {/* <img
-            className='grow shrink basis-0 h-[209.33px] rounded-2xl'
-            src='https://via.placeholder.com/282x209'
-          /> */}
+          <Image className='h-[676px] grow shrink basis-0 rounded-2xl' src={LummiImage1} alt='' />
+          <div className='baseline flex-wrap grow shrink basis-0 h-[676px] justify-start items-center gap-4 flex'>
+            <Image
+              className='grow shrink basis-0 max-w-[282px] h-[209px] rounded-2xl'
+              src={LummiImage2}
+              alt=''
+            />
+            <Image
+              className='grow shrink basis-0 max-w-[282px]  h-[209px] rounded-2xl'
+              src={LummiImage3}
+              alt=''
+            />
+            <Image
+              className='grow shrink basis-0 max-w-[282px]  h-[209px] rounded-2xl'
+              src={LummiImage4}
+              alt=''
+            />
+            <Image
+              className='grow shrink basis-0 max-w-[282px]  h-[209px] rounded-2xl'
+              src={LummiImage5}
+              alt=''
+            />
+            <Image
+              className='grow shrink basis-0   max-w-[580px]  h-[209px] rounded-2xl'
+              src={LummiImage6}
+              alt=''
+            />
           </div>
         </div>
       </div>

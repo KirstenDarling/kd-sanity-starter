@@ -1,7 +1,7 @@
 const NumberAccordion1 = () => {
   return (
     <div className='self-stretch h-[939px] px-4 py-24 bg-black flex-col justify-center items-center gap-10 flex'>
-      <div className='self-stretch h-[747px] flex-col justify-center items-center gap-10 flex'>
+      <div className='p-[5%] self-stretch h-[747px] flex-col justify-center items-center gap-10 flex'>
         <div className="self-stretch text-neutral-100 text-7xl font-extrabold font-['Playfair Display'] leading-[77.76px]">
           How We Innovate
         </div>

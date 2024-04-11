@@ -25,14 +25,7 @@ const CircleComponent = ({
           </div>
         </div>
       </div>
-      {circles.map((circle, index) => (
-        <CircleComponent
-          key={index}
-          title={circle.title}
-          subtitle={circle.subtitle}
-          image={circle.image}
-        />
-      ))}
+
       <div className='w-[260px] flex-col justify-start items-center gap-4 inline-flex'>
         <Image className='self-stretch h-64 rounded-[400px]' src={CircleTwo} alt='' />
         <div className='self-stretch h-[49px] flex-col justify-start items-center flex'>

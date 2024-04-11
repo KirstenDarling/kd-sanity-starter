@@ -1,12 +1,15 @@
 import BulletPointsSection1 from '@/components/BulletPointsSection1';
-import CardRowCircle1 from '@/components/CardRowCircle1';
 import Footer1 from '@/components/Footer1';
 import Hero1 from '@/components/Hero1';
 import NavBar1 from '@/components/NavBar1';
 import NumberAccordion1 from '@/components/NumberAccordion1';
 import SubscriptionPlans1 from '@/components/SubscriptionPlans1';
 import TextBannerWithBackground1 from '@/components/TextBannerWithBackground1';
+import CardRowCircles1 from '@components/CardRowCircles1';
 import MessageIcon from '../../../public/messageIcon.svg';
+import CircleOne from '../../../public/oneCircleOne.png';
+import CircleThree from '../../../public/oneCircleThree.png';
+import CircleTwo from '../../../public/oneCircleTwo.png';
 
 export default function Home() {
   const featuredBullets = [
@@ -67,6 +70,12 @@ export default function Home() {
     },
   ];
 
+  const featuredCircles = [
+    { title: 'Alexa Rydell', subtitle: 'Chief Innovation Officer', image: { CircleOne } },
+    { title: 'Marco Chen', subtitle: 'Lead Urban Architect', image: { CircleTwo } },
+    { title: 'Samira Khan', subtitle: 'Head of Data Science', image: { CircleThree } },
+  ];
+
   return (
     <div className='w-full h-[4806px] bg-white flex-col justify-start items-center inline-flex'>
       <NavBar1
@@ -89,7 +98,11 @@ export default function Home() {
         features={featuredBullets}
       />
       <NumberAccordion1 title='How We Innovate' accordionSections={featuredAccordionSections} />
-      <CardRowCircle1 />
+      <CardRowCircles1
+        heading='Meet Our Visionaries'
+        subheading='The minds driving urban tech into the future.'
+        circles={featuredCircles}
+      />
       <SubscriptionPlans1 />
       <Footer1 />
     </div>

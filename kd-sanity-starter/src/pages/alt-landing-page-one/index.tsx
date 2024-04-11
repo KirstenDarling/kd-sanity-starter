@@ -46,6 +46,27 @@ export default function Home() {
     },
   ];
 
+  const featuredAccordionSections = [
+    {
+      number: 1,
+      title: 'Research & Development',
+      description:
+        'Our journey begins with in-depth research into urban challenges and innovative tech solutions.',
+    },
+    {
+      number: 2,
+      title: 'Prototyping & Testing',
+      description:
+        'We create advanced prototypes and rigorously test them in real-world urban settings.',
+    },
+    {
+      number: 3,
+      title: 'Implementation & Scale',
+      description:
+        'Successful solutions are implemented city-wide, scaling to meet the needs of urbanpopulations.',
+    },
+  ];
+
   return (
     <div className='w-full h-[4806px] bg-white flex-col justify-start items-center inline-flex'>
       <NavBar1
@@ -67,7 +88,7 @@ export default function Home() {
         subheading='Seamless City Integration'
         features={featuredBullets}
       />
-      <NumberAccordion1 />
+      <NumberAccordion1 title='How We Innovate' accordionSections={featuredAccordionSections} />
       <CardRowCircle1 />
       <SubscriptionPlans1 />
       <Footer1 />

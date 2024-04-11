@@ -10,7 +10,6 @@ const BulletPointsSection1 = ({
   subheading?: string;
   features: { title: string; description: string; icon: StaticImageData }[];
 }) => {
-  console.log('features', features);
   return (
     <div className=' h-[659px] px-4 py-40 bg-gray-100 flex-col justify-center items-center gap-10 inline-flex'>
       <div className='self-stretch h-[101px] flex-col justify-start items-center gap-3 flex'>

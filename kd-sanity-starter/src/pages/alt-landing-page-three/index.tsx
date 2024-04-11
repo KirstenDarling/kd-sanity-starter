@@ -1,5 +1,3 @@
-// import Image from 'next/image';
-
 import CardsSquare3 from '@/components/CardsSquare3';
 import Footer3 from '@/components/Footer3';
 import Hero3 from '@/components/Hero3';

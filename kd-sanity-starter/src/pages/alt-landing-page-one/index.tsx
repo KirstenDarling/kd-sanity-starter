@@ -4,12 +4,13 @@ import Hero1 from '@/components/Hero1';
 import NavBar1 from '@/components/NavBar1';
 import NumberAccordion1 from '@/components/NumberAccordion1';
 import SubscriptionPlans1 from '@/components/SubscriptionPlans1';
-import TextBannerWithBackground1 from '@/components/TextBannerWithBackground1';
+import TextBannerWithBackground from '@/components/TextBannerWithBackground';
 import CardRowCircles1 from '@components/CardRowCircles1';
 import MessageIcon from '../../../public/messageIcon.svg';
 import CircleOne from '../../../public/oneCircleOne.png';
 import CircleThree from '../../../public/oneCircleThree.png';
 import CircleTwo from '../../../public/oneCircleTwo.png';
+import BannerImageOne from '../../../public/textBanner1.png';
 
 export default function Home() {
   const featuredBullets = [
@@ -88,9 +89,10 @@ export default function Home() {
         textColor='text-white'
       />
       <Hero1 heading='Revolutionizing Urban Tech' buttonText='Join the Future' />
-      <TextBannerWithBackground1
+      <TextBannerWithBackground
         heading="Shaping Tomorrow's Cityscape."
         subheading='Innovative Urban Solutions'
+        image={BannerImageOne}
       />
       <BulletPointsSection1
         heading='Smart Connectivity'

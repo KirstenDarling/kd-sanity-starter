@@ -1,11 +1,11 @@
-import SplitTextBanner6 from '@/components/SplitTextBanner6';
-import TextBanner2 from '@/components/TextBanner2';
-import TextBanner7 from '@/components/TextBanner7';
-import TextBannerWithBackground1 from '@/components/TextBannerWithBackground1';
+import TextBannerWithBackground from '@/components/TextBannerWithBackground';
+import BannerImageThree from '../../../public/LummiBackground4.png';
+import BannerImageTwo from '../../../public/NovaBackground.png';
 import MessageIcon from '../../../public/messageIcon.svg';
 import CircleOne from '../../../public/oneCircleOne.png';
 import CircleThree from '../../../public/oneCircleThree.png';
 import CircleTwo from '../../../public/oneCircleTwo.png';
+import BannerImageOne from '../../../public/textBanner1.png';
 
 export default function Home() {
   const featuredBullets = [
@@ -73,23 +73,30 @@ export default function Home() {
   ];
 
   return (
-    <div className='w-full h-full bg-white flex-col justify-start items-center inline-flex'>
-      {/* TEXT BANNERS START */}
-      <TextBannerWithBackground1
+    <div className='w-full h-full bg-white flex-col justify-start items-center inline-flex relative'>
+      {/* TEXT BANNERS START */}{' '}
+      <TextBannerWithBackground
         heading="Shaping Tomorrow's Cityscape."
         subheading='Innovative Urban Solutions'
+        image={BannerImageOne}
       />
-      <TextBannerWithBackground1
+      <TextBannerWithBackground
         heading='Crafting virtual utopias.'
         subheading='Digital Frontier Awaits'
+        image={BannerImageTwo}
       />
-      <TextBannerWithBackground1
+      <TextBannerWithBackground
         heading='Study anytime, anywhere.'
         subheading='A new era of online learning.'
+        image={BannerImageThree}
       />
-      <TextBanner7 heading='Pioneering Data Horizons.' subheading='Data solutions reimagined' />
-      <TextBanner2 />
-      <SplitTextBanner6 />
+      <TextBannerWithBackground
+        heading='Pioneering Data Horizons.'
+        subheading='Data solutions reimagined'
+      />
+      {/* <TextBannerWithoutBackground heading='Pioneering Data Horizons.' subheading='Data solutions reimagined' /> */}
+      {/* <TextBannerAltStyle />
+      <TextBannerAltStyleSplit /> */}
       {/* TEXT BANNERS END */}
     </div>
   );

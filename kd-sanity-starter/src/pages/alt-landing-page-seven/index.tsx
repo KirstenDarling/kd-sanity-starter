@@ -6,7 +6,7 @@ import NavBar7 from '@/components/NavBar7';
 import Newsletter7 from '@/components/Newsletter7';
 import Quote7 from '@/components/Quote7';
 import SubscriptionPlans1 from '@/components/SubscriptionPlans1';
-import TextBanner7 from '@/components/TextBanner7';
+import TextBannerWithoutBackground from '@/components/TextBannerWithoutBackground';
 import Media7Layout from '../../../public/mediaLayout7.png';
 
 export default function Home() {
@@ -20,7 +20,10 @@ export default function Home() {
         buttonTwoText='Learn More'
         heroImage={Media7Layout}
       />
-      <TextBanner7 heading='Pioneering Data Horizons.' subheading='Data solutions reimagined' />
+      <TextBannerWithoutBackground
+        heading='Pioneering Data Horizons.'
+        subheading='Data solutions reimagined'
+      />
       <MobilePreviewSection7 />
       <SubscriptionPlans1 />
       <Newsletter7 />

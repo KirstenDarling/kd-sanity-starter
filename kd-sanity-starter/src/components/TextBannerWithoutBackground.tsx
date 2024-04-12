@@ -1,4 +1,10 @@
-const TextBanner7 = ({ heading, subheading }: { heading?: string; subheading?: string }) => {
+const TextBannerWithoutBackground = ({
+  heading,
+  subheading,
+}: {
+  heading?: string;
+  subheading?: string;
+}) => {
   return (
     <div className='bg-black text-black w-[1280px] h-[485px] px-4 py-[184px] justify-center items-center gap-12 inline-flex'>
       <div className='grow shrink basis-0 flex-col justify-start items-center gap-2 inline-flex'>
@@ -13,4 +19,4 @@ const TextBanner7 = ({ heading, subheading }: { heading?: string; subheading?: s
   );
 };
 
-export default TextBanner7;
+export default TextBannerWithoutBackground;

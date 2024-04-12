@@ -1,4 +1,4 @@
-const TextBanner2 = () => {
+const TextBannerAltStyle = () => {
   return (
     <div className='self-stretch px-4 py-36 bg-rose-500 justify-center items-center gap-12 inline-flex'>
       <div className='grow shrink basis-0 flex-col justify-start items-start gap-2 inline-flex'>
@@ -14,4 +14,4 @@ const TextBanner2 = () => {
   );
 };
 
-export default TextBanner2;
+export default TextBannerAltStyle;

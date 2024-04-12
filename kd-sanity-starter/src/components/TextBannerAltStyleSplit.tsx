@@ -1,4 +1,4 @@
-const SplitTextBanner6 = () => {
+const TextBannerAltStyleSplit = () => {
   return (
     <div className='self-stretch h-[477px] px-20 py-36 bg-black justify-center items-center gap-12 inline-flex'>
       <div className='grow shrink basis-0 flex-col justify-start items-start gap-2 inline-flex'>
@@ -18,4 +18,4 @@ const SplitTextBanner6 = () => {
   );
 };
 
-export default SplitTextBanner6;
+export default TextBannerAltStyleSplit;

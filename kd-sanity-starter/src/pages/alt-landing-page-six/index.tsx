@@ -6,7 +6,7 @@ import MobilePreviewSection6 from '@/components/MobilePreviewSection6';
 import NavBar6 from '@/components/NavBar6';
 import Newsletter6 from '@/components/Newsletter6';
 import NumberAccordion6 from '@/components/NumberAccordion6';
-import SplitTextBanner6 from '@/components/SplitTextBanner6';
+import TextBannerAltStyleSplit from '@/components/TextBannerAltStyleSplit';
 import HeroImage6 from '../../../public/heroImage6.png';
 
 export default function Home() {
@@ -19,7 +19,7 @@ export default function Home() {
         buttonText='Initiate Your Journey'
         heroImage={HeroImage6}
       />
-      <SplitTextBanner6 />
+      <TextBannerAltStyleSplit />
       <MobilePreviewSection6 />
       <NumberAccordion6 />
       <Newsletter6 />

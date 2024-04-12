@@ -71,9 +71,9 @@ export default function Home() {
   ];
 
   const featuredCircles = [
-    { title: 'Alexa Rydell', subtitle: 'Chief Innovation Officer', image: { CircleOne } },
-    { title: 'Marco Chen', subtitle: 'Lead Urban Architect', image: { CircleTwo } },
-    { title: 'Samira Khan', subtitle: 'Head of Data Science', image: { CircleThree } },
+    { title: 'Alexa Rydell', subtitle: 'Chief Innovation Officer', image: CircleOne },
+    { title: 'Marco Chen', subtitle: 'Lead Urban Architect', image: CircleTwo },
+    { title: 'Samira Khan', subtitle: 'Head of Data Science', image: CircleThree },
   ];
 
   return (

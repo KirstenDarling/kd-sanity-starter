@@ -4,10 +4,11 @@ import Hero7 from '@/components/Hero7';
 import MobilePreviewSection from '@/components/MobilePreviewSection';
 import NavBar7 from '@/components/NavBar7';
 import Newsletter from '@/components/Newsletter';
-import Quote7 from '@/components/Quote7';
+import Quote from '@/components/Quote';
 import SubscriptionPlans from '@/components/SubscriptionPlans';
 import TextBannerWithoutBackground from '@/components/TextBannerWithoutBackground';
 import MobileMockupImage7 from '../../../public/MobileMockup7.png';
+import CatPic from '../../../public/catPic.png';
 import Media7Layout from '../../../public/mediaLayout7.png';
 import MessageIcon from '../../../public/messageIcon.svg';
 
@@ -61,7 +62,11 @@ export default function Home() {
         legalText='Terms and privacy agreed upon'
         image={2}
       />
-      <Quote7 />
+      <Quote
+        quote='“DataWarp transformed our data strategy and execution.”'
+        author='Ava Smith, Data Scientist'
+        image={CatPic}
+      />
       <Footer7 />
     </div>
   );

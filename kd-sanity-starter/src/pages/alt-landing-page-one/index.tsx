@@ -2,7 +2,7 @@ import BulletPointsSection1 from '@/components/BulletPointsSection1';
 import Footer1 from '@/components/Footer1';
 import Hero1 from '@/components/Hero1';
 import NavBar1 from '@/components/NavBar1';
-import NumberAccordion1 from '@/components/NumberAccordion1';
+import NumberAccordion from '@/components/NumberAccordion';
 import SubscriptionPlans from '@/components/SubscriptionPlans';
 import TextBannerWithBackground from '@/components/TextBannerWithBackground';
 import CardRowCircles1 from '@components/CardRowCircles1';
@@ -99,7 +99,7 @@ export default function Home() {
         subheading='Seamless City Integration'
         features={featuredBullets}
       />
-      <NumberAccordion1 title='How We Innovate' accordionSections={featuredAccordionSections} />
+      <NumberAccordion title='How We Innovate' accordionSections={featuredAccordionSections} />
       <CardRowCircles1
         heading='Meet Our Visionaries'
         subheading='The minds driving urban tech into the future.'

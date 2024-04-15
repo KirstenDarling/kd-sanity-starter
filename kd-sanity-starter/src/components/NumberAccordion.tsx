@@ -1,6 +1,6 @@
 import NumberAccordionRow from './NumberAccordionRow';
 
-const NumberAccordion1 = ({
+const NumberAccordion = ({
   title,
   accordionSections,
 }: {
@@ -26,4 +26,4 @@ const NumberAccordion1 = ({
   );
 };
 
-export default NumberAccordion1;
+export default NumberAccordion;

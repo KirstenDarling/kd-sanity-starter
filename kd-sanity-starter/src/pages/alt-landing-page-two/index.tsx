@@ -4,7 +4,7 @@ import Hero2 from '@/components/Hero2';
 import ImageCTASection2 from '@/components/ImageCTASection2';
 import NavBar2 from '@/components/NavBar2';
 import PortfolioImageGrid2 from '@/components/PortfolioImageGrid2';
-import TextBanner2 from '@/components/TextBanner2';
+import TextBannerAltStyle from '@/components/TextBannerAltStyle';
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
         subheading='Diving deep into development.'
         buttonText='See Projects'
       />
-      <TextBanner2 />
+      <TextBannerAltStyle />
       <PortfolioImageGrid2 />
       <CardRow2 />
       <ImageCTASection2 />

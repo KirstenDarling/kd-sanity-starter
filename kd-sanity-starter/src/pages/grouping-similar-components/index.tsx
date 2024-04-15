@@ -1,11 +1,6 @@
-import BulletPointsSection1 from '@/components/BulletPointsSection1';
-import Footer1 from '@/components/Footer1';
-import Hero1 from '@/components/Hero1';
-import NavBar1 from '@/components/NavBar1';
-import NumberAccordion1 from '@/components/NumberAccordion1';
-import SubscriptionPlans1 from '@/components/SubscriptionPlans1';
 import TextBannerWithBackground from '@/components/TextBannerWithBackground';
-import CardRowCircles1 from '@components/CardRowCircles1';
+import BannerImageThree from '../../../public/LummiBackground4.png';
+import BannerImageTwo from '../../../public/NovaBackground.png';
 import MessageIcon from '../../../public/messageIcon.svg';
 import CircleOne from '../../../public/oneCircleOne.png';
 import CircleThree from '../../../public/oneCircleThree.png';
@@ -78,35 +73,31 @@ export default function Home() {
   ];
 
   return (
-    <div className='w-full h-[4806px] bg-white flex-col justify-start items-center inline-flex'>
-      <NavBar1
-        pageTitle='CityTech'
-        linkOneTitle='Dashboard'
-        linkTwoTitle='Innovations'
-        linkThreeTitle='Our Crew'
-        buttonText='Explore Now'
-        backgroundColor='bg-black'
-        textColor='text-white'
-      />
-      <Hero1 heading='Revolutionizing Urban Tech' buttonText='Join the Future' />
+    <div className='w-full h-full bg-white flex-col justify-start items-center inline-flex relative'>
+      {/* TEXT BANNERS START */}{' '}
       <TextBannerWithBackground
         heading="Shaping Tomorrow's Cityscape."
         subheading='Innovative Urban Solutions'
         image={BannerImageOne}
       />
-      <BulletPointsSection1
-        heading='Smart Connectivity'
-        subheading='Seamless City Integration'
-        features={featuredBullets}
+      <TextBannerWithBackground
+        heading='Crafting virtual utopias.'
+        subheading='Digital Frontier Awaits'
+        image={BannerImageTwo}
       />
-      <NumberAccordion1 title='How We Innovate' accordionSections={featuredAccordionSections} />
-      <CardRowCircles1
-        heading='Meet Our Visionaries'
-        subheading='The minds driving urban tech into the future.'
-        circles={featuredCircles}
+      <TextBannerWithBackground
+        heading='Study anytime, anywhere.'
+        subheading='A new era of online learning.'
+        image={BannerImageThree}
       />
-      <SubscriptionPlans1 />
-      <Footer1 />
+      <TextBannerWithBackground
+        heading='Pioneering Data Horizons.'
+        subheading='Data solutions reimagined'
+      />
+      {/* <TextBannerWithoutBackground heading='Pioneering Data Horizons.' subheading='Data solutions reimagined' /> */}
+      {/* <TextBannerAltStyle />
+      <TextBannerAltStyleSplit /> */}
+      {/* TEXT BANNERS END */}
     </div>
   );
 }

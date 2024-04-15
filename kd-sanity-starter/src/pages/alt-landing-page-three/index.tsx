@@ -4,8 +4,9 @@ import Hero3 from '@/components/Hero3';
 import NavBar3 from '@/components/NavBar3';
 import ProjectLargeImageAccordion3 from '@/components/ProjectLargeImageAccordion3';
 import QuoteWithImage3 from '@/components/QuoteWithImage3';
-import TextBannerWithBackground3 from '@/components/TextBannerWithBackground3';
+import TextBannerWithBackground from '@/components/TextBannerWithBackground';
 import Nova1 from '../../../public/Nova1.png';
+import BannerImageTwo from '../../../public/NovaBackground.png';
 import NovaPerson2 from '../../../public/NovaPerson2.png';
 
 export default function Home() {
@@ -18,9 +19,10 @@ export default function Home() {
         buttonText='Join the Odyssey'
         image={Nova1}
       />
-      <TextBannerWithBackground3
+      <TextBannerWithBackground
         heading='Crafting virtual utopias.'
         subheading='Digital Frontier Awaits'
+        image={BannerImageTwo}
       />
       <CardsSquare3 />
       <ProjectLargeImageAccordion3 />

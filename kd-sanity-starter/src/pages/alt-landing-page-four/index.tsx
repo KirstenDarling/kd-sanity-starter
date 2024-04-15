@@ -7,7 +7,8 @@ import Hero4 from '@/components/Hero4';
 import NavBar4 from '@/components/NavBar4';
 import NumberAccordion4 from '@/components/NumberAccordion4';
 import SubscriptionPlans1 from '@/components/SubscriptionPlans1';
-import TextBannerWithImage4 from '@/components/TextBannerWithImage4';
+import TextBannerWithBackground from '@/components/TextBannerWithBackground';
+import BannerImageThree from '../../../public/LummiBackground4.png';
 import Hero4Image from '../../../public/hero4.png';
 
 export default function Home() {
@@ -21,9 +22,10 @@ export default function Home() {
         buttonTwoText='Learn More'
         image={Hero4Image}
       />
-      <TextBannerWithImage4
+      <TextBannerWithBackground
         heading='Study anytime, anywhere.'
         subheading='A new era of online learning.'
+        image={BannerImageThree}
       />
       <CardRow4 />
       <NumberAccordion4 />

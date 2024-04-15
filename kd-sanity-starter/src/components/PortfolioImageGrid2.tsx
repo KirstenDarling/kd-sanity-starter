@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import LummiImage1 from '../../public/image-lummi1.png';
 import LummiImage2 from '../../public/imageLummi2.png';
 import LummiImage3 from '../../public/imageLummi3.png';
@@ -6,16 +6,34 @@ import LummiImage4 from '../../public/imageLummi4.png';
 import LummiImage5 from '../../public/imageLummi5.png';
 import LummiImage6 from '../../public/imageLummi6.png';
 
-const PortfolioImageGrid2 = () => {
+const PortfolioImageGrid2 = ({
+  heading,
+  subheading,
+  image1,
+  image2,
+  image3,
+  image4,
+  image5,
+  image6,
+}: {
+  heading?: string;
+  subheading?: string;
+  image1: StaticImageData;
+  image2: StaticImageData;
+  image3: StaticImageData;
+  image4: StaticImageData;
+  image5: StaticImageData;
+  image6: StaticImageData;
+}) => {
   return (
     <div className='self-stretch h-[1058px] px-4 py-[120px] bg-rose-500 flex-col justify-center items-center gap-10 flex'>
       <div className='self-stretch h-[818px] flex-col justify-center items-center gap-10 flex'>
         <div className='self-stretch h-[102px] flex-col justify-start items-center gap-3 flex'>
           <div className="self-stretch text-center text-orange-200 text-[51px] font-bold font-['Syne'] leading-[61.20px]">
-            Portfolio Highlights
+            {heading}
           </div>
           <div className="self-stretch text-center text-amber-300 text-[22px] font-normal font-['Work Sans'] leading-7">
-            A peek into my professional adventures.
+            A peek into my professional adventures.{subheading}
           </div>
         </div>
         <div className='self-stretch justify-center items-start gap-6 inline-flex'>

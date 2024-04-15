@@ -74,7 +74,6 @@ export default function Home() {
         cards={featuredCards}
       />
       <NumberAccordion title='How CyberStudy Works' accordionSections={featuredAccordionSections} />
-
       <SubscriptionPlans />
       <FAQSection4 />
       <Footer4 />

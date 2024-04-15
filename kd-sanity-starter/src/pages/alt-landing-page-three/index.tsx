@@ -10,6 +10,28 @@ import BannerImageTwo from '../../../public/NovaBackground.png';
 import NovaPerson2 from '../../../public/NovaPerson2.png';
 
 export default function Home() {
+  const featuredCards = [
+    {
+      eyebrowText: 'Transcend Reality',
+      heading: 'Reshape the Metropolis Skyline',
+      subheading: 'Urban revolution begins',
+      CTAText: 'Embark the Hype',
+    },
+    {
+      eyebrowText: 'Hack the System',
+      heading: 'Reimagine Cybernetic Life',
+      subheading: 'AI rebellion starts now',
+      CTAText: 'Lead the Change',
+    },
+  ];
+
+  const featuredLongCard = {
+    eyebrowText: 'Rebel With Cause',
+    heading: "Redefine Humanity's Fate",
+    subheading: 'Cyber evolution awaits',
+    CTAText: 'Seize the Future',
+  };
+
   return (
     <div className='w-full h-[4681px] bg-white flex-col justify-start items-center inline-flex'>
       <NavBar3 />
@@ -24,7 +46,12 @@ export default function Home() {
         subheading='Digital Frontier Awaits'
         image={BannerImageTwo}
       />
-      <CardsSquare3 />
+      <CardsSquare3
+        heading='Neon Dreams Unveiled'
+        subheading='Immersive Reality Awaits'
+        shortCards={featuredCards}
+        longCard={featuredLongCard}
+      />
       <ProjectLargeImageAccordion3 />
       <QuoteWithImage3
         quote='“Their vision for the cyber world transformed my reality.”'

@@ -14,6 +14,7 @@ import LummiImage3 from '../../../public/imageLummi3.png';
 import LummiImage4 from '../../../public/imageLummi4.png';
 import LummiImage5 from '../../../public/imageLummi5.png';
 import LummiImage6 from '../../../public/imageLummi6.png';
+import ImageLummiFinal from '../../../public/imageLummiFinal.png';
 
 export default function Home() {
   const cardsFeatured = [
@@ -63,7 +64,12 @@ export default function Home() {
         subheading='A snapshot of my development process.'
         cards={cardsFeatured}
       />
-      <ImageCTASection2 />
+      <ImageCTASection2
+        heading="Let's Collaborate!"
+        subheading='Ready to build something amazing together?'
+        CTAText='Get in Touch'
+        image={ImageLummiFinal}
+      />
       <Footer2 />
     </div>
   );

@@ -4,7 +4,7 @@ import Footer6 from '@/components/Footer6';
 import Hero6 from '@/components/Hero6';
 import MobilePreviewSection from '@/components/MobilePreviewSection';
 import NavBar6 from '@/components/NavBar6';
-import Newsletter6 from '@/components/Newsletter6';
+import Newsletter from '@/components/Newsletter';
 import NumberAccordion from '@/components/NumberAccordion';
 import TextBannerAltStyleSplit from '@/components/TextBannerAltStyleSplit';
 import HeroImage6 from '../../../public/heroImage6.png';
@@ -73,7 +73,16 @@ export default function Home() {
         accordionSections={featuredAccordionSections}
       />
 
-      <Newsletter6 />
+      <Newsletter
+        title='Enlist Now'
+        subtitle='Join the Shadow Network!'
+        buttonOptionOneText='Proceed with OAuth'
+        inputLabel='Username or Email'
+        input='Enter Access Credentials'
+        buttonOptionTwoText='Continue with Secrecy'
+        legalText='Consent to our Cryptic Terms and Covert Policy'
+        image={1}
+      />
       <Footer6 />
     </div>
   );

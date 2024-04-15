@@ -3,7 +3,7 @@ import Footer7 from '@/components/Footer7';
 import Hero7 from '@/components/Hero7';
 import MobilePreviewSection from '@/components/MobilePreviewSection';
 import NavBar7 from '@/components/NavBar7';
-import Newsletter7 from '@/components/Newsletter7';
+import Newsletter from '@/components/Newsletter';
 import Quote7 from '@/components/Quote7';
 import SubscriptionPlans from '@/components/SubscriptionPlans';
 import TextBannerWithoutBackground from '@/components/TextBannerWithoutBackground';
@@ -51,7 +51,16 @@ export default function Home() {
         bullets={featuredBullets}
       />
       <SubscriptionPlans />
-      <Newsletter7 />
+      <Newsletter
+        title='Join Today'
+        subtitle='Secure your spot!'
+        buttonOptionOneText='Connect with Google'
+        inputLabel='Username or Email'
+        input='Create a Password'
+        buttonOptionTwoText='Proceed with Email'
+        legalText='Terms and privacy agreed upon'
+        image={2}
+      />
       <Quote7 />
       <Footer7 />
     </div>

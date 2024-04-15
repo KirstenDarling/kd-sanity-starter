@@ -5,7 +5,7 @@ import FAQSection4 from '@/components/FAQSection4';
 import Footer4 from '@/components/Footer4';
 import Hero4 from '@/components/Hero4';
 import NavBar4 from '@/components/NavBar4';
-import NumberAccordion4 from '@/components/NumberAccordion4';
+import NumberAccordion from '@/components/NumberAccordion';
 import SubscriptionPlans from '@/components/SubscriptionPlans';
 import TextBannerWithBackground from '@/components/TextBannerWithBackground';
 import BannerImageThree from '../../../public/LummiBackground4.png';
@@ -35,6 +35,24 @@ export default function Home() {
     },
   ];
 
+  const featuredAccordionSections = [
+    {
+      number: 1,
+      title: 'Create an Account',
+      description: 'Sign up and access our study features.',
+    },
+    {
+      number: 2,
+      title: 'Customize Your Space',
+      description: 'Personalize your study hall experience.',
+    },
+    {
+      number: 3,
+      title: 'Start Learning',
+      description: 'Dive into a world of knowledge.',
+    },
+  ];
+
   return (
     <div className='w-full h-[5453px] bg-white flex-col justify-start items-center inline-flex'>
       <NavBar4 />
@@ -55,7 +73,8 @@ export default function Home() {
         subheading='Study in the comfort of cyber space.'
         cards={featuredCards}
       />
-      <NumberAccordion4 />
+      <NumberAccordion title='How CyberStudy Works' accordionSections={featuredAccordionSections} />
+
       <SubscriptionPlans />
       <FAQSection4 />
       <Footer4 />

@@ -5,7 +5,7 @@ import CheckCircleIcon from '../../public/checkCircleIcon.svg';
 import PlaceIcon from '../../public/planeIcon.svg';
 import SwitchIcon from '../../public/switchIcon.svg';
 
-const SubscriptionPlans1 = () => {
+const SubscriptionPlans = () => {
   return (
     <div className='self-stretch h-[913px] px-4 py-[120px] bg-black flex-col justify-center items-center gap-10 flex'>
       <div className='self-stretch h-[145px] flex-col justify-center items-center gap-10 flex'>
@@ -279,4 +279,4 @@ const SubscriptionPlans1 = () => {
   );
 };
 
-export default SubscriptionPlans1;
+export default SubscriptionPlans;

@@ -3,7 +3,7 @@ import Footer1 from '@/components/Footer1';
 import Hero1 from '@/components/Hero1';
 import NavBar1 from '@/components/NavBar1';
 import NumberAccordion1 from '@/components/NumberAccordion1';
-import SubscriptionPlans1 from '@/components/SubscriptionPlans1';
+import SubscriptionPlans from '@/components/SubscriptionPlans';
 import TextBannerWithBackground from '@/components/TextBannerWithBackground';
 import CardRowCircles1 from '@components/CardRowCircles1';
 import MessageIcon from '../../../public/messageIcon.svg';
@@ -105,7 +105,7 @@ export default function Home() {
         subheading='The minds driving urban tech into the future.'
         circles={featuredCircles}
       />
-      <SubscriptionPlans1 />
+      <SubscriptionPlans />
       <Footer1 />
     </div>
   );

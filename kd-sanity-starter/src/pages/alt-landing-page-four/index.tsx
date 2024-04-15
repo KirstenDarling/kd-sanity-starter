@@ -6,7 +6,7 @@ import Footer4 from '@/components/Footer4';
 import Hero4 from '@/components/Hero4';
 import NavBar4 from '@/components/NavBar4';
 import NumberAccordion4 from '@/components/NumberAccordion4';
-import SubscriptionPlans1 from '@/components/SubscriptionPlans1';
+import SubscriptionPlans from '@/components/SubscriptionPlans';
 import TextBannerWithBackground from '@/components/TextBannerWithBackground';
 import BannerImageThree from '../../../public/LummiBackground4.png';
 import Hero4Image from '../../../public/hero4.png';
@@ -29,7 +29,7 @@ export default function Home() {
       />
       <CardRow4 />
       <NumberAccordion4 />
-      <SubscriptionPlans1 />
+      <SubscriptionPlans />
       <FAQSection4 />
       <Footer4 />
     </div>

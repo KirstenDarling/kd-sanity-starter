@@ -15,7 +15,10 @@ export default function Home() {
         subheading='Diving deep into development.'
         buttonText='See Projects'
       />
-      <TextBannerAltStyle />
+      <TextBannerAltStyle
+        heading='Creative Ethos'
+        subheading='Fueling innovation with playful designs and robust code that encapsulate my journey as a mobile engineer.'
+      />
       <PortfolioImageGrid2 />
       <CardRow2 />
       <ImageCTASection2 />

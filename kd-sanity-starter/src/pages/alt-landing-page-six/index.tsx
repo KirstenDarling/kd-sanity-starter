@@ -19,7 +19,11 @@ export default function Home() {
         buttonText='Initiate Your Journey'
         heroImage={HeroImage6}
       />
-      <TextBannerAltStyleSplit />
+      <TextBannerAltStyleSplit
+        eyebrowText='Our Ethos'
+        heading='Crafting the Cyber Narrative'
+        text='Innovation through every byte.'
+      />
       <MobilePreviewSection6 />
       <NumberAccordion6 />
       <Newsletter6 />

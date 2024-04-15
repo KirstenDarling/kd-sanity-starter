@@ -5,7 +5,7 @@ import MobilePreviewSection7 from '@/components/MobilePreviewSection7';
 import NavBar7 from '@/components/NavBar7';
 import Newsletter7 from '@/components/Newsletter7';
 import Quote7 from '@/components/Quote7';
-import SubscriptionPlans1 from '@/components/SubscriptionPlans1';
+import SubscriptionPlans from '@/components/SubscriptionPlans';
 import TextBannerWithoutBackground from '@/components/TextBannerWithoutBackground';
 import Media7Layout from '../../../public/mediaLayout7.png';
 
@@ -25,7 +25,7 @@ export default function Home() {
         subheading='Data solutions reimagined'
       />
       <MobilePreviewSection7 />
-      <SubscriptionPlans1 />
+      <SubscriptionPlans />
       <Newsletter7 />
       <Quote7 />
       <Footer7 />

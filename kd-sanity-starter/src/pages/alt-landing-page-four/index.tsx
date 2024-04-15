@@ -9,9 +9,32 @@ import NumberAccordion4 from '@/components/NumberAccordion4';
 import SubscriptionPlans from '@/components/SubscriptionPlans';
 import TextBannerWithBackground from '@/components/TextBannerWithBackground';
 import BannerImageThree from '../../../public/LummiBackground4.png';
+import Image1 from '../../../public/fourCard1.png';
+import Image2 from '../../../public/fourCard2.png';
+import Image3 from '../../../public/fourCard3.png';
+import Image4 from '../../../public/fourCard4.png';
+import Image5 from '../../../public/fourCard5.png';
+import Image6 from '../../../public/fourCard6.png';
 import Hero4Image from '../../../public/hero4.png';
 
 export default function Home() {
+  const featuredCards = [
+    { heading: '24/7 Access', subheading: 'Study at any hour, day or night.', image: Image1 },
+    { heading: 'Expert Support', subheading: 'Guidance from online study experts.', image: Image2 },
+    { heading: 'Global Community', subheading: 'Connect with learners worldwide.', image: Image3 },
+    {
+      heading: 'Customizable Spaces',
+      subheading: 'Create the perfect study environment.',
+      image: Image4,
+    },
+    { heading: 'Tech-Enabled', subheading: 'Advanced tools at your fingertips.', image: Image5 },
+    {
+      heading: 'Interactive Sessions',
+      subheading: 'Engage in live knowledge exchanges.',
+      image: Image6,
+    },
+  ];
+
   return (
     <div className='w-full h-[5453px] bg-white flex-col justify-start items-center inline-flex'>
       <NavBar4 />
@@ -27,7 +50,11 @@ export default function Home() {
         subheading='A new era of online learning.'
         image={BannerImageThree}
       />
-      <CardRow4 />
+      <CardRow4
+        heading='Comfort & Convenience'
+        subheading='Study in the comfort of cyber space.'
+        cards={featuredCards}
+      />
       <NumberAccordion4 />
       <SubscriptionPlans />
       <FAQSection4 />

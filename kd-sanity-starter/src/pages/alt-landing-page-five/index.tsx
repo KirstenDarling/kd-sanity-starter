@@ -1,6 +1,6 @@
 // import Image from 'next/image';
 
-import CardRow5 from '@/components/CardRow5';
+import CardRowSimplified from '@/components/CardRowSimplified';
 import Footer5 from '@/components/Footer5';
 import Hero5 from '@/components/Hero5';
 import NavBar5 from '@/components/NavBar5';
@@ -17,6 +17,22 @@ import Image6 from '../../../public/hero5image6.png';
 import ProfessionalJourneyImage from '../../../public/professionalJourneyImage.png';
 
 export default function Home() {
+  const featuredCards = [
+    {
+      title: 'Cloud Expertise',
+      text: 'Migrating and managing petabyte-scale datasets in the cloud environment.',
+    },
+    {
+      title: 'Real-time Analytics',
+      text: 'Building systems that provide instant insights from live data streams.',
+    },
+    {
+      title: 'Data Security',
+      text: 'Ensuring the integrity and confidentiality of sensitive information.',
+    },
+    { title: 'Automation', text: 'Creating pipelines that efficiently process and analyze data.' },
+  ];
+
   const featuredEvents = [
     {
       date: '2018',
@@ -54,6 +70,12 @@ export default function Home() {
         image5={Image5}
         image6={Image6}
       />
+
+      <CardRowSimplified
+        heading='Data Mastery'
+        subheading='Innovative solutions tailored to empower decision-making.'
+        cards={featuredCards}
+      />
       <Timeline
         mainImage={ProfessionalJourneyImage}
         title='Professional Journey'
@@ -62,7 +84,6 @@ export default function Home() {
         CTAButtonText='Contact Lucas'
         events={featuredEvents}
       />
-      <CardRow5 />
       <ProjectAccordion5 />
       <QuoteWithImage5
         quote='“Lucas transformed our data handling, unveiling insights that propelled our growth.”'

@@ -76,6 +76,7 @@ export default function Home() {
         subheading='Innovative solutions tailored to empower decision-making.'
         cards={featuredCards}
       />
+
       <Timeline
         mainImage={ProfessionalJourneyImage}
         title='Professional Journey'

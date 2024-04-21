@@ -6,6 +6,7 @@ import NumberAccordion from '@/components/NumberAccordion';
 import SubscriptionPlans from '@/components/SubscriptionPlans';
 import TextBannerWithBackground from '@/components/TextBannerWithBackground';
 import CardRowCircles1 from '@components/CardRowCircles1';
+import Hero1Image from '../../../public/hero1Image.png';
 import MessageIcon from '../../../public/messageIcon.svg';
 import CircleOne from '../../../public/oneCircleOne.png';
 import CircleThree from '../../../public/oneCircleThree.png';
@@ -88,7 +89,7 @@ export default function Home() {
         backgroundColor='bg-black'
         textColor='text-white'
       />
-      <Hero1 heading='Revolutionizing Urban Tech' buttonText='Join the Future' />
+      <Hero1 heading='Revolutionizing Urban Tech' buttonText='Join the Future' image={Hero1Image} />
       <TextBannerWithBackground
         heading="Shaping Tomorrow's Cityscape."
         subheading='Innovative Urban Solutions'

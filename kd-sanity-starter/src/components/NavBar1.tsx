@@ -21,7 +21,7 @@ export const NavBar1 = ({
   return (
     // <div className='w-full h-[4806px] bg-white flex-col justify-start items-center inline-flex'>
     <div
-      className={`self-stretch h-[59px] p-2 ${backgroundColor ? backgroundColor : 'bg-black'} justify-between items-center inline-flex`}
+      className={`z-[2] self-stretch h-[59px] p-2 ${backgroundColor ? backgroundColor : 'bg-black'} justify-between items-center inline-flex`}
     >
       <div className='px-2 justify-start items-center gap-2 flex'>
         <Image src={CityTechIcon} alt='CityTech Icon' />

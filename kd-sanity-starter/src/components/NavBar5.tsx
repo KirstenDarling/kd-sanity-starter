@@ -4,7 +4,7 @@ import WinkIcon from '../../public/winkIcon.svg';
 
 const NavBar5 = () => {
   return (
-    <div className='self-stretch p-2 bg-gray-800 justify-between items-center inline-flex'>
+    <div className='z-[2] self-stretch p-2 bg-gray-800 justify-between items-center inline-flex'>
       <div className='px-2 justify-start items-center gap-2 flex'>
         <div className='w-6 h-6 relative'>
           <Image alt='' src={WinkIcon} />

@@ -3,7 +3,7 @@ import NeonThriveStackIcon from '../../public/NeonThriveStackIcon.svg';
 
 const NavBar3 = () => {
   return (
-    <div className='w-full bg-black h-[67px] p-2 justify-between items-center inline-flex'>
+    <div className='z-[2] w-full bg-black h-[67px] p-2 justify-between items-center inline-flex'>
       <div className='grow shrink basis-0 h-[51px] px-2 py-4 bg-gray-100 rounded-[64px] justify-between items-center flex'>
         <div className='px-4 justify-center items-center gap-4 flex'>
           <div className='w-[50px] self-stretch px-2 justify-start items-center gap-2 flex'>

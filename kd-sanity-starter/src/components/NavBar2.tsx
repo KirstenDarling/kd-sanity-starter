@@ -3,7 +3,7 @@ import CodeGrooveIcon from '../../public/codeGrooveIcon.svg';
 
 const NavBar2 = () => {
   return (
-    <div className='self-stretch h-[59px] p-2 bg-rose-500 justify-between items-center inline-flex'>
+    <div className='z-[2] self-stretch h-[59px] p-2 bg-rose-500 justify-between items-center inline-flex'>
       <div className='px-2 justify-start items-center gap-2 flex'>
         <div className='w-6 h-6 relative'>
           <Image src={CodeGrooveIcon} alt='' />

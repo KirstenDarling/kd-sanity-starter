@@ -4,7 +4,7 @@ import Hero1 from '@/components/Hero1';
 import NavBar1 from '@/components/NavBar1';
 import NumberAccordion from '@/components/NumberAccordion';
 import SubscriptionPlans from '@/components/SubscriptionPlans';
-import TextBannerWithBackground from '@/components/TextBannerWithBackground';
+import TextBanner from '@/components/TextBanner';
 import CardRowCircles1 from '@components/CardRowCircles1';
 import Hero1Image from '../../../public/hero1Image.png';
 import MessageIcon from '../../../public/messageIcon.svg';
@@ -90,7 +90,7 @@ export default function Home() {
         textColor='text-white'
       />
       <Hero1 heading='Revolutionizing Urban Tech' buttonText='Join the Future' image={Hero1Image} />
-      <TextBannerWithBackground
+      <TextBanner
         heading="Shaping Tomorrow's Cityscape."
         subheading='Innovative Urban Solutions'
         image={BannerImageOne}

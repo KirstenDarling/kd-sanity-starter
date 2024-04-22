@@ -19,7 +19,6 @@ export const NavBar1 = ({
   textColor?: string;
 }) => {
   return (
-    // <div className='w-full h-[4806px] bg-white flex-col justify-start items-center inline-flex'>
     <div
       className={`z-[2] self-stretch h-[59px] p-2 ${backgroundColor ? backgroundColor : 'bg-black'} justify-between items-center inline-flex`}
     >
@@ -64,7 +63,6 @@ export const NavBar1 = ({
         </div>
       </div>
     </div>
-    // </div>
   );
 };
 

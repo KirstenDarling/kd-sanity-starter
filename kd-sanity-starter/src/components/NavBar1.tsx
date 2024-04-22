@@ -63,7 +63,6 @@ export const NavBar1 = ({
         </div>
       </div>
     </div>
-    // </div>
   );
 };
 

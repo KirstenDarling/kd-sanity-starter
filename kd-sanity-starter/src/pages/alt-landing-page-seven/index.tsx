@@ -6,7 +6,7 @@ import NavBar7 from '@/components/NavBar7';
 import Newsletter from '@/components/Newsletter';
 import Quote from '@/components/Quote';
 import SubscriptionPlans from '@/components/SubscriptionPlans';
-import TextBannerWithoutBackground from '@/components/TextBannerWithoutBackground';
+import TextBanner from '@/components/TextBanner';
 import MobileMockupImage7 from '../../../public/MobileMockup7.png';
 import CatPic from '../../../public/catPic.png';
 import Media7Layout from '../../../public/mediaLayout7.png';
@@ -42,10 +42,7 @@ export default function Home() {
         buttonTwoText='Learn More'
         heroImage={Media7Layout}
       />
-      <TextBannerWithoutBackground
-        heading='Pioneering Data Horizons.'
-        subheading='Data solutions reimagined'
-      />
+      <TextBanner heading='Pioneering Data Horizons.' subheading='Data solutions reimagined' />
       <MobilePreviewSection
         title='Advanced Analytics'
         subtitle='Leverage insights effectively.'

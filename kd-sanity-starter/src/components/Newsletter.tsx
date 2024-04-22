@@ -1,4 +1,4 @@
-import BackgroundImageStyles from '../styles/background.module.css';
+import Image, { StaticImageData } from 'next/image';
 
 const Newsletter = ({
   title,
@@ -8,7 +8,7 @@ const Newsletter = ({
   input,
   buttonOptionTwoText,
   legalText,
-  image,
+  backgroundImage,
 }: {
   title?: string;
   subtitle?: string;
@@ -17,13 +17,12 @@ const Newsletter = ({
   input?: string;
   buttonOptionTwoText?: string;
   legalText?: string;
-  image: 1 | 2;
+  backgroundImage: StaticImageData;
 }) => {
   return (
-    <div
-      className={` ${image == 1 ? BackgroundImageStyles.subscriptionBackground : BackgroundImageStyles.newsletterBackground} self-stretch h-[686px] px-4 py-[120px] flex-col justify-center items-center flex`}
-    >
-      <div className='self-stretch h-[446px] max-w-[480px] m-[auto] p-8 bg-black flex-col justify-center items-center gap-4 flex'>
+    <div className='relative bg-cover bg-center self-stretch h-[686px] px-4 py-[120px] flex-col justify-center items-center flex'>
+      <Image src={backgroundImage} alt='subscription' layout='fill' />
+      <div className='z-[2] self-stretch h-[446px] max-w-[480px] m-[auto] p-8 bg-black flex-col justify-center items-center gap-4 flex'>
         <div className='self-stretch h-[82px] flex-col justify-center items-center gap-2 flex'>
           <div className="self-stretch text-center text-neutral-100 text-4xl font-extrabold font-['Alegreya'] leading-[46.80px]">
             {title}

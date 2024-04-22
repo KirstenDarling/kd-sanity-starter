@@ -1,3 +1,4 @@
+import { StaticImageData } from 'next/image';
 import BackgroundImageStyles from '../styles/background.module.css';
 
 const Newsletter = ({
@@ -9,6 +10,7 @@ const Newsletter = ({
   buttonOptionTwoText,
   legalText,
   image,
+  backgroundImage,
 }: {
   title?: string;
   subtitle?: string;
@@ -18,6 +20,7 @@ const Newsletter = ({
   buttonOptionTwoText?: string;
   legalText?: string;
   image: 1 | 2;
+  backgroundImage?: StaticImageData;
 }) => {
   return (
     <div

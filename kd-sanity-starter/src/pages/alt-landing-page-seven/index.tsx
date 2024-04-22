@@ -11,6 +11,7 @@ import MobileMockupImage7 from '../../../public/MobileMockup7.png';
 import CatPic from '../../../public/catPic.png';
 import Media7Layout from '../../../public/mediaLayout7.png';
 import MessageIcon from '../../../public/messageIcon.svg';
+import NewsletterImage from '../../../public/newsletterBackground.png';
 
 export default function Home() {
   const featuredBullets = [
@@ -60,7 +61,7 @@ export default function Home() {
         input='Create a Password'
         buttonOptionTwoText='Proceed with Email'
         legalText='Terms and privacy agreed upon'
-        image={2}
+        image={NewsletterImage}
       />
       <Quote
         quote='“DataWarp transformed our data strategy and execution.”'

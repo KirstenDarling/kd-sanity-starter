@@ -10,6 +10,7 @@ import TextBannerAltStyleSplit from '@/components/TextBannerAltStyleSplit';
 import HeroImage6 from '../../../public/heroImage6.png';
 import MessageIcon from '../../../public/messageIcon.svg';
 import MobileMockupImage from '../../../public/mobileMockupImage.png';
+import SubscriptionImage from '../../../public/subscriptionBackground.png';
 
 export default function Home() {
   const featuredBullets = [
@@ -81,7 +82,7 @@ export default function Home() {
         input='Enter Access Credentials'
         buttonOptionTwoText='Continue with Secrecy'
         legalText='Consent to our Cryptic Terms and Covert Policy'
-        image={1}
+        image={SubscriptionImage}
       />
       <Footer6 />
     </div>

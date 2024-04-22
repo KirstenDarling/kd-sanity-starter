@@ -1,6 +1,4 @@
-import Image from 'next/image';
-import NewsletterImage from '../../public/newsletterBackground.png';
-import SubscriptionImage from '../../public/subscriptionBackground.png';
+import Image, { StaticImageData } from 'next/image';
 
 const Newsletter = ({
   title,
@@ -19,17 +17,11 @@ const Newsletter = ({
   input?: string;
   buttonOptionTwoText?: string;
   legalText?: string;
-  image: 1 | 2;
+  image: StaticImageData;
 }) => {
   return (
     <div className='relative bg-cover bg-center self-stretch h-[686px] px-4 py-[120px] flex-col justify-center items-center flex'>
-      {image && (
-        <Image
-          src={image == 1 ? SubscriptionImage : NewsletterImage}
-          alt='subscription'
-          layout='fill'
-        />
-      )}
+      {image && <Image src={image} alt='subscription' layout='fill' />}
       <div className='z-[2] self-stretch h-[446px] max-w-[480px] m-[auto] p-8 bg-black flex-col justify-center items-center gap-4 flex'>
         <div className='self-stretch h-[82px] flex-col justify-center items-center gap-2 flex'>
           <div className="self-stretch text-center text-neutral-100 text-4xl font-extrabold font-['Alegreya'] leading-[46.80px]">

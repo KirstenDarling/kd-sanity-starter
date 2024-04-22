@@ -13,8 +13,8 @@ const Hero1 = ({
     <div
       className={` bg-cover bg-center h-screen self-stretch px-4 pt-[183px] pb-[168px] flex-col justify-center items-center gap-12 flex`}
     >
-      <Image src={image} alt='Hero Image' layout='fill' className='z-[1]' />
-      <div className='  w-[70%] m-[auto] relative z-[9] self-stretch h-[337px] flex-col justify-center items-center gap-10 flex'>
+      {image && <Image src={image} alt='Hero Image' layout='fill' className='z-[1]' />}
+      <div className=' w-[70%] m-[auto] relative z-[9] self-stretch h-[337px] flex-col justify-center items-center gap-10 flex'>
         <div className='self-stretch h-[238px] flex-col justify-center items-center gap-4 flex'>
           <div className="self-stretch text-center text-slate-100 text-[108px] font-extrabold font-['Playfair Display'] leading-[118.80px]">
             {heading}

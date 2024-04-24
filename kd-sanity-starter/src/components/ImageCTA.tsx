@@ -1,6 +1,6 @@
 import Image, { StaticImageData } from 'next/image';
 
-const ImageCTASection2 = ({
+const ImageCTA = ({
   heading,
   subheading,
   CTAText,
@@ -37,4 +37,4 @@ const ImageCTASection2 = ({
   );
 };
 
-export default ImageCTASection2;
+export default ImageCTA;

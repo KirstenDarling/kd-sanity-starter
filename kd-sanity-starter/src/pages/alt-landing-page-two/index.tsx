@@ -1,7 +1,7 @@
 import CardRow2 from '@/components/CardRow2';
 import Footer2 from '@/components/Footer2';
 import Hero2 from '@/components/Hero2';
-import ImageCTASection2 from '@/components/ImageCTASection2';
+import ImageCTA from '@/components/ImageCTA';
 import NavBar2 from '@/components/NavBar2';
 import PortfolioImageGrid from '@/components/PortfolioImageGrid';
 import TextBannerAltStyle from '@/components/TextBannerAltStyle';
@@ -64,7 +64,7 @@ export default function Home() {
         subheading='A snapshot of my development process.'
         cards={cardsFeatured}
       />
-      <ImageCTASection2
+      <ImageCTA
         heading="Let's Collaborate!"
         subheading='Ready to build something amazing together?'
         CTAText='Get in Touch'

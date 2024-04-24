@@ -4,7 +4,7 @@ import CardRowSimplified from '@/components/CardRowSimplified';
 import Footer5 from '@/components/Footer5';
 import Hero5 from '@/components/Hero5';
 import NavBar5 from '@/components/NavBar5';
-import ProjectAccordion5 from '@/components/ProjectAccordion5';
+import ProjectAccordion from '@/components/ProjectAccordion';
 import QuoteWithImage5 from '@/components/QuoteWithImage5';
 import Timeline from '@/components/Timeline';
 import FiveSplitImage from '../../../public/fiveSplitImage.png';
@@ -85,7 +85,7 @@ export default function Home() {
         CTAButtonText='Contact Lucas'
         events={featuredEvents}
       />
-      <ProjectAccordion5 />
+      <ProjectAccordion />
       <QuoteWithImage5
         quote='“Lucas transformed our data handling, unveiling insights that propelled our growth.”'
         author='Jordan Smith, CEO of Innotech'

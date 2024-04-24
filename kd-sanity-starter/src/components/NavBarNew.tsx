@@ -6,9 +6,6 @@ import NavBarPageTitle from './NavBarPageTitle';
 export const NavBarNew = ({
   icon,
   pageTitle,
-  linkOneTitle,
-  linkTwoTitle,
-  linkThreeTitle,
   buttonText,
   isButtonRounded,
   backgroundColor,
@@ -23,9 +20,6 @@ export const NavBarNew = ({
 }: {
   icon: StaticImageData;
   pageTitle?: string;
-  linkOneTitle?: string;
-  linkTwoTitle?: string;
-  linkThreeTitle?: string;
   buttonText?: string;
   isButtonRounded?: boolean;
   buttonBorderColor?: string;

@@ -1,63 +1,43 @@
 import Image, { StaticImageData } from 'next/image';
+import { NavBarLinkSection } from './NavBarLinkSection';
 
 const NavBar3 = ({
   icon,
   pageTitle,
-  linkOneTitle,
-  linkTwoTitle,
-  linkThreeTitle,
-  linkOneTitleB,
-  linkTwoTitleB,
-  linkThreeTitleB,
-  buttonText,
-  isButtonRounded,
-  backgroundColor,
   textColor,
   font,
-  buttonBorderColor,
   isNavBar1 = true,
   linkSection = true,
+  linkSection2 = true,
   pageTitleSection = true,
+  links,
+  additionalLinks,
+  backgroundColor,
 }: {
   icon: StaticImageData;
   pageTitle?: string;
-  linkOneTitle?: string;
-  linkTwoTitle?: string;
-  linkThreeTitle?: string;
-  linkOneTitleB?: string;
-  linkTwoTitleB?: string;
-  linkThreeTitleB?: string;
-  buttonText?: string;
-  isButtonRounded?: boolean;
-  backgroundColor?: string;
   textColor?: string;
   font?: string;
-  buttonBorderColor?: string;
   isNavBar1?: boolean;
   linkSection?: boolean;
+  linkSection2?: boolean;
   pageTitleSection?: boolean;
+  links?: { title: string; URL: string }[];
+  backgroundColor?: string;
+  additionalLinks?: { title: string; URL: string }[];
 }) => {
   return (
-    <div className='z-[2] w-full bg-black h-[67px] p-2 justify-between items-center inline-flex'>
+    <div
+      className={`z-[2] w-full ${backgroundColor} h-[67px] p-2 justify-between items-center inline-flex`}
+    >
       <div className='grow shrink basis-0 h-[51px] px-2 py-4 bg-gray-100 rounded-[64px] justify-between items-center flex'>
         {linkSection && (
-          <div className='px-4 justify-center items-center gap-4 flex'>
-            <div className='w-[50px] self-stretch px-2 justify-start items-center gap-2 flex'>
-              <div className="text-zinc-900 text-xs font-normal font-['Open Sans'] leading-tight">
-                {linkOneTitle}
-              </div>
-            </div>
-            <div className='w-[65px] self-stretch px-2 justify-start items-center gap-2 flex'>
-              <div className="text-zinc-900 text-xs font-normal font-['Open Sans'] leading-tight">
-                {linkTwoTitle}
-              </div>
-            </div>
-            <div className='w-[45px] self-stretch px-2 justify-start items-center gap-2 flex'>
-              <div className="text-zinc-900 text-xs font-normal font-['Open Sans'] leading-tight">
-                {linkThreeTitle}
-              </div>
-            </div>
-          </div>
+          <NavBarLinkSection
+            textColor={textColor}
+            font={font}
+            isNavBar1={isNavBar1}
+            links={links}
+          />
         )}
         {pageTitleSection && (
           <div className='justify-center items-center gap-2 flex'>
@@ -69,24 +49,13 @@ const NavBar3 = ({
             </div>
           </div>
         )}
-        {linkSection && (
-          <div className='px-4 justify-center items-center gap-4 flex'>
-            <div className='w-[72px] self-stretch px-2 justify-start items-center gap-2 flex'>
-              <div className="text-zinc-900 text-xs font-normal font-['Open Sans'] leading-tight">
-                {linkOneTitleB}
-              </div>
-            </div>
-            <div className='w-[88px] self-stretch px-2 justify-start items-center gap-2 flex'>
-              <div className="text-zinc-900 text-xs font-normal font-['Open Sans'] leading-tight">
-                {linkTwoTitleB}
-              </div>
-            </div>
-            <div className='w-[63px] self-stretch px-2 justify-start items-center gap-2 flex'>
-              <div className="text-zinc-900 text-xs font-normal font-['Open Sans'] leading-tight">
-                {linkThreeTitleB}
-              </div>
-            </div>
-          </div>
+        {linkSection2 && (
+          <NavBarLinkSection
+            textColor={textColor}
+            font={font}
+            isNavBar1={isNavBar1}
+            links={additionalLinks}
+          />
         )}
       </div>
     </div>

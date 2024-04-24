@@ -33,18 +33,26 @@ export default function Home() {
     CTAText: 'Seize the Future',
   };
 
+  const links = [
+    { title: 'Portal', URL: 'https://www.google.com' },
+    { title: 'Dystopia', URL: 'https://www.google.com' },
+    { title: 'Crew', URL: 'https://www.google.com' },
+  ];
+
+  const additionalLinks = [
+    { title: 'Manifesto', URL: 'https://www.google.com' },
+    { title: '@cyberpulse', URL: 'https://www.google.com' },
+    { title: 'Connect', URL: 'https://www.google.com' },
+  ];
+
   return (
     <div className='w-full h-[4681px] bg-white flex-col justify-start items-center inline-flex'>
       <NavBar3
         icon={NeonThriveStackIcon}
         pageTitle='Neon Thrive'
-        linkOneTitle='Portal'
-        linkTwoTitle='Dystopia'
-        linkThreeTitle='Crew'
-        linkOneTitleB='Manifesto'
-        linkTwoTitleB='@cyberpulse'
-        linkThreeTitleB='Connect'
-        backgroundColor=''
+        links={links}
+        additionalLinks={additionalLinks}
+        backgroundColor='bg-black'
         textColor=''
         font=''
       />

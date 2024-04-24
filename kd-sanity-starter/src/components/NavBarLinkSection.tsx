@@ -1,4 +1,4 @@
-import Link from './Link';
+import LinkSection from './LinkSection';
 
 export const NavBarLinkSection = ({
   textColor,
@@ -15,9 +15,10 @@ export const NavBarLinkSection = ({
     <div className={`w-${isNavBar1 ? '334' : '307'} px-4 justify-start items-center gap-4 flex`}>
       {links &&
         links.map((link, index) => (
-          <Link
+          <LinkSection
             key={index}
             title={link.title}
+            URL={link.URL}
             textColor={textColor}
             font={font}
             isNavBar1={isNavBar1}

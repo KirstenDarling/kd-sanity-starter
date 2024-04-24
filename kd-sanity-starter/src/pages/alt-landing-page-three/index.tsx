@@ -44,6 +44,9 @@ export default function Home() {
         linkOneTitleB='Manifesto'
         linkTwoTitleB='@cyberpulse'
         linkThreeTitleB='Connect'
+        backgroundColor=''
+        textColor=''
+        font=''
       />
       <Hero3
         heading="I'm Nova, Cybernetic Enthusiast."

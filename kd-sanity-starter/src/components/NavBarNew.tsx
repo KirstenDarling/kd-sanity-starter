@@ -1,4 +1,5 @@
-import Image, { StaticImageData } from 'next/image';
+import { StaticImageData } from 'next/image';
+import NavBarPageTitle from './NavBarPageTitle';
 
 export const NavBarNew = ({
   icon,
@@ -24,10 +25,10 @@ export const NavBarNew = ({
   linkThreeTitle?: string;
   buttonText?: string;
   isButtonRounded?: boolean;
+  buttonBorderColor?: string;
   backgroundColor?: string;
   textColor?: string;
   font?: string;
-  buttonBorderColor?: string;
   isNavBar1?: boolean;
   pageTitleSection?: boolean;
   linkSection?: boolean;
@@ -38,16 +39,13 @@ export const NavBarNew = ({
       className={`z-[2] self-stretch h-[59px] p-2 ${backgroundColor} justify-between items-center inline-flex`}
     >
       {pageTitleSection && (
-        <div className='px-2 justify-start items-center gap-2 flex'>
-          <div className={isNavBar1 ? 'w-6 h-6 relative' : ''}>
-            <Image src={icon} alt='' />
-          </div>
-          <div
-            className={`${textColor} ${isNavBar1 ? 'text-base' : 'text-sm'} font-normal ${font} ${isNavBar1 ? 'leading-normal' : 'leading-[21px]'}`}
-          >
-            {pageTitle}
-          </div>
-        </div>
+        <NavBarPageTitle
+          icon={icon}
+          pageTitle={pageTitle}
+          textColor={textColor}
+          font={font}
+          isNavBar1={isNavBar1}
+        />
       )}
       {linkSection && (
         <div

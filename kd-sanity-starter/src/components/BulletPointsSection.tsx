@@ -1,7 +1,7 @@
 import { StaticImageData } from 'next/image';
 import FeaturedBullets from './FeaturedBullets';
 
-const BulletPointsSection1 = ({
+const BulletPointsSection = ({
   heading,
   subheading,
   features,
@@ -34,4 +34,4 @@ const BulletPointsSection1 = ({
   );
 };
 
-export default BulletPointsSection1;
+export default BulletPointsSection;

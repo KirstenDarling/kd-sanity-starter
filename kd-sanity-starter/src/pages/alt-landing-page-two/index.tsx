@@ -3,7 +3,7 @@ import Footer2 from '@/components/Footer2';
 import Hero2 from '@/components/Hero2';
 import ImageCTASection2 from '@/components/ImageCTASection2';
 import NavBar2 from '@/components/NavBar2';
-import PortfolioImageGrid2 from '@/components/PortfolioImageGrid2';
+import PortfolioImageGrid from '@/components/PortfolioImageGrid';
 import TextBannerAltStyle from '@/components/TextBannerAltStyle';
 import LummiGroup1Image from '../../../public/ImageLummiGroup1.png';
 import LummiGroup2Image from '../../../public/ImageLummiGroup2.png';
@@ -49,7 +49,7 @@ export default function Home() {
         heading='Creative Ethos'
         subheading='Fueling innovation with playful designs and robust code that encapsulate my journey as a mobile engineer.'
       />
-      <PortfolioImageGrid2
+      <PortfolioImageGrid
         heading='Portfolio Highlights'
         subheading='A peek into my professional adventures.'
         image1={LummiImage1}

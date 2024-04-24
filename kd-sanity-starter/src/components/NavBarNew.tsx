@@ -1,4 +1,5 @@
 import { StaticImageData } from 'next/image';
+import NavBarButtonSection from './NavBarButtonSection';
 import NavBarPageTitle from './NavBarPageTitle';
 
 export const NavBarNew = ({
@@ -75,15 +76,14 @@ export const NavBarNew = ({
         </div>
       )}
       {buttonSection && (
-        <div
-          className={`w-${isNavBar1 ? '121' : '147'} px-5 py-3 ${isButtonRounded ? 'rounded-lg' : ''} border ${buttonBorderColor} justify-center items-center gap-1 flex`}
-        >
-          <div className='px-1 justify-center items-center gap-2 flex'>
-            <div className={`text-center ${textColor} text-xs font-normal ${font} leading-tight`}>
-              {buttonText}
-            </div>
-          </div>
-        </div>
+        <NavBarButtonSection
+          buttonText={buttonText}
+          isButtonRounded={isButtonRounded}
+          textColor={textColor}
+          font={font}
+          buttonBorderColor={buttonBorderColor}
+          isNavBar1={isNavBar1}
+        />
       )}
     </div>
   );

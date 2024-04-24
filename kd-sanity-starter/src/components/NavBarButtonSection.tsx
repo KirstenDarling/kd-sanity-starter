@@ -1,37 +1,17 @@
-import { StaticImageData } from 'next/image';
-
-export const NavBarNew = ({
-  icon,
-  pageTitle,
-  linkOneTitle,
-  linkTwoTitle,
-  linkThreeTitle,
+export const NavBarButtonSection = ({
   buttonText,
   isButtonRounded,
-  backgroundColor,
   textColor,
   font,
   buttonBorderColor,
   isNavBar1 = true,
-  pageTitleSection = true,
-  linkSection = true,
-  buttonSection = true,
 }: {
-  icon: StaticImageData;
-  pageTitle?: string;
-  linkOneTitle?: string;
-  linkTwoTitle?: string;
-  linkThreeTitle?: string;
   buttonText?: string;
   isButtonRounded?: boolean;
   buttonBorderColor?: string;
-  backgroundColor?: string;
   textColor?: string;
   font?: string;
   isNavBar1?: boolean;
-  pageTitleSection?: boolean;
-  linkSection?: boolean;
-  buttonSection?: boolean;
 }) => {
   return (
     <div
@@ -46,4 +26,4 @@ export const NavBarNew = ({
   );
 };
 
-export default NavBarNew;
+export default NavBarButtonSection;

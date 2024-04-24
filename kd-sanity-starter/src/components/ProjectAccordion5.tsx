@@ -1,4 +1,4 @@
-const ProjectAccordion5 = () => {
+const ProjectAccordion = () => {
   return (
     <div className='self-stretch h-[1202px] px-16 py-[120px] bg-gray-800 flex-col justify-start items-center gap-16 flex'>
       <div className='self-stretch h-[962px] flex-col justify-start items-start gap-16 flex'>
@@ -34,4 +34,4 @@ const ProjectAccordion5 = () => {
   );
 };
 
-export default ProjectAccordion5;
+export default ProjectAccordion;

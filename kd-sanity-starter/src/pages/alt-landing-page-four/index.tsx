@@ -75,6 +75,7 @@ export default function Home() {
         heading='Study anytime, anywhere.'
         subheading='A new era of online learning.'
         image={BannerImageThree}
+        isSplitStyle={false}
       />
       <CardRow4
         heading='Comfort & Convenience'

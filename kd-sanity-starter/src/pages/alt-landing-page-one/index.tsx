@@ -94,6 +94,7 @@ export default function Home() {
         heading="Shaping Tomorrow's Cityscape."
         subheading='Innovative Urban Solutions'
         image={BannerImageOne}
+        isSplitStyle={false}
       />
       <BulletPointsSection
         heading='Smart Connectivity'

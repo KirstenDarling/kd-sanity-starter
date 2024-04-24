@@ -7,6 +7,8 @@ const TextBanner = ({
   eyebrowText,
   text,
   withBackground = true,
+
+  splitText,
 }: {
   heading?: string;
   subheading?: string;
@@ -14,11 +16,12 @@ const TextBanner = ({
   eyebrowText?: string;
   text?: string;
   withBackground?: boolean;
+  splitText?: string;
 }) => {
-  const hasSplitStyle = eyebrowText && heading && text;
+  const hasSplitStyle = eyebrowText && heading && splitText;
 
   return (
-    <div className={`w-full h-full relative ${!withBackground && 'bg-rose-500'}`}>
+    <div className={`w-full h-full relative min-h-[9%] ${!withBackground && 'bg-rose-500'}`}>
       {withBackground && image && (
         <Image
           alt=''
@@ -31,7 +34,7 @@ const TextBanner = ({
         />
       )}
       <div
-        className={`absolute top-0 z-[5] text-center self-stretch px-4 py-[184px] justify-center items-center gap-12 inline-flex ${
+        className={`absolute ${!hasSplitStyle ? 'w-[100vw]' : 'w-[50%]'} top-0 z-[5] text-center self-stretch px-4 py-[184px] justify-center items-center gap-12 inline-flex ${
           withBackground ? 'bg-black bg-opacity-20' : 'bg-black text-black'
         }`}
       >

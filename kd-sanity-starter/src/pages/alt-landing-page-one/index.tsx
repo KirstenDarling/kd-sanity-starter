@@ -1,11 +1,12 @@
 import BulletPointsSection from '@/components/BulletPointsSection';
 import Footer1 from '@/components/Footer1';
 import Hero1 from '@/components/Hero1';
-import NavBar1 from '@/components/NavBar1';
+import NavBarNew from '@/components/NavBarNew';
 import NumberAccordion from '@/components/NumberAccordion';
 import SubscriptionPlans from '@/components/SubscriptionPlans';
 import TextBanner from '@/components/TextBanner';
 import CardRowCircles1 from '@components/CardRowCircles1';
+import CityTechIcon from '../../../public/cityTechIcon.svg';
 import Hero1Image from '../../../public/hero1Image.png';
 import MessageIcon from '../../../public/messageIcon.svg';
 import CircleOne from '../../../public/oneCircleOne.png';
@@ -80,7 +81,7 @@ export default function Home() {
 
   return (
     <div className='w-full h-[4806px] bg-white flex-col justify-start items-center inline-flex'>
-      <NavBar1
+      <NavBarNew
         pageTitle='CityTech'
         linkOneTitle='Dashboard'
         linkTwoTitle='Innovations'
@@ -88,6 +89,9 @@ export default function Home() {
         buttonText='Explore Now'
         backgroundColor='bg-black'
         textColor='text-white'
+        icon={CityTechIcon}
+        buttonBorderColor='border-neutral-100'
+        font="font-['Fira Sans']"
       />
       <Hero1 heading='Revolutionizing Urban Tech' buttonText='Join the Future' image={Hero1Image} />
       <TextBanner

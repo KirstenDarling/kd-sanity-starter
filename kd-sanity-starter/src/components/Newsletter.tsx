@@ -1,5 +1,4 @@
 import { StaticImageData } from 'next/image';
-import BackgroundImageStyles from '../styles/background.module.css';
 
 const Newsletter = ({
   title,
@@ -24,7 +23,7 @@ const Newsletter = ({
 }) => {
   return (
     <div
-      className={` ${image == 1 ? BackgroundImageStyles.subscriptionBackground : BackgroundImageStyles.newsletterBackground} self-stretch h-[686px] px-4 py-[120px] flex-col justify-center items-center flex`}
+    // className={` ${image == 1 ? BackgroundImageStyles.subscriptionBackground : BackgroundImageStyles.newsletterBackground} self-stretch h-[686px] px-4 py-[120px] flex-col justify-center items-center flex`}
     >
       <div className='self-stretch h-[446px] max-w-[480px] m-[auto] p-8 bg-black flex-col justify-center items-center gap-4 flex'>
         <div className='self-stretch h-[82px] flex-col justify-center items-center gap-2 flex'>

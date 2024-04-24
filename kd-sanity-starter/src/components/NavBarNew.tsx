@@ -19,6 +19,7 @@ export const NavBarNew = ({
   pageTitleSection = true,
   linkSection = true,
   buttonSection = true,
+  links,
 }: {
   icon: StaticImageData;
   pageTitle?: string;
@@ -35,6 +36,7 @@ export const NavBarNew = ({
   pageTitleSection?: boolean;
   linkSection?: boolean;
   buttonSection?: boolean;
+  links?: { title: string; URL: string }[];
 }) => {
   return (
     <div
@@ -50,14 +52,7 @@ export const NavBarNew = ({
         />
       )}
       {linkSection && (
-        <NavBarLinkSection
-          linkOneTitle={linkOneTitle}
-          linkTwoTitle={linkTwoTitle}
-          linkThreeTitle={linkThreeTitle}
-          textColor={textColor}
-          font={font}
-          isNavBar1={isNavBar1}
-        />
+        <NavBarLinkSection textColor={textColor} font={font} isNavBar1={isNavBar1} links={links} />
       )}
       {buttonSection && (
         <NavBarButtonSection

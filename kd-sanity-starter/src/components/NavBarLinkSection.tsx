@@ -1,37 +1,17 @@
-import { StaticImageData } from 'next/image';
-
-export const NavBarNew = ({
-  icon,
-  pageTitle,
+export const NavBarLinkSection = ({
   linkOneTitle,
   linkTwoTitle,
   linkThreeTitle,
-  buttonText,
-  isButtonRounded,
-  backgroundColor,
   textColor,
   font,
-  buttonBorderColor,
   isNavBar1 = true,
-  pageTitleSection = true,
-  linkSection = true,
-  buttonSection = true,
 }: {
-  icon: StaticImageData;
-  pageTitle?: string;
   linkOneTitle?: string;
   linkTwoTitle?: string;
   linkThreeTitle?: string;
-  buttonText?: string;
-  isButtonRounded?: boolean;
-  buttonBorderColor?: string;
-  backgroundColor?: string;
   textColor?: string;
   font?: string;
   isNavBar1?: boolean;
-  pageTitleSection?: boolean;
-  linkSection?: boolean;
-  buttonSection?: boolean;
 }) => {
   return (
     <div className={`w-${isNavBar1 ? '334' : '307'} px-4 justify-start items-center gap-4 flex`}>
@@ -60,4 +40,4 @@ export const NavBarNew = ({
   );
 };
 
-export default NavBarNew;
+export default NavBarLinkSection;

@@ -2,12 +2,13 @@ import CardRow2 from '@/components/CardRow2';
 import Footer2 from '@/components/Footer2';
 import Hero2 from '@/components/Hero2';
 import ImageCTA from '@/components/ImageCTA';
-import NavBar2 from '@/components/NavBar2';
+import NavBarNew from '@/components/NavBarNew';
 import PortfolioImageGrid from '@/components/PortfolioImageGrid';
 import TextBanner from '@/components/TextBanner';
 import LummiGroup1Image from '../../../public/ImageLummiGroup1.png';
 import LummiGroup2Image from '../../../public/ImageLummiGroup2.png';
 import LummiGroup3Image from '../../../public/ImageLummiGroup3.png';
+import CodeGrooveIcon from '../../../public/codeGrooveIcon.svg';
 import LummiImage1 from '../../../public/image-lummi1.png';
 import LummiImage2 from '../../../public/imageLummi2.png';
 import LummiImage3 from '../../../public/imageLummi3.png';
@@ -39,7 +40,19 @@ export default function Home() {
   ];
   return (
     <div className='w-full h-[4071px] bg-white flex-col justify-start items-center inline-flex'>
-      <NavBar2 />
+      <NavBarNew
+        pageTitle='CodeGroove'
+        linkOneTitle='Start'
+        linkTwoTitle='Profile'
+        linkThreeTitle='Collaborators'
+        buttonText='Explore My Work'
+        icon={CodeGrooveIcon}
+        isButtonRounded={true}
+        backgroundColor='bg-rose-500'
+        textColor='text-orange-200'
+        font="font-['Work Sans']"
+        buttonBorderColor='border-orange-200'
+      />
       <Hero2
         heading='Crafting Code Creatively'
         subheading='Diving deep into development.'

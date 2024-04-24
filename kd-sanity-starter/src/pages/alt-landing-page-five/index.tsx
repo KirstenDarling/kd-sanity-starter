@@ -5,7 +5,7 @@ import Footer5 from '@/components/Footer5';
 import Hero5 from '@/components/Hero5';
 import NavBar5 from '@/components/NavBar5';
 import ProjectAccordion5 from '@/components/ProjectAccordion5';
-import QuoteWithImage5 from '@/components/QuoteWithImage5';
+import QuoteWithImage from '@/components/QuoteWithImage';
 import Timeline from '@/components/Timeline';
 import FiveSplitImage from '../../../public/fiveSplitImage.png';
 import Image1 from '../../../public/hero5image1.png';
@@ -86,10 +86,11 @@ export default function Home() {
         events={featuredEvents}
       />
       <ProjectAccordion5 />
-      <QuoteWithImage5
+      <QuoteWithImage
         quote='“Lucas transformed our data handling, unveiling insights that propelled our growth.”'
         author='Jordan Smith, CEO of Innotech'
         image={FiveSplitImage}
+        bgColor='gray-800'
       />
       <Footer5 />
     </div>

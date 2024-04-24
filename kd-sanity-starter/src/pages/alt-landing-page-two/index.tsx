@@ -4,7 +4,7 @@ import Hero2 from '@/components/Hero2';
 import ImageCTA from '@/components/ImageCTA';
 import NavBar2 from '@/components/NavBar2';
 import PortfolioImageGrid from '@/components/PortfolioImageGrid';
-import TextBannerAltStyle from '@/components/TextBannerAltStyle';
+import TextBanner from '@/components/TextBanner';
 import LummiGroup1Image from '../../../public/ImageLummiGroup1.png';
 import LummiGroup2Image from '../../../public/ImageLummiGroup2.png';
 import LummiGroup3Image from '../../../public/ImageLummiGroup3.png';
@@ -45,7 +45,7 @@ export default function Home() {
         subheading='Diving deep into development.'
         buttonText='See Projects'
       />
-      <TextBannerAltStyle
+      <TextBanner
         heading='Creative Ethos'
         subheading='Fueling innovation with playful designs and robust code that encapsulate my journey as a mobile engineer.'
       />

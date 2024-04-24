@@ -6,7 +6,7 @@ import MobilePreviewSection from '@/components/MobilePreviewSection';
 import NavBar6 from '@/components/NavBar6';
 import Newsletter from '@/components/Newsletter';
 import NumberAccordion from '@/components/NumberAccordion';
-import TextBannerAltStyle from '@/components/TextBannerAltStyle';
+import TextBanner from '@/components/TextBanner';
 import HeroImage6 from '../../../public/heroImage6.png';
 import MessageIcon from '../../../public/messageIcon.svg';
 import MobileMockupImage from '../../../public/mobileMockupImage.png';
@@ -58,7 +58,7 @@ export default function Home() {
         buttonText='Initiate Your Journey'
         heroImage={HeroImage6}
       />
-      <TextBannerAltStyle
+      <TextBanner
         eyebrowText='Our Ethos'
         heading='Crafting the Cyber Narrative'
         text='Innovation through every byte.'

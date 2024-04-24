@@ -6,7 +6,7 @@ import LummiImage4 from '../../public/imageLummi4.png';
 import LummiImage5 from '../../public/imageLummi5.png';
 import LummiImage6 from '../../public/imageLummi6.png';
 
-const PortfolioImageGrid2 = ({
+const PortfolioImageGrid = ({
   heading,
   subheading,
   image1,
@@ -71,4 +71,4 @@ const PortfolioImageGrid2 = ({
   );
 };
 
-export default PortfolioImageGrid2;
+export default PortfolioImageGrid;

@@ -5,6 +5,7 @@ import NavBar3 from '@/components/NavBar3';
 import ProjectLargeImageAccordion3 from '@/components/ProjectLargeImageAccordion3';
 import QuoteWithImage from '@/components/QuoteWithImage';
 import TextBanner from '@/components/TextBanner';
+import NeonThriveStackIcon from '../../../public/NeonThriveStackIcon.svg';
 import Nova1 from '../../../public/Nova1.png';
 import BannerImageTwo from '../../../public/NovaBackground.png';
 import NovaPerson2 from '../../../public/NovaPerson2.png';
@@ -34,7 +35,16 @@ export default function Home() {
 
   return (
     <div className='w-full h-[4681px] bg-white flex-col justify-start items-center inline-flex'>
-      <NavBar3 />
+      <NavBar3
+        icon={NeonThriveStackIcon}
+        pageTitle='Neon Thrive'
+        linkOneTitle='Portal'
+        linkTwoTitle='Dystopia'
+        linkThreeTitle='Crew'
+        linkOneTitleB='Manifesto'
+        linkTwoTitleB='@cyberpulse'
+        linkThreeTitleB='Connect'
+      />
       <Hero3
         heading="I'm Nova, Cybernetic Enthusiast."
         subheading='Navigate the neon-lit streets.'

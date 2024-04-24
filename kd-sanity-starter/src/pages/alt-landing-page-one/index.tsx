@@ -1,4 +1,4 @@
-import BulletPointsSection1 from '@/components/BulletPointsSection1';
+import BulletPointsSection from '@/components/BulletPointsSection';
 import Footer1 from '@/components/Footer1';
 import Hero1 from '@/components/Hero1';
 import NavBar1 from '@/components/NavBar1';
@@ -95,7 +95,7 @@ export default function Home() {
         subheading='Innovative Urban Solutions'
         image={BannerImageOne}
       />
-      <BulletPointsSection1
+      <BulletPointsSection
         heading='Smart Connectivity'
         subheading='Seamless City Integration'
         features={featuredBullets}

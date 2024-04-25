@@ -21,9 +21,6 @@ type Story = StoryObj<typeof meta>;
 export const Dark: Story = {
   args: {
     pageTitle: 'CityTech',
-    linkOneTitle: 'Dashboard',
-    linkTwoTitle: 'Innovations',
-    linkThreeTitle: 'Our Crew',
     buttonText: 'Explore Now',
     backgroundColor: 'bg-black',
     textColor: 'text-white',
@@ -34,9 +31,6 @@ export const Dark: Story = {
 export const Light: Story = {
   args: {
     pageTitle: 'CityTech',
-    linkOneTitle: 'Dashboard',
-    linkTwoTitle: 'Innovations',
-    linkThreeTitle: 'Our Crew',
     buttonText: 'Explore Now',
     backgroundColor: 'bg-white',
     textColor: 'text-black',

@@ -90,9 +90,6 @@ export default function Home() {
       <NavBarNew
         pageTitle='CityTech'
         links={links}
-        linkOneTitle='Dashboard'
-        linkTwoTitle='Innovations'
-        linkThreeTitle='Our Crew'
         buttonText='Explore Now'
         backgroundColor='bg-black'
         textColor='text-white'

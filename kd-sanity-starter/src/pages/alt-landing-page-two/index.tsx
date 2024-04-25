@@ -42,9 +42,6 @@ export default function Home() {
     <div className='w-full h-[4071px] bg-white flex-col justify-start items-center inline-flex'>
       <NavBarNew
         pageTitle='CodeGroove'
-        linkOneTitle='Start'
-        linkTwoTitle='Profile'
-        linkThreeTitle='Collaborators'
         buttonText='Explore My Work'
         icon={CodeGrooveIcon}
         isButtonRounded={true}

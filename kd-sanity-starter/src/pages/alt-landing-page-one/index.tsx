@@ -79,13 +79,17 @@ export default function Home() {
     { title: 'Samira Khan', subtitle: 'Head of Data Science', image: CircleThree },
   ];
 
+  const links = [
+    { title: 'Dashboard', URL: 'd' },
+    { title: 'Innovations', URL: 'd' },
+    { title: 'Our Crew', URL: '' },
+  ];
+
   return (
     <div className='w-full h-[4806px] bg-white flex-col justify-start items-center inline-flex'>
       <NavBarNew
         pageTitle='CityTech'
-        linkOneTitle='Dashboard'
-        linkTwoTitle='Innovations'
-        linkThreeTitle='Our Crew'
+        links={links}
         buttonText='Explore Now'
         backgroundColor='bg-black'
         textColor='text-white'

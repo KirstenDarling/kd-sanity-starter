@@ -5,6 +5,7 @@ import NavBar3 from '@/components/NavBar3';
 import ProjectLargeImageAccordion3 from '@/components/ProjectLargeImageAccordion3';
 import QuoteWithImage from '@/components/QuoteWithImage';
 import TextBanner from '@/components/TextBanner';
+import NeonThriveStackIcon from '../../../public/NeonThriveStackIcon.svg';
 import Nova1 from '../../../public/Nova1.png';
 import BannerImageTwo from '../../../public/NovaBackground.png';
 import NovaPerson2 from '../../../public/NovaPerson2.png';
@@ -32,9 +33,29 @@ export default function Home() {
     CTAText: 'Seize the Future',
   };
 
+  const links = [
+    { title: 'Portal', URL: 'https://www.google.com' },
+    { title: 'Dystopia', URL: 'https://www.google.com' },
+    { title: 'Crew', URL: 'https://www.google.com' },
+  ];
+
+  const additionalLinks = [
+    { title: 'Manifesto', URL: 'https://www.google.com' },
+    { title: '@cyberpulse', URL: 'https://www.google.com' },
+    { title: 'Connect', URL: 'https://www.google.com' },
+  ];
+
   return (
     <div className='w-full h-[4681px] bg-white flex-col justify-start items-center inline-flex'>
-      <NavBar3 />
+      <NavBar3
+        icon={NeonThriveStackIcon}
+        pageTitle='Neon Thrive'
+        links={links}
+        additionalLinks={additionalLinks}
+        backgroundColor='bg-black'
+        textColor=''
+        font=''
+      />
       <Hero3
         heading="I'm Nova, Cybernetic Enthusiast."
         subheading='Navigate the neon-lit streets.'

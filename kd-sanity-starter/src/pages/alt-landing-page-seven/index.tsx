@@ -45,7 +45,7 @@ export default function Home() {
       <TextBanner
         heading='Pioneering Data Horizons.'
         subheading='Data solutions reimagined'
-        isSplitStyle={false}
+        // isSplitStyle={false}
       />
       <MobilePreviewSection
         title='Advanced Analytics'

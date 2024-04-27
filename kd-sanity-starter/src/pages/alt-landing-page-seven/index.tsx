@@ -42,7 +42,11 @@ export default function Home() {
         buttonTwoText='Learn More'
         heroImage={Media7Layout}
       />
-      <TextBanner heading='Pioneering Data Horizons.' subheading='Data solutions reimagined' />
+      <TextBanner
+        heading='Pioneering Data Horizons.'
+        subheading='Data solutions reimagined'
+        // isSplitStyle={false}
+      />
       <MobilePreviewSection
         title='Advanced Analytics'
         subtitle='Leverage insights effectively.'

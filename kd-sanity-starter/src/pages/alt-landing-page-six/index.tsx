@@ -61,7 +61,7 @@ export default function Home() {
       <TextBanner
         eyebrowText='Our Ethos'
         heading='Crafting the Cyber Narrative'
-        text='Innovation through every byte.'
+        splitText='Innovation through every byte.'
       />
       <MobilePreviewSection
         title='Stealth Operations'

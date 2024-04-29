@@ -2,7 +2,7 @@
 import Footer7 from '@/components/Footer7';
 import Hero7 from '@/components/Hero7';
 import MobilePreviewSection from '@/components/MobilePreviewSection';
-import NavBar7 from '@/components/NavBar7';
+import NavBarWithLogin from '@/components/NavBarWithLogin';
 import Newsletter from '@/components/Newsletter';
 import Quote from '@/components/Quote';
 import SubscriptionPlans from '@/components/SubscriptionPlans';
@@ -34,7 +34,7 @@ export default function Home() {
 
   return (
     <div className='w-full h-[4818.97px] bg-white flex-col justify-start items-center inline-flex'>
-      <NavBar7 />
+      <NavBarWithLogin />
       <Hero7
         heading='Unveiling Future Data'
         subheading='Explore data-driven innovation.'

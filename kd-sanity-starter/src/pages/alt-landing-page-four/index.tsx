@@ -1,10 +1,10 @@
 // import Image from 'next/image';
 
 import CardRow4 from '@/components/CardRow4';
+import CombinedNavBar from '@/components/CombinedNavBar';
 import FAQSection from '@/components/FAQSection';
 import Footer4 from '@/components/Footer4';
 import Hero4 from '@/components/Hero4';
-import NavBar4 from '@/components/NavBar4';
 import NumberAccordion from '@/components/NumberAccordion';
 import SubscriptionPlans from '@/components/SubscriptionPlans';
 import TextBanner from '@/components/TextBanner';
@@ -16,6 +16,7 @@ import Image4 from '../../../public/fourCard4.png';
 import Image5 from '../../../public/fourCard5.png';
 import Image6 from '../../../public/fourCard6.png';
 import Hero4Image from '../../../public/hero4.png';
+import SunIcon from '../../../public/sunIcon.svg';
 
 export default function Home() {
   const featuredQuestions = [
@@ -61,9 +62,29 @@ export default function Home() {
     },
   ];
 
+  const links = [
+    { title: 'Welcome', URL: 'https://www.google.com' },
+    { title: 'Our Spaces', URL: 'https://www.google.com' },
+    { title: 'Our Story', URL: 'https://www.google.com' },
+  ];
+
+  const additionalLinks = [
+    { title: 'Learn More', URL: 'https://www.google.com' },
+    { title: '@cyberstudyhall', URL: 'https://www.google.com' },
+    { title: 'Get in Touch', URL: 'https://www.google.com' },
+  ];
+
   return (
     <div className='w-full h-[5453px] bg-white flex-col justify-start items-center inline-flex'>
-      <NavBar4 />
+      <CombinedNavBar
+        icon={SunIcon}
+        pageTitle='CyberStudy Cafe'
+        links={links}
+        additionalLinks={additionalLinks}
+        backgroundColor='bg-black'
+        textColor='text-white'
+        font=''
+      />
       <Hero4
         heading='Revolutionize Your Study'
         subheading='Join the digital study revolution'

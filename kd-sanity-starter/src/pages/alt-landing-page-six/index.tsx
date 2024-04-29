@@ -1,9 +1,9 @@
 // import Image from 'next/image';
 
+import CombinedNavBar from '@/components/CombinedNavBar';
 import Footer6 from '@/components/Footer6';
 import Hero6 from '@/components/Hero6';
 import MobilePreviewSection from '@/components/MobilePreviewSection';
-import NavBar6 from '@/components/NavBar6';
 import Newsletter from '@/components/Newsletter';
 import NumberAccordion from '@/components/NumberAccordion';
 import TextBanner from '@/components/TextBanner';
@@ -11,6 +11,7 @@ import HeroImage6 from '../../../public/heroImage6.png';
 import MessageIcon from '../../../public/messageIcon.svg';
 import MobileMockupImage from '../../../public/mobileMockupImage.png';
 import SubscriptionImage from '../../../public/subscriptionBackground.png';
+import SunIcon from '../../../public/sunIcon.svg';
 
 export default function Home() {
   const featuredBullets = [
@@ -49,9 +50,30 @@ export default function Home() {
     },
   ];
 
+  const links = [
+    { title: 'Synopsis', URL: 'https://www.google.com' },
+    { title: 'Code Vault', URL: 'https://www.google.com' },
+    { title: 'Hackers', URL: 'https://www.google.com' },
+  ];
+
+  const additionalLinks = [
+    { title: 'Manifesto', URL: 'https://www.google.com' },
+    { title: '@darkpurplehack', URL: 'https://www.google.com' },
+    { title: 'Infiltrate Us', URL: 'https://www.google.com' },
+  ];
+
   return (
     <div className='w-full h-[4106px] bg-white flex-col justify-start items-center inline-flex'>
-      <NavBar6 />
+      <CombinedNavBar
+        icon={SunIcon}
+        pageTitle='ShadowBytes'
+        links={links}
+        additionalLinks={additionalLinks}
+        backgroundEdges='bg-white'
+        backgroundColor='bg-black'
+        textColor='text-white'
+        font=''
+      />
       <Hero6
         heading='Unveil the Digital Shadows'
         subheading='Piercing through cybersecurity.'

@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import HomeIcon from '../../public/homeIcon.svg';
 
-const NavBar7 = () => {
+const NavBarWithLogin = () => {
   return (
     <div className='z-[2] bg-black text-white self-stretch p-2 justify-between items-center inline-flex'>
       <div className='w-[102px] self-stretch pl-2 pr-4 bg-black rounded-lg justify-start items-center gap-1 flex'>
@@ -49,4 +49,4 @@ const NavBar7 = () => {
   );
 };
 
-export default NavBar7;
+export default NavBarWithLogin;

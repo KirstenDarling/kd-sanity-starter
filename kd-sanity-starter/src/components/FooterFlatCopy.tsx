@@ -4,7 +4,7 @@ import LinkedInIcon from '../../public/LinkedinLogo.svg';
 import TwitterIcon from '../../public/TwitterLogo.svg';
 import HeartIcon from '../../public/heartIcon.svg';
 
-const Footer6 = () => {
+const FooterFlatCopy = () => {
   return (
     <div className='self-stretch px-8 py-12 bg-black justify-between items-center inline-flex'>
       <div className='grow shrink basis-0 h-[58px] justify-between items-center flex'>
@@ -48,4 +48,4 @@ const Footer6 = () => {
   );
 };
 
-export default Footer6;
+export default FooterFlatCopy;

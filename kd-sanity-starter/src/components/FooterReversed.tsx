@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import RightArrowIcon from '../../public/rightArrowIcon.svg';
 
-const Footer3 = () => {
+const FooterReversed = () => {
   return (
     <div className='self-stretch h-[290px] px-8 py-16 bg-black flex-col justify-start items-start gap-8 flex'>
       <div className='self-stretch justify-start items-start gap-10 inline-flex'>
@@ -86,4 +86,4 @@ const Footer3 = () => {
   );
 };
 
-export default Footer3;
+export default FooterReversed;

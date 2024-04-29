@@ -3,7 +3,7 @@
 import CardRowSimplified from '@/components/CardRowSimplified';
 import Footer5 from '@/components/Footer5';
 import Hero5 from '@/components/Hero5';
-import NavBar5 from '@/components/NavBar5';
+import NavBarWithSearch from '@/components/NavBarWithSearch';
 import ProjectAccordion from '@/components/ProjectAccordion';
 import QuoteWithImage from '@/components/QuoteWithImage';
 import Timeline from '@/components/Timeline';
@@ -56,7 +56,7 @@ export default function Home() {
 
   return (
     <div className='w-full h-[4526px] bg-white flex-col justify-start items-center inline-flex'>
-      <NavBar5 />
+      <NavBarWithSearch />
       <Hero5
         heading='Hi, I&amp;m Lucas Brenton, Data Engineer.'
         subheading='Crafting data architectures and analytics for impactful insights in various

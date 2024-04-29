@@ -2,7 +2,7 @@ import Image from 'next/image';
 import DropdownIcon from '../../public/dropdownIcon.svg';
 import WinkIcon from '../../public/winkIcon.svg';
 
-const NavBar5 = () => {
+const NavBarWithSearch = () => {
   return (
     <div className='z-[2] self-stretch p-2 bg-gray-800 justify-between items-center inline-flex'>
       <div className='px-2 justify-start items-center gap-2 flex'>
@@ -41,4 +41,4 @@ const NavBar5 = () => {
   );
 };
 
-export default NavBar5;
+export default NavBarWithSearch;

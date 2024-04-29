@@ -1,7 +1,7 @@
 import CardsSquare3 from '@/components/CardsSquare3';
+import CombinedNavBar from '@/components/CombinedNavBar';
 import Footer3 from '@/components/Footer3';
 import Hero3 from '@/components/Hero3';
-import NavBar3 from '@/components/NavBar3';
 import ProjectLargeImageAccordion3 from '@/components/ProjectLargeImageAccordion3';
 import QuoteWithImage from '@/components/QuoteWithImage';
 import TextBanner from '@/components/TextBanner';
@@ -47,12 +47,13 @@ export default function Home() {
 
   return (
     <div className='w-full h-[4681px] bg-white flex-col justify-start items-center inline-flex'>
-      <NavBar3
+      <CombinedNavBar
         icon={NeonThriveStackIcon}
         pageTitle='Neon Thrive'
         links={links}
         additionalLinks={additionalLinks}
-        backgroundColor='bg-black'
+        backgroundEdges='bg-black'
+        backgroundColor='bg-white'
         textColor=''
         font=''
       />

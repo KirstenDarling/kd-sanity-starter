@@ -1,5 +1,5 @@
 import BulletPointsSection from '@/components/BulletPointsSection';
-import FooterBasic from '@/components/FooterBasic';
+import FooterThicc from '@/components/FooterThicc';
 import Hero1 from '@/components/Hero1';
 import NavBarNew from '@/components/NavBarNew';
 import NumberAccordion from '@/components/NumberAccordion';
@@ -151,12 +151,14 @@ export default function Home() {
         circles={featuredCircles}
       />
       <SubscriptionPlans />
-      <FooterBasic
+      <FooterThicc
         icon={HeartIcon}
-        pageTitle='CityTech'
-        subtitle="Tomorrow's Cities Today"
+        pageTitle='CyberStudy Cafe'
+        subtitle='Elevate your learning space'
         columns={footerColumns}
-        textColor='text-zinc-900'
+        textColor='text-black'
+        backgroundColor='bg-white'
+        additionalSection={false}
       />
     </div>
   );

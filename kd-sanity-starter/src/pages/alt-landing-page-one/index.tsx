@@ -1,5 +1,5 @@
 import BulletPointsSection from '@/components/BulletPointsSection';
-import Footer1 from '@/components/Footer1';
+import FooterBasic from '@/components/FooterBasic';
 import Hero1 from '@/components/Hero1';
 import NavBarNew from '@/components/NavBarNew';
 import NumberAccordion from '@/components/NumberAccordion';
@@ -7,6 +7,7 @@ import SubscriptionPlans from '@/components/SubscriptionPlans';
 import TextBanner from '@/components/TextBanner';
 import CardRowCircles1 from '@components/CardRowCircles1';
 import CityTechIcon from '../../../public/cityTechIcon.svg';
+import HeartIcon from '../../../public/heartIcon.svg';
 import Hero1Image from '../../../public/hero1Image.png';
 import MessageIcon from '../../../public/messageIcon.svg';
 import CircleOne from '../../../public/oneCircleOne.png';
@@ -85,6 +86,40 @@ export default function Home() {
     { title: 'Our Crew', URL: '' },
   ];
 
+  const footerColumns = [
+    {
+      links: [
+        { link: 'Company', URL: 'https://www.google.com' },
+        { link: 'About', URL: 'https://www.google.com' },
+        { link: 'Careers', URL: 'https://www.google.com' },
+        { link: 'Newsroom', URL: 'https://www.google.com' },
+      ],
+    },
+    {
+      links: [
+        { link: 'Innovation', URL: 'https://www.google.com' },
+        { link: 'Efficiency', URL: 'https://www.google.com' },
+        { link: 'Partnerships', URL: 'https://www.google.com' },
+        { link: 'Press Releases', URL: 'https://www.google.com' },
+      ],
+    },
+    {
+      links: [
+        { link: 'Social', URL: 'https://www.google.com' },
+        { link: 'Twitter', URL: 'https://www.google.com' },
+        { link: 'Instagram', URL: 'https://www.google.com' },
+        { link: 'Threads', URL: 'https://www.google.com' },
+      ],
+    },
+    {
+      links: [
+        { link: 'Legal', URL: 'https://www.google.com' },
+        { link: 'Terms', URL: 'https://www.google.com' },
+        { link: 'Privacy', URL: 'https://www.google.com' },
+      ],
+    },
+  ];
+
   return (
     <div className='w-full h-[4806px] bg-white flex-col justify-start items-center inline-flex'>
       <NavBarNew
@@ -116,7 +151,12 @@ export default function Home() {
         circles={featuredCircles}
       />
       <SubscriptionPlans />
-      <Footer1 />
+      <FooterBasic
+        icon={HeartIcon}
+        pageTitle='CityTech'
+        subtitle="Tomorrow's Cities Today"
+        columns={footerColumns}
+      />
     </div>
   );
 }

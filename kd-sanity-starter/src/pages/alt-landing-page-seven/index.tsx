@@ -1,5 +1,5 @@
 // import Image from 'next/image';
-import Footer7 from '@/components/Footer7';
+import FooterBasic from '@/components/FooterBasic';
 import Hero7 from '@/components/Hero7';
 import MobilePreviewSection from '@/components/MobilePreviewSection';
 import NavBarWithLogin from '@/components/NavBarWithLogin';
@@ -9,6 +9,7 @@ import SubscriptionPlans from '@/components/SubscriptionPlans';
 import TextBanner from '@/components/TextBanner';
 import MobileMockupImage7 from '../../../public/MobileMockup7.png';
 import CatPic from '../../../public/catPic.png';
+import HeartIcon from '../../../public/heartIcon.svg';
 import Media7Layout from '../../../public/mediaLayout7.png';
 import MessageIcon from '../../../public/messageIcon.svg';
 import NewsletterImage from '../../../public/newsletterBackground.png';
@@ -29,6 +30,40 @@ export default function Home() {
       title: 'Secure Cloud Storage',
       subtitle: 'Protecting your data at all costs.',
       icon: MessageIcon,
+    },
+  ];
+
+  const footerColumns = [
+    {
+      links: [
+        { link: 'Company', URL: 'https://www.google.com' },
+        { link: 'About', URL: 'https://www.google.com' },
+        { link: 'Careers', URL: 'https://www.google.com' },
+        { link: 'Newsroom', URL: 'https://www.google.com' },
+      ],
+    },
+    {
+      links: [
+        { link: 'Solutions', URL: 'https://www.google.com' },
+        { link: 'Efficiency', URL: 'https://www.google.com' },
+        { link: 'Insights', URL: 'https://www.google.com' },
+        { link: 'Innovations', URL: 'https://www.google.com' },
+      ],
+    },
+    {
+      links: [
+        { link: 'Social', URL: 'https://www.google.com' },
+        { link: 'Twitter', URL: 'https://www.google.com' },
+        { link: 'Instagram', URL: 'https://www.google.com' },
+        { link: 'Threads', URL: 'https://www.google.com' },
+      ],
+    },
+    {
+      links: [
+        { link: 'Legal', URL: 'https://www.google.com' },
+        { link: 'Terms', URL: 'https://www.google.com' },
+        { link: 'Privacy', URL: 'https://www.google.com' },
+      ],
     },
   ];
 
@@ -70,7 +105,12 @@ export default function Home() {
         author='Ava Smith, Data Scientist'
         image={CatPic}
       />
-      <Footer7 />
+      <FooterBasic
+        icon={HeartIcon}
+        pageTitle='DataWarp'
+        subtitle='Empower your data journey'
+        columns={footerColumns}
+      />
     </div>
   );
 }

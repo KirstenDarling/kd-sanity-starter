@@ -156,7 +156,7 @@ export default function Home() {
         pageTitle='CyberStudy Cafe'
         subtitle='Elevate your learning space'
         columns={footerColumns}
-        textColor='text-black'
+        textColor='text-zinc-900'
         backgroundColor='bg-white'
         additionalSection={false}
       />

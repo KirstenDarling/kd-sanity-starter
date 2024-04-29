@@ -110,6 +110,7 @@ export default function Home() {
         pageTitle='DataWarp'
         subtitle='Empower your data journey'
         columns={footerColumns}
+        textColor='text-zinc-900'
       />
     </div>
   );

@@ -6,11 +6,13 @@ const FooterBasic = ({
   pageTitle,
   subtitle,
   columns,
+  textColor,
 }: {
   icon: StaticImageData;
   pageTitle?: string;
   subtitle?: string;
   columns: { links: { link: string; URL: string }[] }[];
+  textColor?: string;
 }) => {
   return (
     <div className='self-stretch px-8 py-16 bg-gray-100 justify-between items-start inline-flex'>
@@ -30,7 +32,7 @@ const FooterBasic = ({
         </div>
         <div className='grow shrink basis-0 h-[136px] justify-end items-start gap-10 flex'>
           {columns.map((column, index) => (
-            <FooterColumn key={index} links={column.links} />
+            <FooterColumn key={index} links={column.links} textColor={textColor} />
           ))}
         </div>
       </div>

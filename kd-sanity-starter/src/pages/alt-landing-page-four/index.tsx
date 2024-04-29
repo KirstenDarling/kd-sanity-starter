@@ -3,7 +3,7 @@
 import CardRow4 from '@/components/CardRow4';
 import CombinedNavBar from '@/components/CombinedNavBar';
 import FAQSection from '@/components/FAQSection';
-import Footer4 from '@/components/Footer4';
+import FooterThicc from '@/components/FooterThicc';
 import Hero4 from '@/components/Hero4';
 import NumberAccordion from '@/components/NumberAccordion';
 import SubscriptionPlans from '@/components/SubscriptionPlans';
@@ -15,6 +15,7 @@ import Image3 from '../../../public/fourCard3.png';
 import Image4 from '../../../public/fourCard4.png';
 import Image5 from '../../../public/fourCard5.png';
 import Image6 from '../../../public/fourCard6.png';
+import HeartIcon from '../../../public/heartIcon.svg';
 import Hero4Image from '../../../public/hero4.png';
 import SunIcon from '../../../public/sunIcon.svg';
 
@@ -74,6 +75,33 @@ export default function Home() {
     { title: 'Get in Touch', URL: 'https://www.google.com' },
   ];
 
+  const footerColumns = [
+    {
+      links: [
+        { link: 'Company', URL: 'https://www.google.com' },
+        { link: 'About', URL: 'https://www.google.com' },
+        { link: 'Careers', URL: 'https://www.google.com' },
+        { link: 'Newsroom', URL: 'https://www.google.com' },
+      ],
+    },
+    {
+      links: [
+        { link: 'Our Features', URL: 'https://www.google.com' },
+        { link: 'High-Speed Wi-Fi', URL: 'https://www.google.com' },
+        { link: 'Study Cards', URL: 'https://www.google.com' },
+        { link: 'Virtual Bulletin', URL: 'https://www.google.com' },
+      ],
+    },
+    {
+      links: [
+        { link: 'Social', URL: 'https://www.google.com' },
+        { link: 'Twitter', URL: 'https://www.google.com' },
+        { link: 'Instagram', URL: 'https://www.google.com' },
+        { link: 'Threads', URL: 'https://www.google.com' },
+      ],
+    },
+  ];
+
   return (
     <div className='w-full h-[5453px] bg-white flex-col justify-start items-center inline-flex'>
       <CombinedNavBar
@@ -113,7 +141,15 @@ export default function Home() {
         footerText='Reach out to us anytime for additional support.'
         footerCTAButtonText='Contact Us'
       />
-      <Footer4 />
+      <FooterThicc
+        icon={HeartIcon}
+        pageTitle='CyberStudy Cafe'
+        subtitle='Elevate your learning space'
+        columns={footerColumns}
+        textColor='text-neutral-100'
+        backgroundColor='bg-black'
+        additionalSection={true}
+      />
     </div>
   );
 }

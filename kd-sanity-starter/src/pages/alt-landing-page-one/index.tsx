@@ -156,6 +156,7 @@ export default function Home() {
         pageTitle='CityTech'
         subtitle="Tomorrow's Cities Today"
         columns={footerColumns}
+        textColor='text-zinc-900'
       />
     </div>
   );

@@ -21,34 +21,6 @@ const Footer7 = () => {
         <div className='grow shrink basis-0 h-[136px] justify-end items-start gap-10 flex'>
           <div className='grow shrink basis-0 flex-col justify-start items-start gap-4 inline-flex'>
             <div className="text-zinc-900 text-sm font-normal font-['Alegreya'] leading-snug">
-              Company
-            </div>
-            <div className="text-zinc-900 text-sm font-normal font-['Alegreya'] leading-snug">
-              About
-            </div>
-            <div className="text-zinc-900 text-sm font-normal font-['Alegreya'] leading-snug">
-              Careers
-            </div>
-            <div className="text-zinc-900 text-sm font-normal font-['Alegreya'] leading-snug">
-              Newsroom
-            </div>
-          </div>
-          <div className='grow shrink basis-0 flex-col justify-start items-start gap-4 inline-flex'>
-            <div className="text-zinc-900 text-sm font-normal font-['Alegreya'] leading-snug">
-              Solutions
-            </div>
-            <div className="text-zinc-900 text-sm font-normal font-['Alegreya'] leading-snug">
-              Efficiency
-            </div>
-            <div className="text-zinc-900 text-sm font-normal font-['Alegreya'] leading-snug">
-              Insights
-            </div>
-            <div className="text-zinc-900 text-sm font-normal font-['Alegreya'] leading-snug">
-              Innovations
-            </div>
-          </div>
-          <div className='grow shrink basis-0 flex-col justify-start items-start gap-4 inline-flex'>
-            <div className="text-zinc-900 text-sm font-normal font-['Alegreya'] leading-snug">
               Social
             </div>
             <div className="text-zinc-900 text-sm font-normal font-['Alegreya'] leading-snug">

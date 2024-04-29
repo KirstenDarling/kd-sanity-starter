@@ -1,13 +1,14 @@
 // import Image from 'next/image';
 
 import CardRowSimplified from '@/components/CardRowSimplified';
-import FooterFlat2 from '@/components/FooterFlat2';
+import FooterFlat from '@/components/FooterFlat';
 import Hero5 from '@/components/Hero5';
 import NavBarWithSearch from '@/components/NavBarWithSearch';
 import ProjectAccordion from '@/components/ProjectAccordion';
 import QuoteWithImage from '@/components/QuoteWithImage';
 import Timeline from '@/components/Timeline';
 import FiveSplitImage from '../../../public/fiveSplitImage.png';
+import HeartIcon from '../../../public/heartIcon.svg';
 import Image1 from '../../../public/hero5image1.png';
 import Image2 from '../../../public/hero5image2.png';
 import Image3 from '../../../public/hero5image3.png';
@@ -54,6 +55,12 @@ export default function Home() {
     },
   ];
 
+  const footerLinks = [
+    { title: '@DataArcana', URL: 'https://www.google.com' },
+    { title: '@DataArcana', URL: 'https://www.google.com' },
+    { title: '@DataArcana', URL: 'https://www.google.com' },
+  ];
+
   return (
     <div className='w-full h-[4526px] bg-white flex-col justify-start items-center inline-flex'>
       <NavBarWithSearch />
@@ -92,7 +99,13 @@ export default function Home() {
         image={FiveSplitImage}
         bgColor='gray-800'
       />
-      <FooterFlat2 />
+      <FooterFlat
+        backgroundColor='bg-gray-800'
+        appIcon={HeartIcon}
+        pageTitle='Data Arcana'
+        legalText='All rights reserved 2024'
+        links={footerLinks}
+      />
     </div>
   );
 }

@@ -2,7 +2,6 @@
 
 import CombinedNavBar from '@/components/CombinedNavBar';
 import FooterFlat from '@/components/FooterFlat';
-import FooterFlatCopy from '@/components/FooterFlatCopy';
 import Hero6 from '@/components/Hero6';
 import MobilePreviewSection from '@/components/MobilePreviewSection';
 import Newsletter from '@/components/Newsletter';
@@ -118,7 +117,6 @@ export default function Home() {
         image={1}
         backgroundImage={SubscriptionImage}
       />
-      <FooterFlatCopy />
       <FooterFlat
         appIcon={HeartIcon}
         instagramIcon={InstagramIcon}

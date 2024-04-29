@@ -1,5 +1,5 @@
 // import Image from 'next/image';
-import FooterBasic from '@/components/FooterBasic';
+import FooterThicc from '@/components/FooterThicc';
 import Hero7 from '@/components/Hero7';
 import MobilePreviewSection from '@/components/MobilePreviewSection';
 import NavBarWithLogin from '@/components/NavBarWithLogin';
@@ -105,12 +105,14 @@ export default function Home() {
         author='Ava Smith, Data Scientist'
         image={CatPic}
       />
-      <FooterBasic
+      <FooterThicc
         icon={HeartIcon}
-        pageTitle='DataWarp'
-        subtitle='Empower your data journey'
+        pageTitle='CyberStudy Cafe'
+        subtitle='Elevate your learning space'
         columns={footerColumns}
         textColor='text-zinc-900'
+        backgroundColor='bg-white'
+        additionalSection={false}
       />
     </div>
   );

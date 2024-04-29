@@ -1,13 +1,17 @@
 import CardRow2 from '@/components/CardRow2';
-import Footer2 from '@/components/Footer2';
+import FooterFlat from '@/components/FooterFlat';
 import Hero2 from '@/components/Hero2';
 import ImageCTA from '@/components/ImageCTA';
 import NavBarNew from '@/components/NavBarNew';
 import PortfolioImageGrid from '@/components/PortfolioImageGrid';
 import TextBanner from '@/components/TextBanner';
+import HeartIcon2 from '../../../public/HeartIcon2.svg';
 import LummiGroup1Image from '../../../public/ImageLummiGroup1.png';
 import LummiGroup2Image from '../../../public/ImageLummiGroup2.png';
 import LummiGroup3Image from '../../../public/ImageLummiGroup3.png';
+import InstagramIcon from '../../../public/InstagramLogo.svg';
+import LinkedInIcon from '../../../public/LinkedinLogo.svg';
+import TwitterIcon from '../../../public/TwitterLogo.svg';
 import CodeGrooveIcon from '../../../public/codeGrooveIcon.svg';
 import LummiImage1 from '../../../public/image-lummi1.png';
 import LummiImage2 from '../../../public/imageLummi2.png';
@@ -38,6 +42,13 @@ export default function Home() {
       text: 'Polishing features to ensure a delightful and bug-free user journey.',
     },
   ];
+
+  const footerLinks = [
+    { title: 'Start', URL: 'https://www.google.com' },
+    { title: 'Profile', URL: 'https://www.google.com' },
+    { title: 'Collaborators', URL: 'https://www.google.com' },
+  ];
+
   return (
     <div className='w-full h-[4071px] bg-white flex-col justify-start items-center inline-flex'>
       <NavBarNew
@@ -81,7 +92,16 @@ export default function Home() {
         CTAText='Get in Touch'
         image={ImageLummiFinal}
       />
-      <Footer2 />
+      <FooterFlat
+        appIcon={HeartIcon2}
+        instagramIcon={InstagramIcon}
+        twitterIcon={TwitterIcon}
+        linkedinIcon={LinkedInIcon}
+        pageTitle='CodeGroove'
+        legalText='All rights reserved 2024'
+        links={footerLinks}
+        backgroundColor='bg-rose-500'
+      />
     </div>
   );
 }

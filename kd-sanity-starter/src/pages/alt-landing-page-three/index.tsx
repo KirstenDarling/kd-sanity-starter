@@ -1,6 +1,6 @@
 import CardsSquare3 from '@/components/CardsSquare3';
 import CombinedNavBar from '@/components/CombinedNavBar';
-import Footer3 from '@/components/Footer3';
+import FooterReversed from '@/components/FooterReversed';
 import Hero3 from '@/components/Hero3';
 import ProjectLargeImageAccordion3 from '@/components/ProjectLargeImageAccordion3';
 import QuoteWithImage from '@/components/QuoteWithImage';
@@ -82,7 +82,7 @@ export default function Home() {
         image={NovaPerson2}
         bgColor='black'
       />
-      <Footer3 />
+      <FooterReversed />
     </div>
   );
 }

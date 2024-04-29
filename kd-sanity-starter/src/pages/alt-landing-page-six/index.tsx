@@ -1,12 +1,17 @@
 // import Image from 'next/image';
 
 import CombinedNavBar from '@/components/CombinedNavBar';
-import Footer6 from '@/components/Footer6';
+import FooterFlat from '@/components/FooterFlat';
+import FooterFlatCopy from '@/components/FooterFlatCopy';
 import Hero6 from '@/components/Hero6';
 import MobilePreviewSection from '@/components/MobilePreviewSection';
 import Newsletter from '@/components/Newsletter';
 import NumberAccordion from '@/components/NumberAccordion';
 import TextBanner from '@/components/TextBanner';
+import InstagramIcon from '../../../public/InstagramLogo.svg';
+import LinkedInIcon from '../../../public/LinkedinLogo.svg';
+import TwitterIcon from '../../../public/TwitterLogo.svg';
+import HeartIcon from '../../../public/heartIcon.svg';
 import HeroImage6 from '../../../public/heroImage6.png';
 import MessageIcon from '../../../public/messageIcon.svg';
 import MobileMockupImage from '../../../public/mobileMockupImage.png';
@@ -62,6 +67,12 @@ export default function Home() {
     { title: 'Infiltrate Us', URL: 'https://www.google.com' },
   ];
 
+  const footerLinks = [
+    { title: 'Dossier', URL: 'https://www.google.com' },
+    { title: 'Manifesto', URL: 'https://www.google.com' },
+    { title: 'Hackers', URL: 'https://www.google.com' },
+  ];
+
   return (
     <div className='w-full h-[4106px] bg-white flex-col justify-start items-center inline-flex'>
       <CombinedNavBar
@@ -107,7 +118,17 @@ export default function Home() {
         image={1}
         backgroundImage={SubscriptionImage}
       />
-      <Footer6 />
+      <FooterFlatCopy />
+      <FooterFlat
+        appIcon={HeartIcon}
+        instagramIcon={InstagramIcon}
+        twitterIcon={TwitterIcon}
+        linkedinIcon={LinkedInIcon}
+        pageTitle='ShadowBytes'
+        legalText='All rights reserved 2024'
+        links={footerLinks}
+        backgroundColor='bg-black'
+      />
     </div>
   );
 }

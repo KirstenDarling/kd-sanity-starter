@@ -1,7 +1,7 @@
 // import Image from 'next/image';
 
 import CardRowSimplified from '@/components/CardRowSimplified';
-import Footer5 from '@/components/Footer5';
+import FooterFlat2 from '@/components/FooterFlat2';
 import Hero5 from '@/components/Hero5';
 import NavBarWithSearch from '@/components/NavBarWithSearch';
 import ProjectAccordion from '@/components/ProjectAccordion';
@@ -92,7 +92,7 @@ export default function Home() {
         image={FiveSplitImage}
         bgColor='gray-800'
       />
-      <Footer5 />
+      <FooterFlat2 />
     </div>
   );
 }

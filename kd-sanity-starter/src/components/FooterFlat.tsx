@@ -15,9 +15,9 @@ const FooterFlat = ({
   links?: { title: string; URL: string }[];
   backgroundColor?: string;
   appIcon: StaticImageData;
-  twitterIcon: StaticImageData;
-  instagramIcon: StaticImageData;
-  linkedinIcon: StaticImageData;
+  twitterIcon?: StaticImageData;
+  instagramIcon?: StaticImageData;
+  linkedinIcon?: StaticImageData;
 }) => {
   return (
     <div
@@ -48,17 +48,25 @@ const FooterFlat = ({
             {legalText}
           </div>
         </div>
-        <div className='justify-start items-start gap-4 flex'>
-          <div className='w-6 h-6 relative'>
-            <Image alt='' src={twitterIcon} />
+        {twitterIcon && (
+          <div className='justify-start items-start gap-4 flex'>
+            {twitterIcon && (
+              <div className='w-6 h-6 relative'>
+                <Image alt='' src={twitterIcon} />
+              </div>
+            )}
+            {instagramIcon && (
+              <div className='w-6 h-6 relative'>
+                <Image alt='' src={instagramIcon} />
+              </div>
+            )}
+            {linkedinIcon && (
+              <div className='w-6 h-6 relative'>
+                <Image alt='' src={linkedinIcon} />
+              </div>
+            )}
           </div>
-          <div className='w-6 h-6 relative'>
-            <Image alt='' src={instagramIcon} />
-          </div>
-          <div className='w-6 h-6 relative'>
-            <Image alt='' src={linkedinIcon} />
-          </div>
-        </div>
+        )}
       </div>
     </div>
   );

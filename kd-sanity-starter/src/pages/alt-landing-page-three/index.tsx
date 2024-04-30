@@ -1,7 +1,7 @@
 import CardsSquare3 from '@/components/CardsSquare3';
+import CombinedHero from '@/components/CombinedHero';
 import CombinedNavBar from '@/components/CombinedNavBar';
 import FooterReversed from '@/components/FooterReversed';
-import Hero3 from '@/components/Hero3';
 import ProjectLargeImageAccordion3 from '@/components/ProjectLargeImageAccordion3';
 import QuoteWithImage from '@/components/QuoteWithImage';
 import TextBanner from '@/components/TextBanner';
@@ -57,11 +57,14 @@ export default function Home() {
         textColor=''
         font=''
       />
-      <Hero3
+      <CombinedHero
         heading="I'm Nova, Cybernetic Enthusiast."
         subheading='Navigate the neon-lit streets.'
         buttonText='Join the Odyssey'
         image={Nova1}
+        backgroundStyle='bg-black'
+        textStyle="text-neutral-100 text-7xl font-normal font-['Fugaz One'] leading-[77.76px]"
+        buttonStyle="bg-purple-500 text-white text-lg font-normal font-['Open Sans'] leading-[27px]"
       />
       <TextBanner
         heading='Crafting virtual utopias.'

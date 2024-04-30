@@ -1,8 +1,8 @@
 // import Image from 'next/image';
 
+import CombinedHero from '@/components/CombinedHero';
 import CombinedNavBar from '@/components/CombinedNavBar';
 import FooterFlat from '@/components/FooterFlat';
-import Hero6 from '@/components/Hero6';
 import MobilePreviewSection from '@/components/MobilePreviewSection';
 import Newsletter from '@/components/Newsletter';
 import NumberAccordion from '@/components/NumberAccordion';
@@ -84,12 +84,17 @@ export default function Home() {
         textColor='text-white'
         font=''
       />
-      <Hero6
+
+      <CombinedHero
         heading='Unveil the Digital Shadows'
         subheading='Piercing through cybersecurity.'
         buttonText='Initiate Your Journey'
-        heroImage={HeroImage6}
+        image={HeroImage6}
+        backgroundStyle='bg-gray-100'
+        textStyle="text-zinc-900 text-7xl font-extrabold font-['Alegreya'] leading-[77.76px]"
+        buttonStyle="bg-purple-500 text-white text-lg font-normal font-['Alegreya'] leading-[27px]"
       />
+
       <TextBanner
         eyebrowText='Our Ethos'
         heading='Crafting the Cyber Narrative'

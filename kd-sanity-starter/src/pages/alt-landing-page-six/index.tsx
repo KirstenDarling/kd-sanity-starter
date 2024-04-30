@@ -122,7 +122,6 @@ export default function Home() {
         image={1}
         backgroundImage={SubscriptionImage}
       />
-
       <FooterFlat
         appIcon={HeartIcon}
         instagramIcon={InstagramIcon}

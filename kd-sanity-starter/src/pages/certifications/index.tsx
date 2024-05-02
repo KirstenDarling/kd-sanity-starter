@@ -1,4 +1,3 @@
-import CardsSquare3 from '@/components/CardsSquare3';
 import CombinedHero from '@/components/CombinedHero';
 import CombinedNavBar from '@/components/CombinedNavBar';
 import FooterThicc from '@/components/FooterThicc';
@@ -7,9 +6,9 @@ import QuoteWithImage from '@/components/QuoteWithImage';
 import TextBanner from '@/components/TextBanner';
 import { FaDatabase } from 'react-icons/fa';
 import NovaPerson2 from '../../../public/NovaPerson2.png';
+import CertOne from '../../../public/certOne.jpg';
+import Gemini3 from '../../../public/gemini3.jpg';
 import HeartIcon from '../../../public/heartIcon.svg';
-import HeroGen1 from '../../../public/heroGen1.jpg';
-import Purple8 from '../../../public/purple8.jpg';
 
 export default function Home() {
   const featuredCards = [
@@ -80,32 +79,25 @@ export default function Home() {
         pageTitle='Kirsten Darling'
         links={links}
         additionalLinks={additionalLinks}
-        backgroundEdges='bg-black'
-        backgroundColor='bg-white'
-        textColor=''
+        backgroundEdges='bg-white'
+        backgroundColor='bg-black'
+        textColor='text-white'
         font=''
       />
       <CombinedHero
-        heading="I'm Kirsten, Software Engineer and Data Explorer."
-        subheading='Explore my coding journey and the resources that fueled it. '
-        buttonText='Study Room'
-        image={HeroGen1}
-        backgroundStyle='bg-black'
-        textStyle="text-neutral-100 text-7xl font-normal font-['Fugaz One'] leading-[77.76px]"
-        subTextStyle="text-neutral-100 text-lg font-normal font-['Open Sans'] leading-[27px] mt-[3%]"
+        heading='Highlighted Skills: '
+        subheading='Software & Data Certifications'
+        // buttonText='Study Room'
+        image={CertOne}
+        backgroundStyle='bg-white'
+        textStyle="text-black text-7xl font-normal font-['Fugaz One'] leading-[77.76px]"
+        subTextStyle="text-black text-lg font-normal font-['Open Sans'] leading-[27px] mt-[3%]"
         buttonStyle="bg-purple-500 max-h-[60px] max-w-[360px] mt-[10%] text-white text-lg font-normal font-['Open Sans'] leading-[27px]"
       />
       <TextBanner
-        heading='From Dream to Deployment'
-        subheading="Let's transform your Figma designs into reality"
-        image={Purple8}
-      />
-
-      <CardsSquare3
-        heading='Neon Dreams Unveiled'
-        subheading='Immersive Reality Awaits'
-        shortCards={featuredCards}
-        longCard={featuredLongCard}
+        heading='Always Learning, Always Growing.'
+        subheading='Scroll down to see my latest certifications.'
+        image={Gemini3}
       />
       <ProjectLargeImageAccordion3 />
       <QuoteWithImage

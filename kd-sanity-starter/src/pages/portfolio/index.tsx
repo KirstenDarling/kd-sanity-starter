@@ -1,151 +1,128 @@
-import Head from 'next/head';
-// import homeStyles from '../styles/home.module.css';
-import EscapeBanner from '@/components/EscapeBanner';
-import NavBar from '@/components/NavBar';
-import PortfolioSection from '@/components/PortfolioSection';
-import BecksSiteImage from '../../../public/beckshybridsSite.png';
-import CodingResourcesImage from '../../../public/codingresourcessite.png';
-import FlexBoxPlaygroundImage from '../../../public/flexbloxplaygroundsite.png';
-import FormImage from '../../../public/formsite.png';
-import JubileeAustenImage from '../../../public/jubileeaustensite.png';
-import LolCatImage from '../../../public/lolcatsite.png';
-import Magic8BallImage from '../../../public/magic8ballsite.png';
-import RecipeImage from '../../../public/receipesite.png';
-import RoguePickingsImage from '../../../public/roguepickingssite.png';
-import UnpluggedImage from '../../../public/unpluggedScreenshot.png';
-// import VisionBoardImage from '../../../public/visionboardsite.png';
-import Footer from '@/components/Footer';
-import CollegeSkylineImage from '../../../public/collegeskylinecentersite.png';
-import ErrorPageImage from '../../../public/errorpage.png';
+import CardsSquare3 from '@/components/CardsSquare3';
+import CombinedHero from '@/components/CombinedHero';
+import CombinedNavBar from '@/components/CombinedNavBar';
+import FooterThicc from '@/components/FooterThicc';
+import ProjectLargeImageAccordion3 from '@/components/ProjectLargeImageAccordion3';
+import QuoteWithImage from '@/components/QuoteWithImage';
+import TextBanner from '@/components/TextBanner';
+import { FaDatabase } from 'react-icons/fa';
+import NovaPerson2 from '../../../public/NovaPerson2.png';
+import HeartIcon from '../../../public/heartIcon.svg';
+import HeroGen1 from '../../../public/heroGen1.jpg';
+import Purple8 from '../../../public/purple8.jpg';
 
 export default function Home() {
+  const featuredCards = [
+    {
+      eyebrowText: 'Transcend Reality',
+      heading: 'Reshape the Metropolis Skyline',
+      subheading: 'Urban revolution begins',
+      CTAText: 'Embark the Hype',
+    },
+    {
+      eyebrowText: 'Hack the System',
+      heading: 'Reimagine Cybernetic Life',
+      subheading: 'AI rebellion starts now',
+      CTAText: 'Lead the Change',
+    },
+  ];
+
+  const featuredLongCard = {
+    eyebrowText: 'Rebel With Cause',
+    heading: "Redefine Humanity's Fate",
+    subheading: 'Cyber evolution awaits',
+    CTAText: 'Seize the Future',
+  };
+
+  const links = [
+    { title: 'Portal', URL: '/study-portal' },
+    { title: 'Portfolio', URL: '/portfolio' },
+    { title: 'Certifications', URL: '/certifications' },
+  ];
+
+  const additionalLinks = [
+    { title: 'About Me', URL: '/about-me' },
+    { title: '@kirstendarling', URL: 'https://www.linkedin.com/in/kirstendarling/' },
+    { title: 'Connect', URL: '/connect' },
+  ];
+
+  const footerColumns = [
+    {
+      links: [
+        { link: 'Study Portal', URL: '/study-portal' },
+        { link: 'Coding Resources', URL: '/coding-resources' },
+        { link: 'Flash Cards', URL: '/flash-cards' },
+        { link: 'Virtual Bulletin', URL: '/bulletin' },
+      ],
+    },
+    {
+      links: [
+        { link: 'Portfolio', URL: '/portfolio' },
+        { link: 'Certifications', URL: '/certifications' },
+        { link: 'About Me', URL: '/about-me' },
+        { link: 'Connect', URL: '/connect' },
+      ],
+    },
+    {
+      links: [
+        { link: 'LinkedIn', URL: 'https://www.linkedin.com/in/kirstendarling/' },
+        { link: 'GitHub', URL: 'https://github.com/KirstenDarling' },
+        { link: 'Google Dev', URL: 'https://developers.google.com/profile/u/kirsten_darling' },
+        { link: 'Dev.to', URL: 'https://dev.to/kdarling93' },
+      ],
+    },
+  ];
+
   return (
-    <div>
-      <Head>
-        <title>Kirsten Darling</title>
-        <meta
-          name='description'
-          content='A fun and informative site, created by Kirsten Darling.'
-        />
-        <link rel='icon' href='/favicon.ico' />
-      </Head>
+    <div className='w-full bg-white flex-col justify-start items-center inline-flex'>
+      <CombinedNavBar
+        FAIcon={FaDatabase}
+        pageTitle='Kirsten Darling'
+        links={links}
+        additionalLinks={additionalLinks}
+        backgroundEdges='bg-black'
+        backgroundColor='bg-white'
+        textColor=''
+        font=''
+      />
+      <CombinedHero
+        heading="I'm Kirsten, Software Engineer and Data Explorer."
+        subheading='Explore my coding journey and the resources that fueled it. '
+        buttonText='Study Room'
+        image={HeroGen1}
+        backgroundStyle='bg-black'
+        textStyle="text-neutral-100 text-7xl font-normal font-['Fugaz One'] leading-[77.76px]"
+        subTextStyle="text-neutral-100 text-lg font-normal font-['Open Sans'] leading-[27px] mt-[3%]"
+        buttonStyle="bg-purple-500 max-h-[60px] max-w-[360px] mt-[10%] text-white text-lg font-normal font-['Open Sans'] leading-[27px]"
+      />
+      <TextBanner
+        heading='From Dream to Deployment'
+        subheading="Let's transform your Figma designs into reality"
+        image={Purple8}
+      />
 
-      <div className='w-full h-full'>
-        <EscapeBanner pageType='professional' />
-        <NavBar />
-        <PortfolioSection
-          subheading='Nextjs and Sanity.io'
-          heading="Beck's Hybrids"
-          text="This site was created as a redesign of Beck's Hybrids previous website. The designs were created by Element Three. I was responsible for turning the designs into a fully functional website. This site was built using Nextjs and Sanity.io."
-          buttonText='View Site'
-          buttonLink='https://www.beckshybrids.com/'
-          image={BecksSiteImage}
-          alignment='left'
-        />
-        <PortfolioSection
-          subheading='Responsive Web Development'
-          heading='Unplugged Retreat'
-          text='A sleek and minimal website built to display information about a work retreat. This
-          website is fully responsive; which means it will look just as good when viewed on a
-          smartphone or a laptop.'
-          buttonText='View Site'
-          buttonLink='https://kirstendarling.github.io/Unplugged-Retreat-Site/'
-          image={UnpluggedImage}
-          alignment='right'
-        />
-        <PortfolioSection
-          subheading='JavaScript'
-          heading='Magic 8 Ball'
-          text=' A fun and interactive site that will give you answers to all of your questions. This site was built using HTML, CSS, and JavaScript.'
-          buttonText='View Site'
-          buttonLink='https://kirstendarling.github.io/Magic-8-Ball/'
-          image={Magic8BallImage}
-          alignment='left'
-        />
-        <PortfolioSection
-          subheading='Javascript'
-          heading='LOL Cat Clock'
-          text='A fun and interactive site that displays a clock with a different cat picture for each hour of the day. This site was built using HTML, CSS, and JavaScript.'
-          buttonText='View Site'
-          buttonLink='https://kirstendarling.github.io/Lol-Cat-Clock/'
-          image={LolCatImage}
-          alignment='right'
-        />
-        <PortfolioSection
-          subheading='Responsive Web Development'
-          heading='Rogue Pickings'
-          text=''
-          buttonText='View Site'
-          buttonLink='https://kirstendarling.github.io/Rogue-Pickings-Responsive-Site/'
-          image={RoguePickingsImage}
-          alignment='left'
-        />
-        <PortfolioSection
-          subheading='Interactive Forms'
-          heading='Submission Forms'
-          text=' A collection of forms that I have created using HTML, CSS, and JavaScript while following along with the 100DaysOfCode Challenge. These forms are fully responsive and interactive.'
-          buttonText='View Site'
-          buttonLink='https://kirstendarling.github.io/100DaysOfCode-Day1-Registration-Form/'
-          image={FormImage}
-          alignment='right'
-        />
-        <PortfolioSection
-          subheading='Responsive Web Development'
-          heading='Coding Resources'
-          text=' A collection of resources for coding. This site was built using HTML, CSS, and JavaScript. It is fully responsive and interactive.'
-          buttonText='View Site'
-          buttonLink='https://kirstendarling.github.io/Coding-Resources-Site/'
-          image={CodingResourcesImage}
-          alignment='left'
-        />
-        <PortfolioSection
-          subheading='Portfolio Template'
-          heading='Jubilee Austen'
-          text=' A portfolio template that I recreated using HTML, CSS, and JavaScript in Skillcrush class. This template is fully responsive and interactive. It is a great starting point for anyone looking to create a portfolio site.'
-          buttonText='View Site'
-          buttonLink='https://kirstendarling.github.io/Jubilee-Austen-Site/'
-          image={JubileeAustenImage}
-          alignment='right'
-        />
-        <PortfolioSection
-          subheading='Responsive Web Development'
-          heading='Recipe Site'
-          text=' A recipe site that I recreated using HTML, CSS, and JavaScript while in Skillcrush class. This site is fully responsive and interactive. It is a great starting point for anyone looking to create a recipe site.'
-          buttonText='View Site'
-          buttonLink='https://kirstendarling.github.io/Recipe-Site-Skillcrush-Challenge/'
-          image={RecipeImage}
-          alignment='left'
-        />
-        <PortfolioSection
-          subheading='CSS Flexbox'
-          heading='Flexbox Playground Site'
-          text=' A site that I created to test out different flexbox properties. This site was built using HTML, CSS, and JavaScript. It is fully responsive and interactive.'
-          buttonText='View Site'
-          buttonLink='https://kirstendarling.github.io/Flexbox-Test-Site/'
-          image={FlexBoxPlaygroundImage}
-          alignment='right'
-        />
-        <PortfolioSection
-          subheading='Basic Routing'
-          heading='Error Page'
-          text=" A simple error page that I created using HTML, CSS, and JavaScript while attending Skillcrush' bootcamp."
-          buttonText='View Site'
-          buttonLink='https://kirstendarling.github.io/105-Error-Page/'
-          image={ErrorPageImage}
-          alignment='left'
-        />
-        <PortfolioSection
-          subheading='PHP WordPress Template'
-          heading='College Skyline Center'
-          text='A template that I created using PHP and WordPress to rework an existing site.'
-          buttonText='View Site'
-          buttonLink='https://collegeskyline.com/'
-          image={CollegeSkylineImage}
-          alignment='right'
-        />
-
-        <Footer />
-      </div>
+      <CardsSquare3
+        heading='Neon Dreams Unveiled'
+        subheading='Immersive Reality Awaits'
+        shortCards={featuredCards}
+        longCard={featuredLongCard}
+      />
+      <ProjectLargeImageAccordion3 />
+      <QuoteWithImage
+        quote='“Their vision for the cyber world transformed my reality.”'
+        author='Maverick T., Cyberpunk Enthusiast'
+        image={NovaPerson2}
+        bgColor='black'
+      />
+      <FooterThicc
+        icon={HeartIcon}
+        pageTitle='Kirsten Darling'
+        subtitle='Study. Code. Deploy. Repeat.'
+        columns={footerColumns}
+        textColor='text-neutral-100'
+        backgroundColor='bg-black'
+        additionalSection={true}
+      />
     </div>
   );
 }

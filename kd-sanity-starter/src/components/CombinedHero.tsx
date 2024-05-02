@@ -6,6 +6,7 @@ const CombinedHero = ({
   buttonText,
   image,
   backgroundStyle,
+  subTextStyle,
   textStyle,
   buttonStyle,
 }: {
@@ -15,6 +16,7 @@ const CombinedHero = ({
   image: StaticImageData;
   backgroundStyle: string;
   textStyle: string;
+  subTextStyle?: string;
   buttonStyle: string;
 }) => {
   return (
@@ -23,7 +25,7 @@ const CombinedHero = ({
         <div className='self-stretch h-[302px] flex-col justify-center items-start gap-10 flex'>
           <div className='self-stretch h-[203px] flex-col justify-center items-start gap-4 flex'>
             <div className={`self-stretch ${textStyle}`}>{heading}</div>
-            <div className={`self-stretch ${textStyle}`}>{subheading}</div>
+            <div className={`self-stretch ${subTextStyle}`}>{subheading}</div>
           </div>
           <div
             className={`self-stretch px-12 py-4 ${buttonStyle} justify-center items-center gap-1 inline-flex`}

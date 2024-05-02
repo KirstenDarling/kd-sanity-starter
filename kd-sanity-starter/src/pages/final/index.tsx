@@ -1,14 +1,15 @@
 import CardsSquare3 from '@/components/CardsSquare3';
+import CombinedHero from '@/components/CombinedHero';
 import CombinedNavBar from '@/components/CombinedNavBar';
-import FooterReversed from '@/components/FooterReversed';
-import Hero3 from '@/components/Hero3';
+import FooterThicc from '@/components/FooterThicc';
 import ProjectLargeImageAccordion3 from '@/components/ProjectLargeImageAccordion3';
 import QuoteWithImage from '@/components/QuoteWithImage';
 import TextBanner from '@/components/TextBanner';
-import NeonThriveStackIcon from '../../../public/NeonThriveStackIcon.svg';
-import Nova1 from '../../../public/Nova1.png';
-import BannerImageTwo from '../../../public/NovaBackground.png';
+import { FaDatabase } from 'react-icons/fa';
 import NovaPerson2 from '../../../public/NovaPerson2.png';
+import HeartIcon from '../../../public/heartIcon.svg';
+import HeroGen1 from '../../../public/heroGen1.jpg';
+import Purple8 from '../../../public/purple8.jpg';
 
 export default function Home() {
   const featuredCards = [
@@ -34,22 +35,49 @@ export default function Home() {
   };
 
   const links = [
-    { title: 'Portal', URL: 'https://www.google.com' },
-    { title: 'Dystopia', URL: 'https://www.google.com' },
-    { title: 'Crew', URL: 'https://www.google.com' },
+    { title: 'Portal', URL: '/study-portal' },
+    { title: 'Portfolio', URL: '/portfolio' },
+    { title: 'Certifications', URL: '/certifications' },
   ];
 
   const additionalLinks = [
-    { title: 'Manifesto', URL: 'https://www.google.com' },
-    { title: '@cyberpulse', URL: 'https://www.google.com' },
-    { title: 'Connect', URL: 'https://www.google.com' },
+    { title: 'About Me', URL: '/about-me' },
+    { title: '@kirstendarling', URL: 'https://www.linkedin.com/in/kirstendarling/' },
+    { title: 'Connect', URL: '/connect' },
+  ];
+
+  const footerColumns = [
+    {
+      links: [
+        { link: 'Study Portal', URL: '/study-portal' },
+        { link: 'Coding Resources', URL: '/coding-resources' },
+        { link: 'Flash Cards', URL: '/flash-cards' },
+        { link: 'Virtual Bulletin', URL: '/bulletin' },
+      ],
+    },
+    {
+      links: [
+        { link: 'Portfolio', URL: '/portfolio' },
+        { link: 'Certifications', URL: '/certifications' },
+        { link: 'About Me', URL: '/about-me' },
+        { link: 'Connect', URL: '/connect' },
+      ],
+    },
+    {
+      links: [
+        { link: 'LinkedIn', URL: 'https://www.linkedin.com/in/kirstendarling/' },
+        { link: 'GitHub', URL: 'https://github.com/KirstenDarling' },
+        { link: 'Google Dev', URL: 'https://developers.google.com/profile/u/kirsten_darling' },
+        { link: 'Dev.to', URL: 'https://dev.to/kdarling93' },
+      ],
+    },
   ];
 
   return (
-    <div className='w-full h-[4681px] bg-white flex-col justify-start items-center inline-flex'>
+    <div className='w-full bg-white flex-col justify-start items-center inline-flex'>
       <CombinedNavBar
-        icon={NeonThriveStackIcon}
-        pageTitle='Neon Thrive'
+        FAIcon={FaDatabase}
+        pageTitle='Kirsten Darling'
         links={links}
         additionalLinks={additionalLinks}
         backgroundEdges='bg-black'
@@ -57,18 +85,22 @@ export default function Home() {
         textColor=''
         font=''
       />
-      <Hero3
-        heading="I'm Nova, Cybernetic Enthusiast."
-        subheading='Navigate the neon-lit streets.'
-        buttonText='Join the Odyssey'
-        image={Nova1}
+      <CombinedHero
+        heading="I'm Kirsten, Software Engineer and Data Explorer."
+        subheading='Explore my coding journey and the resources that fueled it. '
+        buttonText='Study Room'
+        image={HeroGen1}
+        backgroundStyle='bg-black'
+        textStyle="text-neutral-100 text-7xl font-normal font-['Fugaz One'] leading-[77.76px]"
+        subTextStyle="text-neutral-100 text-lg font-normal font-['Open Sans'] leading-[27px] mt-[3%]"
+        buttonStyle="bg-purple-500 max-h-[60px] max-w-[360px] mt-[10%] text-white text-lg font-normal font-['Open Sans'] leading-[27px]"
       />
       <TextBanner
-        heading='Crafting virtual utopias.'
-        subheading='Digital Frontier Awaits'
-        image={BannerImageTwo}
-        // isSplitStyle={false}
+        heading='From Dream to Deployment'
+        subheading="Let's transform your Figma designs into reality"
+        image={Purple8}
       />
+
       <CardsSquare3
         heading='Neon Dreams Unveiled'
         subheading='Immersive Reality Awaits'
@@ -82,7 +114,15 @@ export default function Home() {
         image={NovaPerson2}
         bgColor='black'
       />
-      <FooterReversed />
+      <FooterThicc
+        icon={HeartIcon}
+        pageTitle='Kirsten Darling'
+        subtitle='Study. Code. Deploy. Repeat.'
+        columns={footerColumns}
+        textColor='text-neutral-100'
+        backgroundColor='bg-black'
+        additionalSection={true}
+      />
     </div>
   );
 }

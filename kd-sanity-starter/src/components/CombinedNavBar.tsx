@@ -1,8 +1,9 @@
 import Image, { StaticImageData } from 'next/image';
-import SunIcon from '../../public/sunIcon.svg';
+import { IconType } from 'react-icons';
 import { NavBarLinkSection } from './NavBarLinkSection';
 
 const CombinedNavBar = ({
+  FAIcon,
   icon,
   pageTitle,
   textColor,
@@ -17,6 +18,7 @@ const CombinedNavBar = ({
   backgroundEdges,
 }: {
   icon?: StaticImageData;
+  FAIcon?: IconType;
   pageTitle?: string;
   textColor?: string;
   font?: string;
@@ -48,7 +50,8 @@ const CombinedNavBar = ({
           <div className='justify-center items-center gap-2 flex'>
             <div className='w-6 h-6 relative'>
               {icon && <Image alt='' src={icon} />}
-              {!icon && <Image alt='' src={SunIcon} />}{' '}
+              {FAIcon && <FAIcon className='text-purple-500 h-[22px] w-[22px] mr-[20px]' />}
+              {/* {!icon && <Image alt='' src={SunIcon} />}{' '} */}
               {/* Fallback to SunIcon if no icon provided */}
             </div>
             <div className={`${textColor} text-base font-normal font-['Open Sans'] leading-normal`}>

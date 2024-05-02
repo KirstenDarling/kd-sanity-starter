@@ -21,16 +21,14 @@ const TextBanner = ({
   const hasSplitStyle = eyebrowText && heading && splitText;
 
   return (
-    <div className={`w-full h-full relative min-h-[9%] ${!withBackground && 'bg-rose-500'}`}>
+    <div className={`w-full max-h-[400px] relative min-h-[9%] ${!withBackground && 'bg-rose-500'}`}>
       {withBackground && image && (
         <Image
           alt=''
           src={image}
           className='z-[3]'
-          width={0}
-          height={0}
           sizes='100vw'
-          style={{ width: '100%', height: 'auto' }}
+          style={{ width: '100%', maxHeight: '400px' }}
         />
       )}
       <div

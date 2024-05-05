@@ -1,11 +1,10 @@
-import Head from 'next/head';
-// import homeStyles from '../styles/home.module.css';
 import ContinueSection from '@/components/ContinueSection';
 import EscapeBanner from '@/components/EscapeBanner';
 import Footer from '@/components/Footer';
 import IntroSection from '@/components/IntroSection';
 import NavBar from '@/components/NavBar';
 import PortfolioSection from '@/components/PortfolioSection';
+import Head from 'next/head';
 import SkillcrushCert from '../../../public/skillcrushCertImage.png';
 import UnpluggedImage from '../../../public/unpluggedScreenshot.png';
 

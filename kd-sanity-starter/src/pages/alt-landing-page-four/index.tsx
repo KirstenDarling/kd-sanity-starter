@@ -1,5 +1,3 @@
-// import Image from 'next/image';
-
 import CardRow4 from '@/components/CardRow4';
 import CombinedNavBar from '@/components/CombinedNavBar';
 import FAQSection from '@/components/FAQSection';
@@ -124,7 +122,6 @@ export default function Home() {
         heading='Study anytime, anywhere.'
         subheading='A new era of online learning.'
         image={BannerImageThree}
-        // isSplitStyle={false}
       />
       <CardRow4
         heading='Comfort & Convenience'

@@ -1,5 +1,3 @@
-// import Image from 'next/image';
-
 import CardRowSimplified from '@/components/CardRowSimplified';
 import FooterFlat from '@/components/FooterFlat';
 import Hero5 from '@/components/Hero5';

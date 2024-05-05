@@ -1,4 +1,3 @@
-// import Image from 'next/image';
 import FooterThicc from '@/components/FooterThicc';
 import Hero7 from '@/components/Hero7';
 import MobilePreviewSection from '@/components/MobilePreviewSection';
@@ -77,11 +76,7 @@ export default function Home() {
         buttonTwoText='Learn More'
         heroImage={Media7Layout}
       />
-      <TextBanner
-        heading='Pioneering Data Horizons.'
-        subheading='Data solutions reimagined'
-        // isSplitStyle={false}
-      />
+      <TextBanner heading='Pioneering Data Horizons.' subheading='Data solutions reimagined' />
       <MobilePreviewSection
         title='Advanced Analytics'
         subtitle='Leverage insights effectively.'

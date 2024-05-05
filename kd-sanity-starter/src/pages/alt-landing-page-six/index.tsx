@@ -1,5 +1,3 @@
-// import Image from 'next/image';
-
 import CombinedHero from '@/components/CombinedHero';
 import CombinedNavBar from '@/components/CombinedNavBar';
 import FooterFlat from '@/components/FooterFlat';

@@ -1,3 +1,4 @@
+import CardsSquare3 from '@/components/CardsSquare3';
 import CombinedHero from '@/components/CombinedHero';
 import CombinedNavBar from '@/components/CombinedNavBar';
 import FooterThicc from '@/components/FooterThicc';
@@ -9,6 +10,8 @@ import NovaPerson2 from '../../../public/NovaPerson2.png';
 import CertOne from '../../../public/certOne.jpg';
 import Gemini3 from '../../../public/gemini3.jpg';
 import HeartIcon from '../../../public/heartIcon.svg';
+import HeroGen1 from '../../../public/heroGen1.jpg';
+import Purple8 from '../../../public/purple8.jpg';
 
 export default function Home() {
   const featuredCards = [

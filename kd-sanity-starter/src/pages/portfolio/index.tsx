@@ -10,6 +10,8 @@ import Cover from '../../../public/Cover.jpg';
 import NovaPerson2 from '../../../public/NovaPerson2.png';
 import HeartIcon from '../../../public/heartIcon.svg';
 import Purple6 from '../../../public/purple6.jpg';
+import HeroGen1 from '../../../public/heroGen1.jpg';
+import Purple8 from '../../../public/purple8.jpg';
 
 export default function Home() {
   const featuredCards = [

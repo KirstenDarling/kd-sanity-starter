@@ -1,4 +1,5 @@
 import Image, { StaticImageData } from 'next/image';
+import Link from 'next/link';
 import { IconType } from 'react-icons';
 import { NavBarLinkSection } from './NavBarLinkSection';
 
@@ -47,17 +48,21 @@ const CombinedNavBar = ({
           />
         )}
         {pageTitleSection && (
-          <div className='justify-center items-center gap-2 flex'>
-            <div className='w-6 h-6 relative'>
-              {icon && <Image alt='' src={icon} />}
-              {FAIcon && <FAIcon className='text-purple-500 h-[22px] w-[22px] mr-[20px]' />}
-              {/* {!icon && <Image alt='' src={SunIcon} />}{' '} */}
-              {/* Fallback to SunIcon if no icon provided */}
+          <Link href='/'>
+            <div className='justify-center items-center gap-2 flex'>
+              <div className='w-6 h-6 relative'>
+                {icon && <Image alt='' src={icon} />}
+                {FAIcon && <FAIcon className='text-purple-500 h-[22px] w-[22px] mr-[20px]' />}
+                {/* {!icon && <Image alt='' src={SunIcon} />}{' '} */}
+                {/* Fallback to SunIcon if no icon provided */}
+              </div>
+              <div
+                className={`${textColor} text-base font-normal font-['Open Sans'] leading-normal`}
+              >
+                {pageTitle}
+              </div>
             </div>
-            <div className={`${textColor} text-base font-normal font-['Open Sans'] leading-normal`}>
-              {pageTitle}
-            </div>
-          </div>
+          </Link>
         )}
         {linkSection2 && (
           <NavBarLinkSection

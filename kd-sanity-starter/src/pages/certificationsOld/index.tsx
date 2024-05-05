@@ -1,9 +1,8 @@
-import Head from 'next/head';
-// import homeStyles from '../styles/home.module.css';
 import EscapeBanner from '@/components/EscapeBanner';
 import Footer from '@/components/Footer';
 import NavBar from '@/components/NavBar';
 import PortfolioSection from '@/components/PortfolioSection';
+import Head from 'next/head';
 import CodingForDataCert from '../../../public/codingfordata.png';
 import CSharpCert from '../../../public/csharpcert.png';
 import CSharpIntermediateCert from '../../../public/csharpintermediatecert.jpg';

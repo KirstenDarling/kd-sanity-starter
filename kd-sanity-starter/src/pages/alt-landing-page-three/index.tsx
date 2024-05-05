@@ -70,7 +70,6 @@ export default function Home() {
         heading='Crafting virtual utopias.'
         subheading='Digital Frontier Awaits'
         image={BannerImageTwo}
-        // isSplitStyle={false}
       />
       <CardsSquare3
         heading='Neon Dreams Unveiled'

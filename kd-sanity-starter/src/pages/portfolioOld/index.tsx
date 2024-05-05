@@ -1,10 +1,12 @@
-import Head from 'next/head';
-// import homeStyles from '../styles/home.module.css';
 import EscapeBanner from '@/components/EscapeBanner';
+import Footer from '@/components/Footer';
 import NavBar from '@/components/NavBar';
 import PortfolioSection from '@/components/PortfolioSection';
+import Head from 'next/head';
 import BecksSiteImage from '../../../public/beckshybridsSite.png';
 import CodingResourcesImage from '../../../public/codingresourcessite.png';
+import CollegeSkylineImage from '../../../public/collegeskylinecentersite.png';
+import ErrorPageImage from '../../../public/errorpage.png';
 import FlexBoxPlaygroundImage from '../../../public/flexbloxplaygroundsite.png';
 import FormImage from '../../../public/formsite.png';
 import JubileeAustenImage from '../../../public/jubileeaustensite.png';
@@ -13,10 +15,6 @@ import Magic8BallImage from '../../../public/magic8ballsite.png';
 import RecipeImage from '../../../public/receipesite.png';
 import RoguePickingsImage from '../../../public/roguepickingssite.png';
 import UnpluggedImage from '../../../public/unpluggedScreenshot.png';
-// import VisionBoardImage from '../../../public/visionboardsite.png';
-import Footer from '@/components/Footer';
-import CollegeSkylineImage from '../../../public/collegeskylinecentersite.png';
-import ErrorPageImage from '../../../public/errorpage.png';
 
 export default function Home() {
   return (

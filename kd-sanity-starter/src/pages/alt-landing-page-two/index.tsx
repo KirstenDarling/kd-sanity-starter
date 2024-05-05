@@ -69,7 +69,6 @@ export default function Home() {
       <TextBanner
         heading='Creative Ethos'
         subheading='Fueling innovation with playful designs and robust code that encapsulate my journey as a mobile engineer.'
-        // isSplitStyle={false}
       />
       <PortfolioImageGrid
         heading='Portfolio Highlights'

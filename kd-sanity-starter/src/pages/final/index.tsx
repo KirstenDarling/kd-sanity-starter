@@ -35,7 +35,7 @@ export default function Home() {
   };
 
   const links = [
-    { title: 'Portal', URL: '/study-portal' },
+    { title: 'Portal', URL: '/portal' },
     { title: 'Portfolio', URL: '/portfolio' },
     { title: 'Certifications', URL: '/certifications' },
   ];

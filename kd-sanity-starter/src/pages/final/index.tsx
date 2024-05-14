@@ -41,7 +41,7 @@ export default function Home() {
   ];
 
   const additionalLinks = [
-    { title: 'About Me', URL: '/about-me' },
+    { title: 'About Me', URL: '/about' },
     { title: '@kirstendarling', URL: 'https://www.linkedin.com/in/kirstendarling/' },
     { title: 'Connect', URL: '/connect' },
   ];
